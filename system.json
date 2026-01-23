@@ -1,0 +1,62 @@
+{
+  "id": "mythicrealms",
+  "title": "Mythic Realms",
+  "description": "A comprehensive TTRPG system and compendium built for Foundry VTT. It rewrites and expands D&D across editions, restoring legacy content, extending progression to epic scales, and emphasizing deep lore, structure, and long-term campaign play.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13.347",
+    "verified": "13"
+  },
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "authors": [
+    {
+      "name": "ScaleScribe",
+      "url": "",
+      "flags": {}
+    }
+  ],
+  "esmodule": "mythicrealms.mjs"
+],
+"styles": [
+		mythicrealms.css"
+],
+"documentTypes": {
+  "ActiveEffect": {
+    "enchantment": {}
+  },
+  "Actor": {
+    "character": {
+      "htmlFields": [
+        "details.biography.value",
+        "details.biography.public",
+        "bastion.description"
+      ]
+    },
+    "encounter": {
+      "htmlFields": [
+        "description.full",
+        "description.summary"
+      ]
+    },
+    "group": {
+      "htmlFields": [
+        "description.full",
+        "description.summary"
+      ]
+    },
+    "npc": {
+      "htmlFields": [
+        "details.biography.value",
+        "details.biography.public"
+      ]
+    },
+    "vehicle": {
+      "htmlFields": [
+        "details.biography.value",
+        "details.biography.public"
+      ]
+    }
+  },
+}
