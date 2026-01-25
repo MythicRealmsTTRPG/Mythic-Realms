@@ -5,58 +5,284 @@
   "version": "1.0.0",
   "compatibility": {
     "minimum": "13.347",
-    "verified": "13"
+    "verified": "13.347"
   },
-  "url": "",
-  "manifest": "",
-  "download": "",
+  "url": "https://github.com/MythicRealmsTTRPG/Mythic-Realms",
+  "manifest": "https://github.com/MythicRealmsTTRPG/Mythic-Realms/releases/latest/download/system.json",
+  "download": "https://github.com/MythicRealmsTTRPG/Mythic-Realms/releases/latest/download/mythicrealms.zip",
   "authors": [
     {
       "name": "ScaleScribe",
-      "url": "",
-      "flags": {}
+      "url": "https://github.com/MythicRealmsTTRPG"
     }
   ],
-  "esmodule": "mythicrealms.mjs"
-],
-"styles": [
-		mythicrealms.css"
-],
-"documentTypes": {
-  "ActiveEffect": {
-    "enchantment": {}
-  },
-  "Actor": {
-    "character": {
-      "htmlFields": [
-        "details.biography.value",
-        "details.biography.public",
-        "bastion.description"
-      ]
+  "esmodules": [
+    "mythicrealms.mjs"
+  ],
+  "styles": [
+    "mythicrealms.css"
+  ],
+  "documentTypes": {
+    "ActiveEffect": {
+      "enchantment": {}
     },
-    "encounter": {
-      "htmlFields": [
-        "description.full",
-        "description.summary"
-      ]
+    "Actor": {
+      "character": {
+        "htmlFields": [
+          "details.biography.value",
+          "details.biography.public",
+          "bastion.description"
+        ]
+      },
+      "encounter": {
+        "htmlFields": [
+          "description.full",
+          "description.summary"
+        ]
+      },
+      "group": {
+        "htmlFields": [
+          "description.full",
+          "description.summary"
+        ]
+      },
+      "npc": {
+        "htmlFields": [
+          "details.biography.value",
+          "details.biography.public"
+        ]
+      },
+      "vehicle": {
+        "htmlFields": [
+          "details.biography.value",
+          "details.biography.public"
+        ]
+      }
     },
-    "group": {
-      "htmlFields": [
-        "description.full",
-        "description.summary"
-      ]
+    "ChatMessage": {
+      "request": {},
+      "rest": {},
+      "turn": {}
     },
-    "npc": {
-      "htmlFields": [
-        "details.biography.value",
-        "details.biography.public"
-      ]
+    "Item": {
+      "weapon": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "equipment": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "consumable": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "tool": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "loot": {
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "race": {
+        "filePathFields": {
+          "advancement.*.icon": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "background": {
+        "filePathFields": {
+          "advancement.*.icon": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "class": {
+        "filePathFields": {
+          "advancement.*.icon": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "subclass": {
+        "filePathFields": {
+          "advancement.*.icon": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "spell": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "feat": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ],
+          "advancement.*.icon": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat"
+        ]
+      },
+      "container": {
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "backpack": {
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      },
+      "facility": {
+        "filePathFields": {
+          "activities.*.img": [
+            "IMAGE"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat"
+        ]
+      }
     },
-    "vehicle": {
-      "htmlFields": [
-        "details.biography.value",
-        "details.biography.public"
-      ]
+    "JournalEntryPage": {
+      "class": {
+        "htmlFields": [
+          "details.value",
+          "details.additionalHitPoints",
+          "description.additionalTraits",
+          "description.additionalEquipment",
+          "description.subclass"
+        ]
+      },
+      "map": {},
+      "rule": {
+        "htmlFields": [
+          "tooltip"
+        ]
+      },
+      "spells": {},
+      "subclass": {
+        "htmlFields": [
+          "details.value"
+        ]
+      }
+    },
+    "RegionBehavior": {
+      "dnd5e.difficultTerrain": {},
+      "dnd5e.rotateArea": {}
     }
   },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "media": [
+    {
+      "type": "cover",
+      "loop": false,
+      "flags": {}
+    },
+    {
+      "type": "setup",
+      "url": "systems/mythicrealms/icons/mythicrealms-logo.png",
+      "thumbnail": "systems/mythicrealms/icons/mythicrealms-logo.png"
+    }
+  ],
+  "socket": true,
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "attributes.hp",
+  "background": "",
+  "flags": {
+    "compendiumArtMappings": {
+      "mythicrealms": {
+        "mapping": "",
+        "credit": ""
+      }
+    },
+    "mythicrealms": {
+      "license": "MIT",
+      "contact": "scalescribe.mythicrealms@gmail.com",
+      "sourceBooks": [
+        "Mythic Realms Core Rulebook",
+        "Mythic Realms Bestiary"
+      ]
+    }
+  }
 }
