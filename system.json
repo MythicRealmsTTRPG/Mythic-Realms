@@ -1,552 +1,140 @@
 {
-  "DOCUMENT.MYTHICREALMS": {
-    "Activity": "Activity",
-    "Advancement": "Advancement",
-    "Warning": {
-      "SelectType": "{name} type must be selected for creation."
+  "id": "mythicrealms",
+  "title": "Mythic Realms",
+  "description": "",
+  "version": "1.0.0",
+  "compatibility": {
+    "min": "13.347",
+    "max": "13.347"
+  },
+  "url": 
+  "manifest": "",
+  "download": "",
+  "authors": [
+    {
+      "name": "ScaleScribe",
+      "url": "",
+      "flags": []
     }
-  },
-
-  "TYPES.ACTOR.character": "Player Character",
-  "TYPES.ACTOR.characterPl": "Player Characters",
-  "TYPES.ACTOR.encounter": "Encounter",
-  "TYPES.ACTOR.encounterPl": "Encounters",
-  "TYPES.ACTOR.group": "Group",
-  "TYPES.ACTOR.groupPl": "Groups",
-  "TYPES.ACTOR.npc": "Non-Player Character",
-  "TYPES.ACTOR.npcPl": "Non-Player Characters",
-  "TYPES.ACTOR.vehicle": "Vehicle",
-  "TYPES.ACTOR.vehiclePl": "Vehicles",
-
-  "TYPES.ActiveEffect.enchantment": "Enchantment",
-  "TYPES.ActiveEffect.enchantmentPl": "Enchantments",
-
-  "TYPES.ChatMessage": {
-    "request": "Request Message",
-    "rest": "Rest Message",
-    "turn": "Combat Turn Message"
-  },
-
-  "TYPES.Item.background": "Background",
-  "TYPES.Item.backgroundPl": "Backgrounds",
-  "TYPES.Item.container": "Container",
-  "TYPES.Item.containerPl": "Containers",
-  "TYPES.Item.class": "Class",
-  "TYPES.Item.classPl": "Classes",
-  "TYPES.Item.consumable": "Consumable",
-  "TYPES.Item.consumablePl": "Consumables",
-  "TYPES.Item.equipment": "Equipment",
-  "TYPES.Item.equipmentPl": "Equipment",
-  "TYPES.Item.facility": "Facility",
-  "TYPES.Item.facilityPl": "Facilities",
-  "TYPES.Item.feat": "Feature",
-  "TYPES.Item.featurePl": "Features",
-  "TYPES.Item.loot": "Loot",
-  "TYPES.Item.lootPl": "Loot",
-  "TYPES.Item.race": "Species",
-  "TYPES.Item.racePl": "Species",
-  "TYPES.Item.raceLegacy": "Race",
-  "TYPES.Item.raceLegacyPl": "Races",
-  "TYPES.Item.spell": "Spell",
-  "TYPES.Item.spellPl": "Spells",
-  "TYPES.Item.subclass": "Subclass",
-  "TYPES.Item.subclassPl": "Subclasses",
-  "TYPES.Item.tool": "Tool",
-  "TYPES.Item.toolPl": "Tools",
-  "TYPES.Item.weapon": "Weapon",
-  "TYPES.Item.weaponPl": "Weapons",
-
-  "TYPES.RegionBehavior": {
-    "mythicrealms.difficultTerrain": "Difficult Terrain",
-    "mythicrealms.rotateArea": "Rotate Area"
-  },
-
-  "MYTHICREALMS.title": "Mythic Realms",
-  "MYTHICREALMS.AbbreviationCR": "CR",
-  "MYTHICREALMS.AbbreviationConc": "Conc.",
-  "MYTHICREALMS.AbbreviationDC": "DC",
-  "MYTHICREALMS.AbbreviationKg": "kg",
-  "MYTHICREALMS.AbbreviationLR": "LR",
-  "MYTHICREALMS.AbbreviationLevel": "Lvl",
-  "MYTHICREALMS.AbbreviationLbs": "lbs.",
-  "MYTHICREALMS.AbbreviationSR": "SR",
-
-  "MYTHICREALMS.ABILITY": {
-    "Configure": {
-      "CheckLabel": "{ability} Check",
-      "SaveLabel": "{ability} Save",
-      "Title": "Configure {ability}"
+  ],
+  "esmodules": [
+    "mythicrealms.mjs"
+  ],
+  "styles": [
+    "mythicrealms.css"
+  ],
+  "documentTypes": {
+    "ActiveEffect": {
+      "enchantment": {}
     },
-    "SECTIONS": {
-      "Bonuses": {
-        "Label": "{ability} Bonuses",
-        "Hint": "These bonuses apply to checks and saves made with {ability}."
+    "Actor": {
+       "character": {
+          "htmlFields": ["details.biography.value", "details.biography.public", "bastion.description"]
+          },
+        "encounter": {
+          "htmlFields": ["description.full", "description.summary"]
+        },
+        "group": {
+          "htmlFields": ["description.full", "description.summary"]
+        },
+        "npc": {
+          "htmlFields": ["details.biography.value", "details.biography.public"]
+        },
+          "vehicle": {
+            "htmlFields": ["details.biography.value", "details.biography.public"]
+        }
       },
-      "Global": {
-        "Label": "Global Bonuses",
-        "Hint": "These bonuses apply to checks and saves made with any ability."
+      "ChatMessage": {
+        "request": {},
+        "rest": {},
+        "turn": {}
       },
-      "Score": "{ability} Score"
-    }
+      "Item": {
+        "background": {
+          "filePathFields": {
+            "advancement.*.icon": ["image"]
+          },
+          "htmlFields": ["description.value", "descritpion.chat"]
+        },
+        "backpack": {
+          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        },
+        "class": {
+          "filePathFields": {
+            "advancement.*.icon": ["IMAGE"]
+          },
+          "htmlFields": ["description.value", "description.chat"]
+        },
+        "consumable": {
+          "filePathFields": {
+            "activities.*.img": ["IMAGE"]
+          },
+          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        },
+        "container": {
+          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        },
+        "equipment": {
+          "filePathFields": {
+            "activities.*.img": ["IMAGE"]
+          },
+          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        },
+        "facility": {
+          "filePathFields": {
+            "activities.*.img": ["IMAGE"]
+          },
+          "htmlFields": ["description.value", "description.chat"]
+        },
+        "feat": {
+          "filePathFields": {
+            "activities.*.img": ["IMAGE"],
+            "advancement.*.icon": ["IMAGE"]
+          },
+          "htmlFields": ["description.value", "description.chat"]
+        },
+        "loot": {
+          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        },
+        "race": {
+          "filePathFields": {
+            "advancement.*.icon": ["IMAGE"]
+          },
+          "htmlFields": ["description.value", "description.chat"]
+        },
+        "spell": {
+          "filePathFields": {
+            "activities.*.img": ["IMAGE"]
+          },
+          "htmlFields": ["description.value", "description.chat"]
   },
-
-  "MYTHICREALMS.Ability": "Ability",
-  "MYTHICREALMS.Abilities": "Abilities",
-  "MYTHICREALMS.AbilityStr": "Strength",
-  "MYTHICREALMS.AbilityStrAbbr": "STR",
-  "MYTHICREALMS.AbilityCon": "Constitution",
-  "MYTHICREALMS.AbilityConAbbr": "CON",
-  "MYTHICREALMS.AbilityDex": "Dexterity",
-  "MYTHICREALMS.AbilityDexAbbr": "DEX",
-  "MYTHICREALMS.AbilityInt": "Intelligence",
-  "MYTHICREALMS.AbilityIntAbbr": "INT",
-  "MYTHICREALMS.AbilityWis": "Wisdom",
-  "MYTHICREALMS.AbilityWisAbbr": "WIS",
-  "MYTHICREALMS.AbilityCha": "Charisma",
-  "MYTHICREALMS.AbilityChaAbbr": "CHA",
-  "MYTHICREALMS.AbilityHon": "Honor",
-  "MYTHICREALMS.AbilityHonAbbr": "hon",
-  "MYTHICREALMS.AbilitySan": "Sanity",
-  "MYTHICREALMS.AbilitySanAbbr": "san",
-  "MYTHICREALMS.AbilityScore": "Ability Score",
-  "MYTHICREALMS.AbilityScoreShort": "Score",
-  "MYTHICREALMS.AbilityScorePl": "Ability Scores",
-  "MYTHICREALMS.AbilityScoreL": "{ability} Score",
-  "MYTHICREALMS.AbilityScoreMax": "Maximum Ability Score",
-  "MYTHICREALMS.AbilityScoreMaxShort": "Maximum",
-  "MYTHICREALMS.AbilityModifier": "Ability Modifier",
-  "MYTHICREALMS.AbilityModifierShort": "Mod",
-  "MYTHICREALMS.AbilityPromptText": "What type of {ability} check?",
-  "MYTHICREALMS.AbilityPromptTitle": "{ability} Ability Check",
-  "MYTHICREALMS.AbilityUseChargesLabel": "{value} Charges",
-  "MYTHICREALMS.AbilityUseConsumableLabel": "{max} per {per}",
-  "MYTHICREALMS.AbilityUseCast": "Cast Spell",
-  "MYTHICREALMS.AbilityUseUse": "Use Ability",
-  "MYTHICREALMS.AbilityUseConfig": "Usage Configuration",
-  "MYTHICREALMS.AbilityBonuses": "Ability Bonuses",
-  "MYTHICREALMS.AbilityConfigure": "Configure {ability}",
-  "MYTHICREALMS.AbilityConfigureTitle": "Configure {ability} Saving Throws and Checks",
-  "MYTHICREALMS.AbilitySaveConfigure": "{ability} Saving Throws",
-  "MYTHICREALMS.AbilityCheckConfigure": "{ability} Ability Checks",
-  "MYTHICREALMS.AbilityCheckConfigurationHint": "Configure check bonuses.",
-  "MYTHICREALMS.AbilityConfigurationHint": "Configure ability saving throw proficiency, saving throw bonuses, and check bonuses.",
-  "MYTHICREALMS.AbilityCheckBonus": "Check Bonus",
-  "MYTHICREALMS.AbilityCheckGlobalBonusHint": "This bonus applies to all ability checks made by this actor.",
-
-  "MYTHICREALMS.Action": "Action",
-  "MYTHICREALMS.ActionAbbr": "A",
-  "MYTHICREALMS.ActionPl": "Actions",
-  "MYTHICREALMS.ActionAbil": "Ability Check",
-  "MYTHICREALMS.ActionEnch": "Enchant",
-  "MYTHICREALMS.ActionHeal": "Heal",
-  "MYTHICREALMS.ActionMSAK": "Melee Spell Attack",
-  "MYTHICREALMS.ActionMWAK": "Melee Weapon Attack",
-  "MYTHICREALMS.ActionOther": "Other",
-  "MYTHICREALMS.ActionRSAK": "Ranged Spell Attack",
-  "MYTHICREALMS.ActionRWAK": "Ranged Weapon Attack",
-  "MYTHICREALMS.ActionSave": "Saving Throw",
-  "MYTHICREALMS.ActionSumm": "Summon",
-  "MYTHICREALMS.ActionUtil": "Utility",
-  "MYTHICREALMS.ActionWarningNoItem": "The requested item {item} no longer exists on Actor {name}",
-  "MYTHICREALMS.ActionWarningNoToken": "You must have one or more controlled Tokens in order to use this option.",
-
-      "MYTHICREALMS.ACTIVATION": {
-        "FIELDS": {
-          "activation": {
-          "label": "Activation",
-          "condition": {
-            "label": "Activation Condition",
-            "hint": "Condition required to activate this activity."
-            },
-            "override": {
-            "label": "Override Activation",
-            "hint": "Use these activation values instead of the item's when using this activity."
-            },
-            "type": {
-              "label": "Activation Cost",
-              "hint": "Activation type (e.g. action, legendary action, minutes)."
-              },
-              "value": {
-                "label": "Activation Value",
-                "hint": "Scalar value associated with the activation."
-                }
-              }
-            },
-
-          "Category": {
-            "Combat": "Combat",
-            "Monster": "Monster",
-            "Rest": "Rest",
-            "Standard": "Standard",
-            "Time": "Time",
-            "Vehicle": "Vehicle"
+        "subclass": {
+          "filePathFields": {
+            "advancement.*.icon": ["IMAGE"]
           },
-
-          "Type": {
-            "Action": {
-              "Header": "Actions",
-              "Label": "Action"
-            },
-            "BonusAction": {
-              "Header": "Bonus Actions",
-              "Label": "Bonus Action"
-            },
-            "Crew": {
-              "Counted": {
-                "one": "{number} crew action",
-                "other": "{number} crew actions"
-              },
-              "Header": "Crew Actions",
-              "Label": "Crew Action"
-            },
-            "Day": {
-              "Header": "Days",
-              "Label": "Day"
-            },
-            "Encounter": {
-              "Label": "Start of Encounter"
-            },
-            "Hour": {
-              "Header": "Hours",
-              "Label": "Hour"
-            },
-            "Lair": {
-              "Header": "Lair Actions",
-              "Label": "Lair Action"
-            },
-            "Legendary": {
-              "Counted": {
-                "one": "{number} legendary action",
-                "other": "{number} legendary actions"
-              },
-              "Header": "Legendary Actions",
-              "Label": "Legendary Action"
-            },
-            "LongRest": {
-              "Label": "End of a Long Rest"
-            },
-            "Minute": {
-              "Header": "Minutes",
-              "Label": "Minute"
-            },
-            "Mythic": {
-              "Counted": {
-                "one": "{number} mythic action",
-                "other": "{number} mythic actions"
-              },
-              "Header": "Mythic Actions",
-              "Label": "Mythic Action"
-            },
-            "Reaction": {
-              "Header": "Reactions",
-              "Label": "Reaction"
-            },
-            "ShortRest": {
-              "Label": "End of a Short Rest"
-            },
-            "TurnEnd": {
-              "Label": "End of Turn"
-            },
-            "TurnStart": {
-              "Label": "Start of Turn"
-            }
-          },
-
-          "Warning": {
-            "NoActions": "No {type} are available, but activating this requires at least {required}.",
-            "NotEnoughActions": "Not enough {type} to activate, {required} required but only {available} available."
-          }
-      },
-
-      "MYTHICREALMS.ACTIVEEFFECT": {
-        "AttributeKeyTooltip": "For a list of common keys, see <a href=\"{url}\">the wiki</a>.",
-          "FIELDS": {
-            "statuses": {
-              "label": "Status Conditions",
-              "hint": "Apply or remove status conditions when this effect is applied or removed."
-            }
-          }
-      },
-
-      "MYTHICREALMS.ACTIVITY": {
-        "Action": {
-          "Create": "Create Activity",
-          "Edit": "Edit Activity",
-          "Delete": "Delete Activity"
+          "htmlFields": ["description.value", "description.chat"]
         },
-        "FIELDS": {
-          "description": {
-            "chatFlavor": {
-              "label": "Chat Flavor",
-              "hint": "Flavor text to display in the chat message when this activity is used."
-            }
+        "tool": {
+          "filePathFields": {
+            "activities.*.img": ["IMAGE"]
           },
-          "effects": {
-            "element": {
-              "level": {
-                "label": "Level Limit",
-                "hint": "Range of levels required to apply this effect.",
-                "max": {
-                  "label": "Maximum Level",
-                  "hint": "The maximum level that can be affected."
-                },
-                "min": {
-                  "label": "Minimum Level",
-                  "hint": "The minimum level that can be affected."
-                }
-              }
-            },
-            "label": "Applied Effects",
-            "hint": "Active effects that are applied when this activity is used."
-          },
-          "img": {
-            "label": "Icon"
-          },
-          "name": {
-            "label": "Name"
-          },
-          "requireAttunement": {
-            "label": "Require Attunement",
-            "hint": "Activity will not be usable if item requires attunement and isn't attuned."
-          },
-          "requireIdentification": {
-            "label": "Require Identification",
-            "hint": "Activity will not be usable if item isn't identified."
-          },
-          "requireMagic": {
-            "label": "Require Magic",
-            "hint": "Activity will not be usable if magic isn't available."
-          },
-          "usage": {
-            "label": "Usage",
-            "hint": "How often this activity can be used."
-          },
-          "visibility": {
-            "identifier": {
-              "label": "Class Identifier",
-              "hint": "The identifier of the class that level limits apply to. If left blank, the character level is used."
-            },
-            "label": "Visibility",
-            "level": {
-              "hint": "Range of levels required to use this activity.",
-              "label": "Level Limit",
-              "max": {
-                "label": "Maximum Level",
-                "hint": "The maximum level required to use this activity."
-              },
-              "min": {
-                "label": "Minimum Level",
-                "hint": "The minimum level required to use this activity."
-              }
-            }
-          }
+          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
         },
-        "Title": {
-          "one": "Activity",
-          "other": "Activities"
-          }
+        "weapon": {
+          "filePathFields": {
+            "activities.*.img": ["IMAGE"]
+          },
+          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
         }
       },
-      "Sections": {
-        "Activation": "Activation",
-        "Behavior": "Behavior",
-        "Effect": "Effect",
-        "Identity": "Identity",
-        "Time": "Time"
-      },
-      "Warning": {
-        "UsageNotAllowed": "Using this activity is not currently possible." 
-        }
-      },
-
-      "MYTHICREALMS.ACTOR": {
-        "Warning": {
-          "CreateActor": "You must have 'Create New Actors' permission in order to summon directly from a compendium.",
-          "InvalidItem": "{itemType} items cannot be added to a {actorType}.",
-          "NoActor": "Actor cannot be found with UUID '{uuid}' to summon.",
-          "Singleton": "Only a single {itemType} can be added to a {actorType}."
-          }
-      },
-
-
-      "MYTHICREALMS.ActiveEffectOverrideWarning": "This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.",
-      "MYTHICREALMS.Add": "Add",
-      "MYTHICREALMS.AdditionalControls": "Additional Controls",
-      "MYTHICREALMS.AdditionalSettings": "Additional Settings",
-      "MYTHICREALMS.AddEmbeddedItemPromptHint": "Do you want to add these items to your Character Sheet?",
-      "MYTHICREALMS.Advanced": "Advanced",
-
-      "MYTHICREALMS.ADVANCEMENT": {
-        "AbilityScoreImprovement": {
-          "Action": {
-            "Select": "Select Feat"
-          },
-          "CapDisplay:": {
-            "one": "Max {points} point per score",
-            "other": "Max {points} points per score"
-          },
-          "Details": "Improvement Details",
-          "Feat": {
-            "ASINAME": "Ability Score Improvement Feat",
-            "Hint": "Drop a feat here to choose one instead of an ability score improvement."
-          },
-          "Fields": {
-            "cap": {
-              "Hint": "Maximum number of points a player can assign to a single score.",
-              "label": "Point Cap"
-            },
-            "fixed": {
-              "Hint": "Abilities that are improved by a fixed amount and cannot be manually improved during the process.",
-              "label": "Point Cap"
-            },
-            "locked": {
-              "Hint": "Ability cannot be improved.",
-              "Label": "Locked",
-              "Locked": "Ability cannot be improved.",
-              "Unlocked": "Ability can be improved."
-            },
-            "max": {
-              "hint": "Increase the maximum score from what is allowed on the actor.",
-              "label": "Maximum"
-            },
-            "points": {
-              "Hint": "Number of points that can be assigned to any unlocked ability score.",
-              "decrease": "Decrease Points",
-              "increase": "Increase Points",
-              "label": "Points"
-            },
-            "recommendation": {
-              "Hint": "Epic Boon feat recommended by this class.",
-              "label": "Recommendation"
-            }
-          },
-          "Hint": "Allow the player to increase one or more ability scores or take an optional feat.",
-          "Journal": {
-            "DescriptionEpic": "<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>",
-            "DescriptionEpicRecommendation": "<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>",
-            "DescriptionLegacy": "<p>When you reach {firstLevelOrdinal} level, and again at {otherLevelsOrdinal} level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above {maxAbilityScore} using this feature.</p><p>Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.</p>",
-            "DescriptionModern": "<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at {class} levels {otherLevels}.</p>",
-            "Name": "Ability Score Improvement"
-          },
-          "LockedHint": "Scores cannot be modified with a feat selected.",
-          "PointsRemaining": {
-            "one": "{points} Point Remaining",
-            "other": "{points} Points Remaining"
-            },
-          "Title": "Ability Score Improvement",
-          "TitleEpic": "Epic Boon",
-          "Warning": {
-            "Type": "Only features with the \"feat\" type can be selected."
-          }
+      "JournalEntryPage": {
+        "class": {
+          "htmlFields": [
+            "details.value",
+            "details.additionalHitPoints",
+            "description.additionalTraits",
+            "description.additionalEquipment",
+            "description.subclass",
+          ]
         },
-        "Action": {
-          "Create": "Create Advancement",
-          "Delete": "Delete Advancement",
-          "Duplicate": "Duplicate Advancement",
-          "Edit": "Edit Advancement",
-          "View": "View Advancement"
-        },
-        "Config":{
-          "AnyLevel": "Any",
-          "Details": "Advancement Details"
-        },
-        "Defaults": {
-          "BackgroundFeat": "Background Feat",
-          "BackgroundFeature": "Background Feature",
-          "BackgroundProficiencies": "Background Proficiencies",
-          "ChooseLanguages": "Choose Languages",
-        },
-        "Hit Points": {
-          "Title": "Hit Points",
-          "Hint": "Track the player's hit points gained from this advancement.",
-          "Action": {
-            "Roll": "Roll {die}"
-          },
-          "Average": "Average",
-          "MaxAtFirstLevel": "Max at First Level: <strong>{max}</strong>",
-          "Roll": "Roll {class} Hit Points",
-          "Starting": "Hit Points at 1st Level",
-          "TakeAverage": "Take Average"
-          "Warning": {
-            "Empty": "Hit points must be rolled or the average value must be taken.",
-            "Invalid": "Hit points must be a valid whole number.",
-            "NoClass": "A class must be selected to gain hit points from this advancement."
-            }
-          },
-          "ItemChoice": {
-            "Action": {
-              "SelectGeneric": "Select Item",
-              "SelectSpecific": "Select {itemType}"
-            },
-            "Choose": "choose {count}",
-            "Chosen": "Chosen: {current} / {max}",
-            "Details": "Item Choice Details",
-            "DropHint": "Drop Items here toadd them to the list that can be chosen with this advancement.",
-            "FIELDS": {
-              "allowDrops": {
-                "hint": "Allow players to be able to drop their own choices into this advancement.",
-                "label": "Allow Drops"
-              },
-              "choices": {
-                "hint": "Specify how many choices are allowed at each level.",
-                "label": "Choices"
-              },
-              "FIELDS": {
-                "count": {
-                  "label": "Count"
-                },
-                "replacement": {
-                  "label": "Allow Replacement"
-                }
-              }
-            },
-            "pool": {
-              "label": "Item Options"
-            },
-            "restriction": {
-              "level": {
-                "hint": "Only allow choices from spells of this level.",
-                "Available": "Any Available Level",
-                "label": "Spell Level"
-              },
-              "list": {
-              "hint": "Only allow spells from these lists.",
-              "label": "Spell Lists"
-              },
-              "subtype": {
-              "label": "Subtype"
-              },
-              "type": {
-              "label": "Type"
-              }
-            },
-            "type": {
-              "hint": "Restrict what Item types can be chosen.",
-              "Any": "Anything",
-              "label": "Item Type"
-            }
-          },
-          "Hint": "Present the player with a choice of items (such as equipment, features, or spells) that they can choose for their character at one or more levels.",
-          "Replacement": {
-            "None": "No Replacement",
-            "Title": "replace"
-          },
-          "Title": "Choose Items",
-          "Warning": {
-            "InvalidType": "Only {type} items can be selected for this choice.",
-            "MaxSelected": "No additional items can be selected, uncheck items before selecting more.",
-            "NoOriginal": "Previously selected choice no longer available for replacement.",
-            "SpellLevelAvailable": "Only {level} or lower spells can be chosen for this advancement.",
-            "SpellLevelSpecific": "Only {level} spells can be chosen for this advancement.",
-            "SpellList": "Only spells available on the {lists} spell list can be chosen for this advancement."
-          }
-        },
-        "ItemGrant": {
-          "Details": "Item Grant Details",
-          "DropHint": "Drop Items here to add them to the list granted by this advancement.",
-          "FIELDS": {
-            "items": {
-
-            }
-            
       }
