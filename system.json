@@ -7,13 +7,13 @@
     "min": "13.347",
     "max": "13.347"
   },
-  "url": 
+  "url": "https://github.com/MythicRealmsTTRPG/Mythic-Realms",
   "manifest": "",
   "download": "",
   "authors": [
     {
       "name": "ScaleScribe",
-      "url": "",
+      "url": "https://github.com/MythicRealmsTTRPG",
       "flags": []
     }
   ],
@@ -28,113 +28,451 @@
       "enchantment": {}
     },
     "Actor": {
-       "character": {
-          "htmlFields": ["details.biography.value", "details.biography.public", "bastion.description"]
-          },
-        "encounter": {
-          "htmlFields": ["description.full", "description.summary"]
-        },
-        "group": {
-          "htmlFields": ["description.full", "description.summary"]
-        },
-        "npc": {
-          "htmlFields": ["details.biography.value", "details.biography.public"]
-        },
-          "vehicle": {
-            "htmlFields": ["details.biography.value", "details.biography.public"]
-        }
+      "character": {
+        "htmlFields": ["details.biography.value", "details.biography.public", "bastion.description"]
       },
-      "ChatMessage": {
-        "request": {},
-        "rest": {},
-        "turn": {}
+      "encounter": {
+        "htmlFields": ["description.full", "description.summary"]
       },
-      "Item": {
-        "background": {
-          "filePathFields": {
-            "advancement.*.icon": ["image"]
-          },
-          "htmlFields": ["description.value", "descritpion.chat"]
+      "group": {
+        "htmlFields": ["description.full", "description.summary"]
+      },
+      "npc": {
+        "htmlFields": ["details.biography.value", "details.biography.public"]
+      },
+      "vehicle": {
+        "htmlFields": ["details.biography.value", "details.biography.public"]
+      }
+    },
+    "ChatMessage": {
+      "request": {},
+      "rest": {},
+      "turn": {}
+    },
+    "Item": {
+      "background": {
+        "filePathFields": {
+          "advancement.*.icon": ["image"]
         },
-        "backpack": {
-          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        "htmlFields": ["description.value", "description.chat"]
+      },
+      "backpack": {
+        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+      },
+      "class": {
+        "filePathFields": {
+          "advancement.*.icon": ["IMAGE"]
         },
-        "class": {
-          "filePathFields": {
-            "advancement.*.icon": ["IMAGE"]
-          },
-          "htmlFields": ["description.value", "description.chat"]
+        "htmlFields": ["description.value", "description.chat"]
+      },
+      "consumable": {
+        "filePathFields": {
+          "activities.*.img": ["IMAGE"]
         },
-        "consumable": {
-          "filePathFields": {
-            "activities.*.img": ["IMAGE"]
-          },
-          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+      },
+      "container": {
+        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+      },
+      "equipment": {
+        "filePathFields": {
+          "activities.*.img": ["IMAGE"]
         },
-        "container": {
-          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+      },
+      "facility": {
+        "filePathFields": {
+          "activities.*.img": ["IMAGE"]
         },
-        "equipment": {
-          "filePathFields": {
-            "activities.*.img": ["IMAGE"]
-          },
-          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        "htmlFields": ["description.value", "description.chat"]
+      },
+      "feat": {
+        "filePathFields": {
+          "activities.*.img": ["IMAGE"],
+          "advancement.*.icon": ["IMAGE"]
         },
-        "facility": {
-          "filePathFields": {
-            "activities.*.img": ["IMAGE"]
-          },
-          "htmlFields": ["description.value", "description.chat"]
+        "htmlFields": ["description.value", "description.chat"]
+      },
+      "loot": {
+        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+      },
+      "race": {
+        "filePathFields": {
+          "advancement.*.icon": ["IMAGE"]
         },
-        "feat": {
-          "filePathFields": {
-            "activities.*.img": ["IMAGE"],
-            "advancement.*.icon": ["IMAGE"]
-          },
-          "htmlFields": ["description.value", "description.chat"]
+        "htmlFields": ["description.value", "description.chat"]
+      },
+      "spell": {
+        "filePathFields": {
+          "activities.*.img": ["IMAGE"]
         },
-        "loot": {
-          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        "htmlFields": ["description.value", "description.chat"]
+      },
+      "subclass": {
+        "filePathFields": {
+          "advancement.*.icon": ["IMAGE"]
         },
-        "race": {
-          "filePathFields": {
-            "advancement.*.icon": ["IMAGE"]
-          },
-          "htmlFields": ["description.value", "description.chat"]
+        "htmlFields": ["description.value", "description.chat"]
+      },
+      "tool": {
+        "filePathFields": {
+          "activities.*.img": ["IMAGE"]
         },
-        "spell": {
-          "filePathFields": {
-            "activities.*.img": ["IMAGE"]
-          },
-          "htmlFields": ["description.value", "description.chat"]
+        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+      },
+      "weapon": {
+        "filePathFields": {
+          "activities.*.img": ["IMAGE"]
+        },
+        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+      }
+    },
+    "JournalEntryPage": {
+      "class": {
+        "htmlFields": [
+          "details.value",
+          "details.additionalHitPoints",
+          "description.additionalTraits",
+          "description.additionalEquipment",
+          "description.subclass"
+        ]
+      },
+      "map": {},
+      "rule": {
+        "htmlFields": ["tooltip"]
+      },
+      "spells": {},
+      "subclass": {
+        "htmlFields": ["details.value"]
+      }
+    },
+    "RegionBehavior": {
+      "mythicrealms.difficultTerrain": {},
+      "mythicrealms.rotateArea": {}
+    }
   },
-        "subclass": {
-          "filePathFields": {
-            "advancement.*.icon": ["IMAGE"]
-          },
-          "htmlFields": ["description.value", "description.chat"]
-        },
-        "tool": {
-          "filePathFields": {
-            "activities.*.img": ["IMAGE"]
-          },
-          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
-        },
-        "weapon": {
-          "filePathFields": {
-            "activities.*.img": ["IMAGE"]
-          },
-          "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+  "packs": [
+    {
+      "name": "backgrounds",
+      "label": "Backgrounds",
+      "system": "mythicrealms",
+      "path": "packs/backgrounds.db",
+      "type": "Item",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "sourceBook": "MythicRealms Player's Handbook",
+          "types": ["background"]
         }
-      },
-      "JournalEntryPage": {
-        "class": {
-          "htmlFields": [
-            "details.value",
-            "details.additionalHitPoints",
-            "description.additionalTraits",
-            "description.additionalEquipment",
-            "description.subclass",
+      }
+    },
+    {
+      "name": "classes",
+      "label": "Classes",
+      "system": "mythicrealms",
+      "path": "packs/classes.db",
+      "type": "Item",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "sourceBook": "MythicRealms Player's Handbook",
+          "types": ["class"]
+        }
+      }
+    },
+    {
+      "name": "classfeatures",
+      "label": "Class Features",
+      "system": "mythicrealms",
+      "path": "packs/classfeatures",
+      "type": "Item",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "sourceBook": "MythicRealms Player's Handbook",
+          "types": ["feat", "weapon"]
+        }
+      }
+    },
+    {
+      "name": "heroes",
+      "label": "Starter Heroes",
+      "system": "mythicrealms",
+      "path": "packs/heroes.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "sourceBook": "MythicRealms Player's Handbook",
+          "types": ["character"]
+        }
+      }
+    },
+    {
+      "name": "items",
+      "label": "Items",
+      "system": "mythicrealms",
+      "path": "packs/items.db",
+      "type": "Item",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "sourceBook": "MythicRealms Player's Handbook",
+          "types": ["weapon", "equipment", "consumable", "tool", "loot", "feat", "container"]
+        }
+      }
+    },
+    {
+      "name": "monsterfeatures",
+      "label": "Monster Features",
+      "system": "mythicrealms",
+      "path": "packs/monsterfeatures.db",
+      "type": "Item",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "sourceBook": "MythicRealms Bestiary",
+          "types": ["feat", "weapon"]
+        }
+      }
+    },
+    {
+      "name": "monsters",
+      "label": "Monsters",
+      "system": "mythicrealms",
+      "path": "packs/monsters.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "sourceBook": "MythicRealms Bestiary",
+          "types": ["npc"]
+        }
+      }
+    },
+    {
+      "name": "races",
+      "label": "Races",
+      "system": "mythicrealms",
+      "path": "packs/races.db",
+      "type": "Item",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "sourceBook": "MythicRealms Player's Handbook",
+          "types": ["race", "feat"]
+        }
+      }
+    },
+    {
+      "name": "rules",
+      "label": "Rules",
+      "system": "mythicrealms",
+      "path": "path/rules.db",
+      "type": "JournalEntry",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "display": "table-of-contents",
+          "sourceBook": "Mythic Realms Core Rulebook"
+        }
+      }
+    },
+    {
+      "name": "spells",
+      "label": "Spells",
+      "system": "mythicrealms",
+      "path": "packs/spells",
+      "type": "Item",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "sorting": "m",
+          "sourceBook": "MythicRealms Arcane Codex",
+          "types": ["spell"]
+        }
+      }
+    },
+    {
+      "name": "subclasses",
+      "label": "Subclasses",
+      "system": "mythicrealms",
+      "path": "packs/subclasses",
+      "type": "Item",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "sourceBook": "MythicRealms Player's Handbook",
+          "types": ["subclass"]
+        }
+      }
+    },
+    {
+      "name": "tables",
+      "label": "Tables",
+      "system": "mythicrealms",
+      "path": "packs/tables",
+      "type": "RollTable",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "tradegoods",
+      "label": "Trade Goods",
+      "system": "mythicrealms",
+      "path": "packs/tradegoods",
+      "type": "Item",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "sourceBook": "MythicRealms Tools & Trade",
+          "types": ["loot"]
+        }
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Mythic Realms",
+      "sorting":"m",
+      "color": "#2B2E34",
+      "packs": [
+        "rules",
+        "tables",
+        "heroes"
+      ],
+      "folders": [
+        {
+          "name": "Character Features",
+          "sorting": "m",
+          "color": "#2F6F6D",
+          "packs": [
+            "Backgrounds",
+            "Backgrounds-Features",
+            "Backgrounds-Personality",
+            "Classes",
+            "Classes-Features",
+            "Classes-Gestalt",
+            "Feats",
+            "Races",
+            "Races-Traits",
+            "Subclasses",
+            "Subclasses-Features"
           ]
         },
+        {
+          "name": "Items & Spells",
+          "sorting": "m",
+          "color": "#2F6F6D",
+          "packs": [
+            "Adhesives",
+            "Adventurers' Gear",
+            "Arcane Foci",
+            "Armor",
+            "Bait",
+            "Books",
+            "Boons",
+            "Botany",
+            "Clothing",
+            "Containers",
+            "Cosmetics and Pigments",
+            "Currency",
+            "Curses",
+            "Drink",
+            "Equipment-Packs",
+            "Fabric",
+            "Food",
+            "Gaming Sets",
+            "Healing",
+            "Holy Symbol",
+            "Jewelry",
+            "Kits",
+            "Musical Instruments",
+            "Oil",
+            "Poisons",
+            "Potions",
+            "Restraints",
+            "Scrolls",
+            "Sewing",
+            "Spells",
+            "Tattoos",
+            "Tools",
+            "Trade",
+            "Traps",
+            "Trinkets",
+            "Vehicles",
+            "Wepaons",
+            "Wonderous Items"
+          ]
+        },
+        {
+          "name": "Monsters",
+          "sorting": "m",
+          "color": "#2F6F6D",
+          "packs": [
+            "Animals",
+            "Gods and Deities",
+            "Homebrew",
+            "Monsters",
+            "Mounts",
+            "NPCs",
+            "Summons"
+          ]
+        },
+        {
+          "name": "Settings",
+          "sorting": "m",
+          "color": "#2F6F6D",
+          "packs": []
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "media": [
+    {
+      "type": "cover",
+      "loop": false,
+      "flags": {}
+    }
+  ],
+  "socket": true,
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "attributes.hp",
+  "background": "systems/mythicrealms/ui/official/mythicrealms-background.webp",
+  "flags": {
+    "compendiumArtMappings": {
+      "mythicrealms": {
+        "mapping": "systems/mythicrealms/json/fa-token-mapping.json",
+        "credit": "<em>Token artwork by <a href=\"https://www.forgotten-adventures.net/\" target=\"_blank\" rel=\"noopener\">Forgotten Adventures</a>.</em>"
       }
+    },
+    "mythicrealms": {
+      "sourceBooks": {
+        "MythicRealms Core Rulebook": "SOURCE.BOOK.RULEBOOK",
+        "MythicRealms Player's Handbook": "SOURCE.BOOK.CHARACTER",
+        "MythicRealms Bestiary": "SOURCE.BOOK.BESTIARY",
+        "MythicRealms Arcane Codex": "SOURCE.BOOK.ARCANE",
+        "MythicRealms Epic Levels": "SOURCE.BOOK.EPIC",
+        "MythicRealms Tools and Trade": "SOURCE.BOOK.CRAFTING",
+        "MythicRealms Atlas and Calendars": "SOURCE.BOOK.ATLAS"
+      }
+    },
+    "needsMigrationVersion": "1.0.0",
+    "compatibleMigrationVersion": "0.8",
+    "hotReload": {
+      "extensions": ["css", "hbs", "json"],
+      "paths": ["mythicrealms.css", "templates", "lang"]
+    }
+  }
+}
