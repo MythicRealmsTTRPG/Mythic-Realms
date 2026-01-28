@@ -527,7 +527,7 @@
     "units": "ft"
   },
   "primaryTokenAttribute": "attributes.hp",
-  "background": "systems/mythicrealms/ui/official/mythicrealms-background.webp",
+  "background": "systems/mythicrealms/ui/official/mythicrealms-background.png",
   "flags": {
     "compendiumArtMappings": {
       "mythicrealms": {
