@@ -516,7 +516,6 @@
   "media": [
     {
       "type": "cover",
-      "url": "systems/mythicrealms/ui/official/mythicrealms-cover.webp",
       "loop": false,
       "flags": {}
     },
