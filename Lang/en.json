@@ -475,7 +475,7 @@
                 "Available": "Any Available Level",
                 "hint": "Only allow choices from spells of this level.",
                 "label": "Spell Level"
-              },
+              }
             },
             "list": {
               "hint": "Only allow spells from these lists.",
@@ -492,22 +492,22 @@
             "Any": "Anything",
             "hint": "Restrict what Item types can be chosen.",
             "label": "Item Type"
+          },
+          "Warning": {
+            "Title": "Choose Items",
+            "InvalidType": "Only {type} items can be selected for this choice.",
+            "MaxSelected": "No additional items can be selected, uncheck items before selecting more.",
+            "NoOriginal": "Previously selected choice no longer available for replacement.",
+            "SpellLevelAvailable": "Only {level} or lower spells can be chosen for this advancement.",
+            "SpellLevelSpecific": "Only {level} spells can be chosen for this advancement.",
+            "SpellList": "Only spells available on the {lists} spell list can be chosen for this advancement."
           }
         },
-        "Hint": "Present the player with a choice of items (such as equipment, features, or spells) that they can choose for their character at one or more levels.",
         "Replacement": {
+          "Hint": "Present the player with a choice of items (such as equipment, features, or spells) that they can choose for their character at one or more levels.",
           "None": "No Replacement",
           "Title": "replace"
         },
-        "Title": "Choose Items",
-        "Warning": {
-          "InvalidType": "Only {type} items can be selected for this choice.",
-          "MaxSelected": "No additional items can be selected, uncheck items before selecting more.",
-          "NoOriginal": "Previously selected choice no longer available for replacement.",
-          "SpellLevelAvailable": "Only {level} or lower spells can be chosen for this advancement.",
-          "SpellLevelSpecific": "Only {level} spells can be chosen for this advancement.",
-          "SpellList": "Only spells available on the {lists} spell list can be chosen for this advancement."
-        }
         "ItemGrant": {
           "Details": "Grant Details",
           "DropHint": "Drop Items here to add them to the list granted by this advancement.",
@@ -516,9 +516,229 @@
               "label": "Items"
             },
             "optional": {
-              "hint": "If the whole advancement is marked optional, players may opt out of any of the following items, otherwise all non-optional items are granted.""label": "Optional",
+              "hint": "If the whole advancement is marked optional, players may opt out of any of the following items, otherwise all non-optional items are granted.",
+              "label": "Optional"
+            }
+          },
+          "Hint": "Grant the character items (such as equipment, features, or spells) when they reach a certain level.",
+          "Title": "Grant Items",
+          "Warning": {
+            "Container": "Container contents will not be added with containers.",
+            "Duplicate": "That item already exists on this advancement.",
+            "Recursive": "You cannot grant an item in its own advancement."
+          }
+        },
+        "Manager": {
+          "Action": {
+            "Complete": "Complete",
+            "NextStep": "Next",
+            "PreviousStep": "Previous",
+            "Restart": "Restart"
+          },
+          "ClosePrompt": {
+            "Action": {
+              "Continue": "Continue",
+              "Stop": "Stop Advancement"
+            },
+            "Message": "<p>If the advancement process is cancelled, choices made so far will be discarded and no changes will be made to the actor.</p>",
+            "Title": "Stop Advancement"
+          },
+          "RestartPrompt": {
+            "Message": "Are you sure you wish to undo all choices so far?",
+            "Title": "Restart Advancement Choices"
+          },
+          "Steps": "Step {current} of {total}",
+          "Title": {
+            "Default": "Advancement",
+            "LevelIncreased": "Level Up Character",
+            "LevelNewClass": "Add Class",
+            "ModifyChoices": "Modify Choices"
+          }
+        },
+        "Migration": {
+          "Action": {
+            "Confirm": "Apply Migrations"
+          },
+          "Hint": "Select which of the following advancements will be added to {name}.",
+          "Selection": "Advancement Selection",
+          "Title": "Migrate Advancement"
+        },
+        "ScaleValue": {
+          "Action": {
+            "CopyFormula": "Copy Formula"
+          },
+          "Details": "Scale Value Details",
+          "FIELDS": {
+            "distance": {
+              "units": {
+                "label": "Distance Units"
+              }
+            },
+            "identifier": {
+              "label": "Identifier"
+            },
+            "scale": {
+              "label": "Scale"
+            },
+            "type": {
+              "label": "Scale Type"
+            }
+          },
+          "Hint": "A single value that changes as a class increases in level that is made available in roll formulas (such as a Monk's martial arts die).",
+          "Title": "Scale Value",
+          "Type": {
+            "CR": {
+              "FIELDS": {
+                "value": {
+                  "label": "CR"
+                }
+              },
+              "Hint": "Use this for representing creature challenge ratings for features like Wild Shape",
+              "Label": "Challenge Rating"
+            },
+            "Dice": {
+              "FIELDS": {
+                "faces": {
+                  "label": "Faces"
+                },
+                "number": {
+                  "label": "Number"
+                }
+              },
+              "Hint": "Use this for dice values like bardic inspiration, sneak attack, or superiority dice.",
+              "Identifier": "This scale value for the current level will be available in a formula using:<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - whole formula (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - whole die (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - number of dice (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - number of faces (<code>6</code>)",
+              "Label": "Dice"
+            },
+            "Distance": {
+              "Hint": "Use this for numerical values that represent a distance, such as unarmored movement speed, or aura of protection radius.",
+              "Label": "Distance"
+            },
+            "Number": {
+              "Hint": "Use this for purely numerical values like rage damage bonus or number of uses per day.",
+              "Label": "Numeric"
+            },
+            "String": {
+              "FIELDS": {
+                "value": {
+                  "label": "Value"
+                }
+              },
+              "Hint": "Use this if you are unsure of the type of the scale values, or if the type does not matter.",
+              "Identifier": "This scale value for the current level will be available in a formula using:<br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
+              "Label": "Anything"
             }
           }
         },
+        "Size": {
+          "DefaultHint": {
+            "Multiple": "Choose your size from either {sizes}.",
+            "Single": "Your size is {size}."
+          },
+          "FIELDS": {
+            "sizes": {
+              "label": "Sizes"
+            }
+          },
+          "Hint": "Set a character's size.",
+          "Title": "Size"
+        },
+        "SPELLCONFIG": {
+          "FIELDS": {
+            "spell": {
+              "label": "Spell Details",
+              "ability": {
+                "label": "Ability"
+              },
+              "method": {
+                "label": "Spellcasting Method"
+              },
+              "prepared": {
+                "label": "Preparation"
+              },
+              "uses": {
+                "max": {
+                  "label": "Uses"
+                },
+                "per": {
+                  "label": "Period"
+                },
+                "requireSlot": {
+                  "label": "Require Slot",
+                  "hint": "Require a spell slot to be spent when using the limited uses. If not checked then the uses will be additional free uses that don't consume a slot."
+                }
+              }
+            }
+          },
+          "FreeCasting": "Free Casting"
+        },
+        "Subclass": {
+          "Action": {
+            "Select": "Select Subclass"
+          },
+          "Hint": "Specify what level this class receives its subclass.",
+          "Title": "Subclass",
+          "Warning": {
+            "InvalidType": "Only subclasses may be selected."
+          }
+        },
+        "Trait": {
+          "Action": {
+            "AddChoice": "Add Choice",
+            "RemoveChoice": "Remove Choice"
+          },
+          "ChoicesRemaining": "Select {count} more {type}",
+          "Details": "Trait Details",
+          "FIELDS": {
+            "allowReplacements": {
+              "hint": "If a trait is already set on the actor, allow the player to choose from any other trait as a replacement.",
+              "label": "Allow Replacements"
+            },
+            "choices": {
+              "hint": "The following traits will be presented as a choice to the player.",
+              "label": "Choices",
+              "FIELDS": {
+                "count": {
+                  "label": "Count"
+                },
+                "pool": {
+                  "label": "Traits"
+                }
+              }
+            },
+            "grants": {
+              "hint": "The following traits will be granted to the character as long as they don't already possess that trait.",
+              "label": "Guaranteed"
+            },
+            "mode": {
+              "label": "Mode"
+            }
+          },
+          "Hint": "Grant a character certain traits or give them an option to select traits (such as proficiencies, skills, languages).",
+          "Mode": {
+            "Default": {
+              "Hint": "Gain a trait or proficiency.",
+              "Label": "Default"
+            },
+            "Expertise": {
+              "Hint": "Gain expertise in a trait in which you already have proficiency.",
+              "Label": "Expertise"
+            },
+            "Force": {
+              "Hint": "Gain expertise in a trait regardless of your previous proficiency level.",
+              "Label": "Forced Expertise"
+            },
+            "Mastery": {
+              "Hint": "Gain mastery with a weapon in which you already have proficiency.",
+              "Label": "Mastery"
+            },
+            "Upgrade": {
+              "Hint": "Gain proficiency in a trait unless you already have it, otherwise gain expertise.",
+              "Label": "Upgrade"
+            }
+          },
+          "TraitType": "Trait Type",
+          "Title": "Traits"
+        }
       }
     }
+  }
