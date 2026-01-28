@@ -508,6 +508,17 @@
           "SpellLevelSpecific": "Only {level} spells can be chosen for this advancement.",
           "SpellList": "Only spells available on the {lists} spell list can be chosen for this advancement."
         }
-      },
+        "ItemGrant": {
+          "Details": "Grant Details",
+          "DropHint": "Drop Items here to add them to the list granted by this advancement.",
+          "FIELDS": {
+            "items": {
+              "label": "Items"
+            },
+            "optional": {
+              "hint": "If the whole advancement is marked optional, players may opt out of any of the following items, otherwise all non-optional items are granted.""label": "Optional",
+            }
+          }
+        },
+      }
     }
-  }
