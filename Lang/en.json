@@ -52,7 +52,197 @@
   "TYPES.Item.weapon": "Weapon",
   "TYPES.Item.weaponPl": "Weapons",
   "TYPES.RegionBehavior": {
-    "dnd5e.difficultTerrain": "Difficult Terrain",
-    "dnd5e.rotateArea": "Rotate Area"
+    "mythicrealms.difficultTerrain": "Difficult Terrain",
+    "mythicrealms.rotateArea": "Rotate Area"
   },
-}
+  "MYTHICREALMS.title": "Mythic Realms",
+  "MYTHICREALMS.AbbreviationCR": "CR",
+  "MYTHICREALMS.AbbreviationConc": "Conc.",
+  "MYTHICREALMS.AbbreviationDC": "DC",
+  "MYTHICREALMS.AbbreviationKg": "kg",
+  "MYTHICREALMS.AbbreviationLR": "LR",
+  "MYTHICREALMS.AbbreviationLevel": "Lvl",
+  "MYTHICREALMS.AbbreviationLbs": "lbs.",
+  "MYTHICREALMS.AbbreviationSR": "SR",
+  "MYTHICREALMS.ABILITY": {
+    "Configure": {
+      "Title": "Configure {ability}",
+      "CheckLabel": "{ability} Check",
+      "SaveLabel": "{ability} Save"
+    },
+    "Global": {
+      "Hint": "These bonuses apply to checks & saves made with any ability.",
+      "Label": "Global Bonus"
+    },
+    "Score": "{ability} Score",
+    "Sections": {
+      "Bonuses": {
+        "Hint": "These bonuses apply to checks & saves made with {ability}.",
+        "Label": "{ability} Bonuses"
+      }
+    }
+  },
+  "MYTHICREALMS.Ability": "Ability",
+  "MYTHICREALMS.Abilities": "Abilities",
+  "MYTHICREALMS.Str": "Strength",
+  "MYTHICREALMS.AbilityStrAbbr": "str",
+  "MYTHICREALMS.AbilityDex": "Dexterity",
+  "MYTHICREALMS.AbilityDexAbbr": "dex",
+  "MYTHICREALMS.AbilityCon": "Constitution",
+  "MYTHICREALMS.AbilityConAbbr": "con",
+  "MYTHICREALMS.AbilityInt": "Intelligence",
+  "MYTHICREALMS.AbilityIntAbbr": "int",
+  "MYTHICREALMS.AbilityWis": "Wisdom",
+  "MYTHICREALMS.AbilityWisAbbr": "wis",
+  "MYTHICREALMS.AbilityCha": "Charisma",
+  "MYTHICREALMS.AbilityChaAbbr": "cha",
+  "MYTHICREALMS.AbilityHon": "Honor",
+  "MYTHICREALMS.AbilityHonAbbr": "hon",
+  "MYTHICREALMS.AbilitySan": "Sanity",
+  "MYTHICREALMS.AbilitySanAbbr": "san",
+  "MYTHICREALMS.AbilityScore": "Ability Score",
+  "MYTHICREALMS.AbilityScoreShort": "Score",
+  "MYTHICREALMS.AbilityScorePl": "Ability Scores",
+  "MYTHICREALMS.AbilityScoreL": "{ability} Score",
+  "MYTHICREALMS.AbilityScoreMax": "Maximum Ability Score",
+  "MYTHICREALMS.AbilityScoreMaxShort": "Maximum",
+  "MYTHICREALMS.AbilityModifier": "Ability Modifier",
+  "MYTHICREALMS.AbilityModifierShort": "Mod",
+  "MYTHICREALMS.AbilityPromptText": "What type of {ability} check?",
+  "MYTHICREALMS.AbilityPromptTitle": "{ability} Ability Check",
+  "MYTHICREALMS.AbilityUseChargesLabel": "{value} Charges",
+  "MYTHICREALMS.AbilityUseConsumableLabel": "{max} per {per}",
+  "MYTHICREALMS.AbilityUseCast": "Cast Spell",
+  "MYTHICREALMS.AbilityUseUse": "Use Ability",
+  "MYTHICREALMS.AbilityUseConfig": "Usage Configuration",
+  "MYTHICREALMS.AbilityBonuses": "Ability Bonuses",
+  "MYTHICREALMS.AbilityConfigure": "Configure {ability}",
+  "MYTHICREALMS.AbilityConfigureTitle": "Configure {ability} Saving Throws and Checks",
+  "MYTHICREALMS.AbilitySaveConfigure": "{ability} Saving Throws",
+  "MYTHICREALMS.AbilityCheckConfigure": "{ability} Ability Checks",
+  "MYTHICREALMS.AbilityCheckConfigurationHint": "Configure check bonuses.",
+  "MYTHICREALMS.AbilityConfigurationHint": "Configure ability saving throw proficiency, saving throw bonuses, and check bonuses.",
+  "MYTHICREALMS.AbilityCheckBonus": "Check Bonus",
+  "MYTHICREALMS.AbilityCheckGlobalBonusHint": "This bonus applies to all ability checks made by this actor.",
+  "MYTHICREALMS.Action": "Action",
+  "MYTHICREALMS.ActionAbbr": "A",
+  "MYTHICREALMS.ActionPl": "Actions",
+  "MYTHICREALMS.ActionAbil": "Ability Check",
+  "MYTHICREALMS.ActionEnch": "Enchant",
+  "MYTHICREALMS.ActionHeal": "Heal",
+  "MYTHICREALMS.ActionMSAK": "Melee Spell Attack",
+  "MYTHICREALMS.ActionMWAK": "Melee Weapon Attack",
+  "MYTHICREALMS.ActionOther": "Other",
+  "MYTHICREALMS.ActionRSAK": "Ranged Spell Attack",
+  "MYTHICREALMS.ActionRWAK": "Ranged Weapon Attack",
+  "MYTHICREALMS.ActionSave": "Saving Throw",
+  "MYTHICREALMS.ActionSumm": "Summon",
+  "MYTHICREALMS.ActionUtil": "Utility",
+  "MYTHICREALMS.ActionWarningNoItem": "The requested item {item} no longer exists on Actor {name}",
+  "MYTHICREALMS.ActionWarningNoToken": "You must have one or more controlled Tokens in order to use this option.",
+  "MYTHICREALMS.ACTIVATION": {
+    "FIELDS": {
+      "activation": {
+        "condition": {
+          "hint": "Condition required to activate this activity.",
+          "label": "Activation Condition"
+        },
+        "label": "Activation",
+        "override": {
+          "hint": "Use these activation values instead of the item's when using this activity.",
+          "label": "Override Activation"
+        },
+        "type": {
+          "hint": "Activation type (e.g. action, legendary action, minutes).",
+          "label": "Activation Cost"
+        },
+        "value": {
+          "hint": "Scalar value associated with the activation.",
+          "label": "Activation Value"
+        }
+      }
+    },
+    "Category": {
+      "Combat": "Combat",
+      "Monster": "Monster",
+      "Rest": "Rest",
+      "Standard": "Standard",
+      "Time": "Time",
+      "Vehicle": "Vehicle"
+    },
+    "Type": {
+      "Action": {
+        "Header": "Actions",
+        "Label": "Action"
+      },
+      "BonusAction": {
+        "Header": "Bonus Actions",
+        "Label": "Bonus Action"
+      },
+      "Crew": {
+        "Counted": {
+          "one": "{number} crew action",
+          "other": "{number} crew actions"
+        },
+        "Header": "Crew Actions",
+        "Label": "Crew Action"
+      },
+      "Day": {
+        "Header": "Days",
+        "Label": "Day"
+      },
+      "Encounter": {
+        "Label": "Start of Encounter"
+      },
+      "Hour": {
+        "Header": "Hours",
+        "Label": "Hour"
+      },
+      "Lair": {
+        "Header": "Lair Actions",
+        "Label": "Lair Action"
+      },
+      "Legendary": {
+        "Counted": {
+          "one": "{number} legendary action",
+          "other": "{number} legendary actions"
+        },
+        "Header": "Legendary Actions",
+        "Label": "Legendary Action"
+      },
+      "LongRest": {
+        "Label": "End of a Long Rest"
+      },
+      "Minute": {
+        "Header": "Minutes",
+        "Label": "Minute"
+      },
+      "Mythic": {
+        "Counted": {
+          "one": "{number} mythic action",
+          "other": "{number} mythic actions"
+        },
+        "Header": "Mythic Actions",
+        "Label": "Mythic Action"
+      },
+      "Reaction": {
+        "Header": "Reactions",
+        "Label": "Reaction"
+      },
+      "ShortRest": {
+        "Label": "End of a Short Rest"
+      },
+      "TurnEnd": {
+        "Label": "End of Turn"
+      },
+      "TurnStart": {
+        "Label": "Start of Turn"
+      },
+      "Warning": {
+        "NoActions": "No {type} are available, but activating this requires at least {required}.",
+        "NotEnoughActions": "Not enough {type} to activate, {required} required but only {available} available."
+      }
+    },
+    "MYTHICREALMS.ACTIVEEFFECT": {
+      "AttributeKeyTooltip": "For a list of common keys, see <a href=\"{url}\">the wiki</a>.",
+    },
