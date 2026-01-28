@@ -339,6 +339,108 @@
           "Singleton": "Only a single {itemType} can be added to a {actorType}."
         }
       },
+      "MYTHICREALMS.ActiveEffectOverrideWarning": "This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.",
+      "MYTHICREALMS.Add": "Add",
+      "MYTHICREALMS.AdditionalControls": "Additional Controls",
+      "MYTHICREALMS.AdditionalSettings": "Additional Settings",
+      "MYTHICREALMS.AddEmbeddedItemPromptHint": "Do you want to add these items to your character sheet?",
+      "MYTHICREALMS.Advanced": "Advanced",
+      "MYTHICREALMS.ADVANCEMENT": {
+        "AbilityScoreImprovement": {
+          "Action": {
+            "Select": "Select Feat"
+          },
+          "CapDisplay": {
+            "one": "Max {points} point per score",
+            "other": "Max {points} points per score"
+          },
+          "Details": "Improvement Details",
+          "Feat": {
+            "ASIName": "Ability Score Improvement Feat",
+            "Hint": "Drop a feat here to choose one instead of an ability score improvement."
+          },
+          "FIELDS": {
+            "cap": {
+              "hint": "Maximum number of points a player can assign to a single score.",
+              "label": "Point Cap"
+            },
+            "fixed": {
+              "hint": "Abilities that are improved by a fixed amount and cannot be manually improved during the process.",
+              "label": "Fixed Improvement"
+            },
+            "locked": {
+              "hint": "Ability cannot be improved.",
+              "label": "Locked",
+              "locked": "Ability cannot be improved.",
+              "unlocked": "Ability may be improved."
+            },
+            "max": {
+              "hint": "Increase the maximum score from what is allowed on the actor.",
+              "label": "Maximum"
+            },
+            "points": {
+              "decrease": "Decrease Points",
+              "hint": "Number of points that can be assigned to any unlocked ability score.",
+              "increase": "Increase Points",
+              "label": "Points"
+            },
+            "recommendation": {
+              "hint": "Epic Boon feat recommended by this class.",
+              "label": "Recommendation"
+            }
+          },
+          "Hint": "Allow the player to increase one or more ability scores or take an optional feat.",
+          "Journal": {
+            "DescriptionEpic": "<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>",
+            "DescriptionEpicRecommendation": "<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. {recommendation} is recommended.</p>",
+            "DescriptionLegacy": "<p>When you reach {firstLevelOrdinal} level, and again at {otherLevelsOrdinal} level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above {maxAbilityScore} using this feature.</p><p>Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.</p>",
+            "DescriptionModern": "<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at {class} levels {otherLevels}.</p>",
+            "Name": "Ability Score Improvement"
+          },
+          "LockedHint": "Scores cannot be modified with a feat selected.",
+          "PointsRemaining": {
+            "one": "{points} Point Remaining",
+            "other": "{points} Points Remaining"
+          },
+          "Title": "Ability Score Improvement",
+          "TitleEpic": "Epic Boon",
+          "Warning": {
+            "Type": "Only features with the \"feat\" type can be selected."
+          }
+        },
+        "Action": {
+          "Create": "Create Advancement",
+          "Delete": "Delete Advancement",
+          "Duplicate": "Duplicate Advancement",
+          "Edit": "Edit Advancement",
+          "View": "View Advancement"
+        },
+        "Config": {
+          "AnyLevel": "Any",
+          "Details": "Advancement Details"
+        },
+        "Defaults": {
+          "BackgroundFeat": "Background Feat",
+          "BackgroundFeature": "Background Feature",
+          "BackgroundProficiencies": "Background Proficiencies",
+          "ChooseLanguages": "Choose Languages"
+        },
+        "HitPoints": {
+          "Action": {
+            "Roll": "Roll {die}"
+          },
+          "Average": "Average",
+          "Hint": "Track the player's hit points for each level in the class.",
+          "MaxAtFirstLevel": "Max at 1st Level: <strong>{max}</strong>",
+          "Roll": "Roll {class} Hit Points",
+          "Starting": "Hit Points at 1st Level",
+          "TakeAverage": "Take Average",
+          "Title": "Hit Points",
+          "Warning": {
+            "Empty": "Hit points must be rolled or the average value must be taken.",
+            "Invalid": "Hit points must be a valid whole number."
+          }
+        },
+      }
     }
   }
-}
