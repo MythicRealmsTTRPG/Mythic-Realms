@@ -519,6 +519,11 @@
       "url": "systems/mythicrealms/ui/official/mythicrealms-cover.webp",
       "loop": false,
       "flags": {}
+    },
+    {
+      "type": "setup",
+      "url": "systems/mythicrealms/ui/official/mythicrealms-repo.jpg",
+      "thumbnail": "systems/dnd5e/ui/official/mythicrealms-thumbnail.jpg"
     }
   ],
   "socket": true,
