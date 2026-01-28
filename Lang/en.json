@@ -245,4 +245,100 @@
     },
     "MYTHICREALMS.ACTIVEEFFECT": {
       "AttributeKeyTooltip": "For a list of common keys, see <a href=\"{url}\">the wiki</a>.",
+      "FIELDS": {
+        "statuses": {
+          "hint": "While affected by this Active Effect, the target will be treated as having these additional status conditions.",
+          "label": "Status Conditions"
+        }
+      }
     },
+    "MYTHICREALMS.ACTIVITY": {
+      "Title": {
+        "one": "Activity",
+        "other": "Activities"
+      },
+      "Action": {
+        "Create": "Create Activity",
+        "Delete": "Delete Activity",
+        "Edit": "Edit Activity"
+      },
+      "FIELDS": {
+        "description": {
+          "label": "Description",
+          "chatFlavor": {
+            "hint": "Additional text displayed in the activation chat message.",
+            "label": "Chat Flavor"
+          }
+        },
+        "effects": {
+          "element": {
+            "level": {
+              "hint": "Range of levels required to apply this effect.",
+              "label": "Level Limit",
+              "max": {
+                "label": "Maximum Level"
+              },
+              "min": {
+                "label": "Minimum Level"
+              }
+            }
+          },
+          "label": "Applied Effects"
+        },
+        "img": {
+          "label": "Icon"
+        },
+        "name": {
+          "label": "Name"
+        },
+        "requireAttunement": {
+          "hint": "Activity will not be usable if item requires attunement and isn't attuned.",
+          "label": "Require Attunement"
+        },
+        "requireIdentification": {
+          "hint": "Activity will not be usable if item isn't identified.",
+          "label": "Require Identification"
+        },
+        "requireMagic": {
+          "hint": "Activity will not be usable if magic isn't available.",
+          "label": "Require Magic"
+        },
+        "visibility": {
+          "identifier": {
+            "hint": "The identifier of the class that level limits apply to. If left blank, the character level is used.",
+            "label": "Class Identifier"
+          },
+          "label": "Visibility",
+          "level": {
+            "hint": "Range of levels required to use this activity.",
+            "label": "Level Limit",
+            "max": {
+              "label": "Maximum Level"
+            },
+            "min": {
+              "label": "Minimum Level"
+            }
+          }
+        },
+        "SECTIONS": {
+          "Activation": "Activation",
+          "Behavior": "Behavior",
+          "Effect": "Effect",
+          "Identity": "Identity",
+          "Time": "Time"
+        },
+        "Warning": {
+          "UsageNotAllowed": "Using this activity isn't currently possible."
+        }
+      },
+      "MYTHICREALMS.ACTOR": {
+        "Warning": {
+          "CreateActor": "You must have 'Create New Actors' permission in order to summon directly from a compendium.",
+          "InvalidItem": "{itemType} items cannot be added to a {actorType}.",
+          "NoActor": "Actor cannot be found with UUID '{uuid}' to summon.",
+          "Singleton": "Only a single {itemType} can be added to a {actorType}."
+        }
+      },
+    }
+  }
+}
