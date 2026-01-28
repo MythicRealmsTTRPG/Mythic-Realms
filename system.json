@@ -521,8 +521,8 @@
     },
     {
       "type": "setup",
-      "url": "systems/mythicrealms/ui/official/mythicrealms-repo.jpg",
-      "thumbnail": "systems/dnd5e/ui/official/mythicrealms-thumbnail.jpg"
+      "url": "systems/mythicrealms/ui/official/mythicrealms-repo.png",
+      "thumbnail": "systems/dnd5e/ui/official/mythicrealms-thumbnail.png"
     }
   ],
   "socket": true,
