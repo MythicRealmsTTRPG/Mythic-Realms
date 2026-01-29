@@ -741,4 +741,482 @@
         }
       }
     }
+  },
+  "MYTHICREALMS.AdvancementChoices": "choices",
+  "MYTHICREALMS.AdvancementClassRestriction": "Class Restriction",
+  "MYTHICREALMS.AdvancementClassRestrictionNone": "All Classes",
+  "MYTHICREALMS.AdvancementClassRestrictionPrimary": "Original Class Only",
+  "MYTHICREALMS.AdvancementClassRestrictionSecondary": "Multiclass Only",
+  "MYTHICREALMS.AdvancementConfigurationActionDisable": "Disable Configuration",
+  "MYTHICREALMS.AdvancementConfigurationActionEnable": "Enable Configuration",
+  "MYTHICREALMS.AdvancementConfigurationModeDisabled": "Configuration Disabled",
+  "MYTHICREALMS.AdvancementConfigurationModeEnabled": "Configuration Enabled",
+  "MYTHICREALMS.AdvancementConfigureTitle": "Configure {item} Advancement",
+  "MYTHICREALMS.AdvancementConfigureAllowDrops": "Allow Drops",
+  "MYTHICREALMS.AdvancementConfigureAllowDropsHint": "Should players be able to drop their own choices into this advancement?",
+  "MYTHICREALMS.AdvancementConfigureDropAreaHint": "Drop Items here to add them to the pool from which a player can choose.",
+  "MYTHICREALMS.AdvancementConfiguredComplete": "Fully Configured",
+  "MYTHICREALMS.AdvancementConfiguredIncomplete": "Not Configured",
+  "MYTHICREALMS.AdvancementCustomIcon": "Custom Icon",
+  "MYTHICREALMS.AdvancementCustomTitle": "Custom Title",
+  "MYTHICREALMS.AdvancementDeleteConfirmationLabel": "Remove advancement changes",
+  "MYTHICREALMS.AdvancementDeleteConfirmationMessage": "Deleting this item will also delete all advancement choices made for it. These changes will be removed from your character as long as the checkbox below is checked.",
+  "MYTHICREALMS.AdvancementDeleteConfirmationTitle": "Confirm Deletion",
+  "MYTHICREALMS.AdvancementFlowDropAreaHint": "Drop an Item here to choose it.",
+  "MYTHICREALMS.AdvancementHint": "Hint",
+  "MYTHICREALMS.AdvancementItemTypeInvalidWarning": "{type} items cannot be added with this advancement type.",
+  "MYTHICREALMS.AdvancementLevelHeader": "Level {level}",
+  "MYTHICREALMS.AdvancementLevelAnyHeader": "Any Level",
+  "MYTHICREALMS.AdvancementLevelNoneHeader": "No Level",
+  "MYTHICREALMS.AdvancementLevelDownConfirmationMessage": "Leveling this class down will also undo all advancement choices made for it. These changes will be removed from your character as long as the checkbox below is checked.",
+  "MYTHICREALMS.AdvancementLevelDownConfirmationTitle": "Confirm Leveling Down",
+  "MYTHICREALMS.AdvancementModifyChoices": "Modify Choices",
+  "MYTHICREALMS.AdvancementSaveButton": "Save Advancement",
+  "MYTHICREALMS.AdvancementSelectionCreateButton": "Create Advancement",
+  "MYTHICREALMS.AdvancementSelectionTitle": "Select Advancement Type",
+  "MYTHICREALMS.AdvancementTitle": "Advancement",
+  "MYTHICREALMS.Advantage": "Advantage",
+  "MYTHICREALMS.AdvantageMode": "Advantage Mode",
+  "MYTHICREALMS.Age": "Age",
+  "MYTHICREALMS.Alignment": "Alignment",
+  "MYTHICREALMS.AlignmentCE": "Chaotic Evil",
+  "MYTHICREALMS.AlignmentCG": "Chaotic Good",
+  "MYTHICREALMS.AlignmentCN": "Chaotic Neutral",
+  "MYTHICREALMS.AlignmentLE": "Lawful Evil",
+  "MYTHICREALMS.AlignmentLG": "Lawful Good",
+  "MYTHICREALMS.AlignmentLN": "Lawful Neutral",
+  "MYTHICREALMS.AlignmentNE": "Neutral Evil",
+  "MYTHICREALMS.AlignmentNG": "Neutral Good",
+  "MYTHICREALMS.AlignmentTN": "True Neutral",
+  "MYTHICREALMS.Amount": "Amount",
+  "MYTHICREALMS.Appearance": "Appearance",
+  "MYTHICREALMS.Apply": "Apply",
+  "MYTHICREALMS.Attunement": "Attunement",
+  "MYTHICREALMS.AttunementMax": "Maximum Attuned Items",
+  "MYTHICREALMS.AttunementNone": "Attunement Not Required",
+  "MYTHICREALMS.AttunementOptional": "Optional Attunement",
+  "MYTHICREALMS.AttunementRequired": "Attunement Required",
+  "MYTHICREALMS.AttunementAttuned": "Attuned",
+  "MYTHICREALMS.AttunementOverride": "Override attunement",
+  "MYTHICREALMS.Attuned": "Attuned",
+  "MYTHICREALMS.AreaOfEffect": {
+    "Label": "Area of Effect",
+    "Size": {
+      "Label": "Size",
+      "Height": "Height",
+      "Length": "Length",
+      "Radius": "Radius",
+      "Thickness": "Thickness",
+      "Width": "Width"
+    }
+  },
+  "MYTHICREALMS.Armor": "Armor",
+  "MYTHICREALMS.ArmorClass": "Armor Class",
+  "MYTHICREALMS.ArmorClassEquipment": "Equipped Armor",
+  "MYTHICREALMS.ArmorClassFlat": "Flat",
+  "MYTHICREALMS.ArmorClassUnarmored": "Unarmored",
+  "MYTHICREALMS.ArmorClassNatural": "Natural Armor",
+  "MYTHICREALMS.ArmorClassMage": "Mage Armor",
+  "MYTHICREALMS.ArmorClassMotionless": "Armor Class while Motionless",
+  "MYTHICREALMS.ArmorClassDraconic": "Draconic Resilience",
+  "MYTHICREALMS.ArmorClassUnarmoredMonk": "Unarmored Defense (Monk)",
+  "MYTHICREALMS.ArmorClassUnarmoredBarbarian": "Unarmored Defense (Barbarian)",
+  "MYTHICREALMS.ArmorClassUnarmoredBard": "Unarmored Defense (Bard)",
+  "MYTHICREALMS.ArmorClassCustom": "Custom Formula",
+  "MYTHICREALMS.ArmorConfig": "Configure Armor",
+  "MYTHICREALMS.ArmorConfigHint": "Fill in the above box to override automatically calculated armor class.",
+  "MYTHICREALMS.ArmorClassCalculation": "Calculation",
+  "MYTHICREALMS.ArmorClassFormula": "Formula",
+  "MYTHICREALMS.ArmorHeavyProficiency": "Heavy",
+  "MYTHICREALMS.ArmorLightProficiency": "Light",
+  "MYTHICREALMS.ArmorMediumProficiency": "Medium",
+  "MYTHICREALMS.ArmorValue": "Armor Value",
+  "MYTHICREALMS.AC": "AC",
+  "MYTHICREALMS.ATTACK": {
+    "Attack": {
+      "mwak": "Melee Attack",
+      "rwak": "Ranged Attack"
+    },
+    "Classification": {
+      "Spell": "Spell",
+      "Unarmed": "Unarmed",
+      "Weapon": "Weapon"
+    },
+    "FIELDS": {
+      "attack": {
+        "label": "Attack Details",
+        "ability": {
+          "label": "Attack Ability",
+          "hint": "Ability used for make the attack and determine damage. Available using @mod in formulas."
+        },
+        "bonus": {
+          "label": "To Hit Bonus",
+          "hint": "Bonus added to the to hit roll for the attack."
+        },
+        "critical": {
+          "threshold": {
+            "label": "Critical Threshold",
+            "hint": "Minimum value on the D20 needed to roll a critical hit."
+          }
+        },
+        "flat": {
+          "label": "Flat To Hit",
+          "hint": "Ignore the ability modifier, proficiency, and any other bonuses from the actor and only use the bonus defined by the activity when calculating to hit."
+        },
+        "type": {
+          "label": "Attack Type",
+          "value": {
+            "label": "Attack Type",
+            "hint": "Is this a melee or ranged attack?"
+          },
+          "classification": {
+            "label": "Attack Classification",
+            "hint": "Is this an unarmed, weapon, or spell attack?"
+          }
+        }
+      },
+      "damage": {
+        "label": "Attack Damage",
+        "critical": {
+          "bonus": {
+            "label": "Extra Critical Damage",
+            "hint": "Extra damage applied when a critical is rolled. Added to the base damage or first damage part."
+          }
+        },
+        "includeBase": {
+          "label": "Include Base Damage",
+          "hint": "Include the item's base damage with any additional damage parts."
+        },
+        "parts": {
+          "label": "Damage Parts",
+          "hint": "Individual damage parts to include with the roll."
+        }
+      }
+    },
+    "Formatted": {
+      "mythicrealms": "{type} Attack Roll"
+    },
+    "Hint": "Make an attack roll and roll damage.",
+    "Mode": {
+      "Label": "Attack Mode",
+      "Offhand": "Offhand",
+      "OneHanded": "One-Handed",
+      "Ranged": "Ranged",
+      "Thrown": "Thrown",
+      "ThrownOffhand": "Offhand Throw",
+      "TwoHanded": "Two-Handed"
+    },
+    "Title": {
+      "one": "Attack",
+      "other": "Attacks"
+    },
+    "Type": {
+      "Melee": "Melee",
+      "Ranged": "Ranged"
+    },
+    "Warning": {
+      "NoQuantity": "Attempting to attack with a weapon with a quantity of zero."
+    },
+    "Weapon": {
+      "Melee": "Melee Weapon",
+      "Ranged": "Ranged Weapon"
+    }
+  },
+  "MYTHICREALMS.Attack": "Attack",
+  "MYTHICREALMS.AttackPl": "Attacks",
+  "MYTHICREALMS.AttackRoll": "Attack Roll",
+  "MYTHICREALMS.Attributes": "Attributes",
+  "MYTHICREALMS.AttrConcentration": {
+    "Limit": "Limit"
+  },
+  "MYTHICREALMS.Automatic": "Automatic",
+  "MYTHICREALMS.AutomaticValue": "Automatic ({value})",
+  "MYTHICREALMS.Award": {
+    "Title": "Distribute Award",
+    "Action": "Award",
+    "Distribution": {
+      "Split": "Split",
+      "Each": "Each"
+    },
+    "Message": "{name} has been awarded {award}.",
+    "NoDestinations": "No Destinations Available",
+    "NoPrimaryParty": "No primary party set, displaying characters assigned to players instead.",
+    "NotGMError": "The /award command is only available to GMs.",
+    "UnrecognizedWarning": "Unable to parse {commands}. The /award command should be used with XP & currencies values such as '/award 10gp 50xp'."
+  },
+  "MYTHICREALMS.Background": "Background",
+  "MYTHICREALMS.BackgroundAdd": "Add Background",
+  "MYTHICREALMS.BackgroundName": "Background Name",
+  "MYTHICREALMS.Bastion": {
+    "Action": {
+      "BastionTurn": "Advance Bastion Turn"
+    },
+    "Attack": {
+      "Automatic": "Resolve Automatically",
+      "Formula": "Attack Formula",
+      "NoActorWarning": "No character selected as target of the attack. Either select a token, or open their character sheet.",
+      "Resolve": "Resolve Attack",
+      "Result": {
+        "Damaged": "{link} damaged in the attack.",
+        "Deaths": {
+          "one": "<strong>{deaths}</strong> defender was slain in an attack on their bastion!",
+          "other": "<strong>{deaths}</strong> defenders were slain in an attack on their bastion!"
+        },
+        "NoDeaths": "Fended off an attack on their bastion with no casualties!",
+        "Undefended": "Undefended bastion attacked!"
+      },
+      "Title": "Bastion Attack"
+    },
+    "Button": {
+      "Label": "Show Bastion Turn Button",
+      "Hint": "Display a button for advancing bastion turns in the main game interface."
+    },
+    "Configuration": {
+      "Name": "Bastions",
+      "Label": "Configure Bastions",
+      "Hint": "Various configuration options for the Bastion system as presented in the DMG 2024."
+    },
+    "Confirm": "Advance one bastion turn?",
+    "Duration": {
+      "Label": "Bastion Turn Duration (days)"
+    },
+    "Enabled": {
+      "Label": "Enable Bastion Functionality",
+      "Hint": "When enabled, player characters will have access to a new Bastion tab on their character sheets when reaching level 5, and will be able to build facilities and issue orders to them."
+    },
+    "Gold": {
+      "Claim": "Claim Income",
+      "Claimed": "claimed",
+      "Unclaimed": "unclaimed"
+    },
+    "Label": "Bastion",
+    "Summary": {
+      "Gold": "{value} ({claimed})",
+      "NoOrders": "No orders issued to special facilities this turn.",
+      "Order": "{link} completed the <strong>{order}</strong> order."
+    },
+    "Trade": {
+      "Cancel": "Cancel Pending Trade",
+      "Invalid": "Removing a pending trade will invalidate your trade order.",
+      "Pending": "Pending trade"
+    }
+  },
+  "MYTHICREALMS.Biography": "Biography",
+  "MYTHICREALMS.BiographyPublic": "Public Biography",
+  "MYTHICREALMS.BiopgrahyPublicEdit": "Edit Public Biography",
+  "MYTHICREALMS.Bonds": "Bonds",
+  "MYTHICREALMS.Bonus": "Bonus",
+  "MYTHICREALMS.BonusAction": "Bonus Action",
+  "MYTHICREALMS.BonusActionAbbr": "BA",
+  "MYTHICREALMS.BonusAttack": "Attack Bonus",
+  "MYTHICREALMS.BonusDamage": "Damage Bonus",
+  "MYTHICREALMS.BonusSaveForm": "Update Bonuses",
+  "MYTHICREALMS.BonusTitle": "Configure Actor Bonuses",
+  "MYTHICREALMS.BONUSES": {
+    "FIELDS": {
+      "bonuses": {
+        "label": "Global Bonuses",
+        "hint": "Global bonuses as formulas which are added to certain rolls.",
+        "abilities": {
+          "label": "Global Ability Bonuses",
+          "check": {
+            "label": "Global Ability Check Bonus"
+          },
+          "save": {
+            "label": "Global Saving Throw Bonus"
+          },
+          "skill": {
+            "label": "Global Skill Check Bonus"
+          }
+        },
+        "msak": {
+          "label": "Melee Spell Bonuses",
+          "attack": {
+            "label": "Melee Spell Attack Bonus"
+          },
+          "damage": {
+            "label": "Melee Spell Damage Bonus"
+          }
+        },
+        "mwak": {
+          "label": "Melee Weapon Bonuses",
+          "attack": {
+            "label": "Melee Weapon Attack Bonus"
+          },
+          "damage": {
+            "label": "Melee Weapon Damage Bonus"
+          }
+        },
+        "rsak": {
+          "label": "Ranged Spell Bonuses",
+          "attack": {
+            "label": "Ranged Spell Attack Bonus"
+          },
+          "damage": {
+            "label": "Ranged Spell Damage Bonus"
+          }
+        },
+        "rwak": {
+          "label": "Ranged Weapon Bonuses",
+          "attack": {
+            "label": "Ranged Weapon Attack Bonus"
+          },
+          "damage": {
+            "label": "Ranged Weapon Damage Bonus"
+          }
+        },
+        "spell": {
+          "label": "Global Spell Bonuses",
+          "dc": {
+            "label": "Global Spell DC Bonus"
+          }
+        }
+      }
+    }
+  },
+  "MYTHICREALMS.CALENDAR": {
+    "Action": {
+      "AdvanceTime": "Advance by {amount}",
+      "OpenCharacterSheet": "Open Character Sheet",
+      "OpenPartySheet": "Open Party Sheet",
+      "ReverseTime": "Reverse by {amount}",
+      "SetDate": "Set Date"
+    },
+    "Component": {
+      "Day": "Day",
+      "Month": "Month",
+      "Year": "Year"
+    },
+    "Configuration": {
+      "DisabledMessage": "The DM must enable the calendar interface before it can be used by players.",
+      "Hint": "Control whether the calendar HUD is displayed and how it functions.",
+      "Label": "Configure Calendar",
+      "Name": "Calendar",
+      "Preferences": "Calendar Preferences",
+      "UnavailableMessage": "The default calendar interface isn't available because it has been disabled by a module."
+    },
+    "FIELDS": {
+      "calendar": {
+        "hint": "This calendar will be used for tracking in-game time.",
+        "label": "Calendar"
+      },
+      "enabled": {
+        "hint": "Allow the calendar UI to be viewed & customized by all users.",
+        "label": "Enabled"
+      },
+      "formatters": {
+        "date": {
+          "label": "Date Format"
+        },
+        "time": {
+          "label": "Time Format"
+        }
+      },
+      "visible": {
+        "label": "Display Calendar HUD"
+      }
+    },
+    "Formatters": {
+      "Date": "Date Formatters",
+      "ApproximateDate": {
+        "EarlySeason": "Early {season}",
+        "Label": "Approximate Date",
+        "LateSeason": "Late {season}",
+        "MidSeason": "Mid-{season}"
+      },
+      "ApproximateTime": {
+        "Afternoon": "Afternoon",
+        "Dawn": "Dawn",
+        "Dusk": "Dusk",
+        "Evening": "Evening",
+        "Label": "Approximate Time",
+        "Midnight": "Midnight",
+        "Morning": "Morning",
+        "Night": "Night",
+        "Noon": "Noon",
+        "Sunrise": "Sunrise",
+        "Sunset": "Sunset"
+      },
+      "HoursMinutes": {
+        "Format": "{H}:{M}",
+        "Label": "Hours & Minutes"
+      },
+      "HoursMinutesSeconds": {
+        "Format": "{H}:{M}:{S}",
+        "Label": "Hours, Minutes, & Seconds"
+      },
+      "MonthDay": {
+        "Format": "{B} {D}",
+        "Label": "Month & Day"
+      },
+      "MonthDayYear": {
+        "Format": "{B} {D}, {y}",
+        "Label": "Month, Day, & Year"
+      },
+      "Time": "Time Formatters"
+    },
+    "Gregorian": "Gregorian Calendar",
+    "Astral Concordat": {
+      "Day": {
+        "Sunfall": "Sunfall",
+        "Moonrise": "Moonrise",
+        "Hexmarch": "Hexmarch",
+        "Runesday": "Runesday",
+        "Stormcall": "Stormcall",
+        "Gracefall": "Gracefall",
+        "Lastmark": "Lastmark"
+      },
+      "Festival": {
+        "Frostwane 1": "Turning of the Ember",
+        "Frostwane 21": "Longwatch",
+        "Snowmelt 14": "Riverbreak",
+        "Dawnbloom 12": "Sunseed",
+        "Dawnbloom 29": "Bloomrise",
+        "Greentide 10": "Beastmoot",
+        "Suncrest 1": "Day of Bonds",
+        "Suncrest 20": "Ascension of the Flame",
+        "Highsun 18": "Hammerrest",
+        "Harvestfall 1": "Reaping Week",
+        "Harvestfall 2": "Reaping Week",
+        "Harvestfall 3": "Reaping Week",
+        "Harvestfall 4": "Reaping Week",
+        "Harvestfall 5": "Reaping Week",
+        "Harvestfall 6": "Reaping Week",
+        "Harvestfall 7": "Reaping Week",
+        "Harvestfall 15": "High Harvest",
+        "Nightreach 31": "Ashen Vigil",
+        "Frostcall 11": "Stillfire",
+        "Deepwinter 20": "Starhold",
+        "Deepwinter 31": "Crownfall"
+      },
+      "Intercalary": {
+        "Snowmelt 29": "The Long Night"
+      },
+      "Formatters": {
+        "MonthDay": "{B} {D}",
+        "MonthDayYear": "{B} {D}, {y}"
+      },
+      "Month": {
+        "Frostwane": "Frostwane",
+        "Snowmelt": "Snowmelt",
+        "Dawnbloom": "Dawnbloom",
+        "Greentide": "Greentide",
+        "Suncrest": "Suncrest",
+        "Emberreach": "Emberreach",
+        "Highsun": "Highsun",
+        "Harvestfall": "Harvestfall",
+        "Duskwane": "Duskwane",
+        "Nightreach": "Nightreach",
+        "Frostcall": "Frostcall",
+        "Deepwinter": "Deepwinter"
+      },
+      "Tax": {
+        "Frostwane 10": "Hearth Levy",
+        "Greentide 5": "Trade Assessment",
+        "Highsun 1": "Martial Tithe",
+        "Harvestfall 8": "Granary Due",
+        "Deepwinter 30": "Final Accounting"
+      }
+    },
   }
+}
