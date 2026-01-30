@@ -1883,4 +1883,326 @@
       "Half": "Half"
     }
   },
+  "MYTHICREALMS.Current": "Current",
+  "MYTHICREALMS.DAMAGE": {
+    "FIELDS": {
+      "damage": {
+        "label": "Damage",
+        "critical": {
+          "allow": {
+            "label": "Allow Critical",
+            "hint": "Should the creature be able to roll critical damage?"
+          },
+          "bonus": {
+            "label": "Extra Critical Damage",
+            "hint": "Extra damage applied to the first damage part when a critical is rolled."
+          }
+        },
+        "parts": {
+          "label": "Damage Parts",
+          "hint": "Individual damage parts to include with the roll.",
+          "FIELDS": {
+            "bonus": {
+              "label": "Damage Bonus",
+              "hint": "Bonus added to the damage roll."
+            },
+            "custom": {
+              "label": "Custom Damage Formula",
+              "enabled": {
+                "label": "Enable Custom Formula",
+                "hint": "Use a custom formula rather than the default dice."
+              },
+              "formula": {
+                "label": "Damage Formula",
+                "hint": "Custom damage formula."
+              }
+            },
+            "denomination": {
+              "label": "Die Denomination",
+              "hint": "Denomination of the dice to roll."
+            },
+            "number": {
+              "label": "Die Number",
+              "hint": "Number of dice to roll."
+            },
+            "scaling": {
+              "label": "Damage Scaling",
+              "abbr": "Scaling",
+              "mode": {
+                "label": "Scaling Mode",
+                "abbr": "Mode",
+                "hint": "Method by which the scaling increase is calculated."
+              },
+              "number": {
+                "label": "Dice Scaling",
+                "abbr": "Dice",
+                "hint": "Number of dice to increase for each scaling step. Will be applied to the first die found in the damage formula if more than one is present."
+              },
+              "formula": {
+                "label": "Scaling Formula",
+                "hint": "Arbitrary scaling formula that will be multiplied for each scaling step and added to the original formula."
+              }
+            },
+            "types": {
+              "label": "Damage Types",
+              "hint": "Type of damage inflicted or multiple for the user to select from."
+            }
+          }
+        }
+      }
+    },
+    "Hint": "Damage a creature without any attack or save.",
+    "Part": {
+      "Action": {
+        "Create": "Create Damage Part",
+        "Delete": "Delete Damage Part"
+      }
+    },
+    "Scaling": {
+      "Half": "Every Other Level",
+      "HalfCantrip": "Half Cantrip Scaling",
+      "None": "No Scaling",
+      "Whole": "Every Level",
+      "WholeCantrip": "Cantrip Scaling"
+    },
+    "Title": "Damage"
+  },
+  "MYTHICREALMS.DamImm": "Damage Immunities",
+  "MYTHICREALMS.DamMod": "Damage Modification",
+  "MYTHICREALMS.DamRes": "Damage Resistances",
+  "MYTHICREALMS.DamVuln": "Damage Vulnerabilities",
+  "MYTHICREALMS.Damage": "Damage",
+  "MYTHICREALMS.DamageAcid": "Acid",
+  "MYTHICREALMS.DamageAll": "All Damage",
+  "MYTHICREALMS.DamageApplication": {
+    "Change": {
+      "Modification": "{type} Modification",
+      "Immunity": "{type} Immunity",
+      "Resistance": "{type} Resistance",
+      "Threshold": "Damage Threshold",
+      "Vulnerability": "{type} Vulnerability"
+    },
+    "Downgrading": "Downgrading {source} to Resistance",
+    "Ignoring": "Ignoring {source}"
+  },
+  "MYTHICREALMS.DamageBludgeoning": "Bludgeoning",
+  "MYTHICREALMS.DamageCold": "Cold",
+  "MYTHICREALMS.DamageFire": "Fire",
+  "MYTHICREALMS.DamageForce": "Force",
+  "MYTHICREALMS.DamageLightning": "Lightning",
+  "MYTHICREALMS.DamageModification": {
+    "Label": "Damage Modification",
+    "Hint": "Formulas for amounts that will be added to typed damage applied to this actor. Negative values will reduce the damage taken.",
+    "BypassHint": "These weapon properties will bypass damage modification for physical damage."
+  },
+  "MYTHICREALMS.DamageNecrotic": "Necrotic",
+  "MYTHICREALMS.DamagePiercing": "Piercing",
+  "MYTHICREALMS.DamagePhysical": "Non-Magical Physical",
+  "MYTHICREALMS.DamagePhysicalBypass": "Physical Bypasses",
+  "MYTHICREALMS.DamagePhysicalBypassHint": "These weapon properties will bypass damage resistance for physical damage.",
+  "MYTHICREALMS.DamagePhysicalBypasses": "{damageTypes} from attacks that are not {bypassTypes}",
+  "MYTHICREALMS.DamagePhysicalBypassesShort": "Bypassed by {type} Sources",
+  "MYTHICREALMS.DamagePoison": "Poison",
+  "MYTHICREALMS.DamagePsychic": "Psychic",
+  "MYTHICREALMS.DamageRadiant": "Radiant",
+  "MYTHICREALMS.DamageRoll": "Damage Roll",
+  "MYTHICREALMS.DamageSlashing": "Slashing",
+  "MYTHICREALMS.DamageThreshold": "Damage Threshold",
+  "MYTHICREALMS.DamageThunder": "Thunder",
+  "MYTHICREALMS.DamageType": "Damage Type",
+  "MYTHICREALMS.DamageTypes": "Damage Types",
+  "MYTHICREALMS.Dawn": "Dawn",
+  "MYTHICREALMS.Day": "Day",
+  "MYTHICREALMS.DeathSave": "Death Saves",
+  "MYTHICREALMS.DeathSaveBonus": "Death Save Bonus",
+  "MYTHICREALMS.DeathSaveConfigure": "Configure Death Saves",
+  "MYTHICREALMS.DeathSaveCriticalSuccess": "{name} critically succeeded on a death saving throw and has regained 1 Hit Point!",
+  "MYTHICREALMS.DeathSaveHide": "Hide Death Saves",
+  "MYTHICREALMS.DeathSaveShow": "Show Death Saves",
+  "MYTHICREALMS.DeathSaveSuccess": "{name} has survived with 3 death save successes and is now stable!",
+  "MYTHICREALMS.DeathSaveSuccessLabel": "Death Save Success",
+  "MYTHICREALMS.DeathSaveSuccessLabelN.one": "1st death save success",
+  "MYTHICREALMS.DeathSaveSuccessLabelN.two": "2nd death save success",
+  "MYTHICREALMS.DeathSaveSuccessLabelN.few": "3rd death save success",
+  "MYTHICREALMS.DeathSaveSuccesses": "Successes",
+  "MYTHICREALMS.DeathSaveFailure": "{name} has died with 3 death save failures!",
+  "MYTHICREALMS.DeathSaveFailureLabel": "Death Save Failure",
+  "MYTHICREALMS.DeathSaveFailureLabelN.one": "1st death save failure",
+  "MYTHICREALMS.DeathSaveFailureLabelN.two": "2nd death save failure",
+  "MYTHICREALMS.DeathSaveFailureLabelN.few": "3rd death save failure",
+  "MYTHICREALMS.DeathSaveFailures": "Failures",
+  "MYTHICREALMS.DeathSaveRoll": "Roll a Death Saving Throw",
+  "MYTHICREALMS.DeathSavingThrow": "Death Saving Throw",
+  "MYTHICREALMS.DeathSaveUnnecessary": "You do not need to roll death saves because you have a positive number of hit points or have already reached 3 successes or failures.",
+  "MYTHICREALMS.Default": "Default",
+  "MYTHICREALMS.DefaultSpecific": "Default ({default})",
+  "MYTHICREALMS.DefaultAbilityCheck": "Default Ability Check",
+  "MYTHICREALMS.Denomination": "Denomination",
+  "MYTHICREALMS.Description": "Description",
+  "MYTHICREALMS.DescriptionChat": "Chat Description",
+  "MYTHICREALMS.DescriptionEdit": "Edit {description}",
+  "MYTHICREALMS.DescriptionSummary": "Summary Description",
+  "MYTHICREALMS.DescriptionUnidentified": "Unidentified Description",
+  "MYTHICREALMS.Details": "Details",
+  "MYTHICREALMS.DetailsEdit": "Edit Details",
+  "MYTHICREALMS.Die": "Die",
+  "MYTHICREALMS.Dimensions": "Dimensions",
+  "MYTHICREALMS.Disadvantage": "Disadvantage",
+  "MYTHICREALMS.Discord": "Discord",
+  "MYTHICREALMS.Disclaimer": "Disclaimer",
+  "MYTHICREALMS.DisplayCard": "Display in Chat",
+  "MYTHICREALMS.DistAny": "Any",
+  "MYTHICREALMS.DistFt": "Feet",
+  "MYTHICREALMS.DistFtAbbr": "ft",
+  "MYTHICREALMS.DistKm": "Kilometers",
+  "MYTHICREALMS.DistKmAbbr": "km",
+  "MYTHICREALMS.DistM": "Meters",
+  "MYTHICREALMS.DistMAbbr": "m",
+  "MYTHICREALMS.DistMi": "Miles",
+  "MYTHICREALMS.DistMiAbbr": "mi",
+  "MYTHICREALMS.DistSelf": "Self",
+  "MYTHICREALMS.DistTouch": "Touch",
+  "MYTHICREALMS.DocumentUseWarn": "You lack permission to use an item on this document.",
+  "MYTHICREALMS.DocumentViewWarn": "You lack permission to view this document.",
+  "MYTHICREALMS.DURATION": {
+    "FIELDS": {
+      "duration": {
+        "label": "Duration",
+        "concentration": {
+          "label": "Concentration",
+          "hint": "Creature must maintain concentration while active."
+        },
+        "override": {
+          "label": "Override Duration",
+          "hint": "Use these duration values instead of the item's when using this activity."
+        },
+        "special": {
+          "label": "Special Duration",
+          "hint": "Description of any special duration details."
+        },
+        "units": {
+          "label": "Duration Units",
+          "hint": "Units used to measure duration."
+        },
+        "value": {
+          "label": "Duration Value",
+          "hint": "Value of the duration in the specified units, if applicable."
+        }
+      }
+    }
+  },
+  "MYTHICREALMS.Duration": "Duration",
+  "MYTHICREALMS.DurationPermanent": "Permanent",
+  "MYTHICREALMS.DurationTime": "Time",
+  "MYTHICREALMS.DurationType": "Duration Type",
+  "MYTHICREALMS.DurationUnits": "Duration Units",
+  "MYTHICREALMS.DurationValue": "Duration Value",
+  "MYTHICREALMS.Dusk": "Dusk",
+  "MYTHICREALMS.Effect": "Effect",
+  "MYTHICREALMS.Effects": "Effects",
+  "MYTHICREALMS.EFFECT": {
+    "Action": {
+      "Create": "Create Effect",
+      "Delete": "Delete Effect",
+      "Dissociate": "Dissociate Effect"
+    },
+    "Empty": "No associated effects. Use the <i class=\"fas fa-plus\"></i> button above to create one, or select an existing effect from the drop-down.",
+    "Label": "Available Effects",
+    "RIDER": {
+      "Activity": "Enchantment Rider Activity",
+      "Effect": "Enchantment Rider Effect"
+    }
+  },
+  "MYTHICREALMS.EffectsApplyTokens": "Apply to selected tokens",
+  "MYTHICREALMS.EffectApplyWarningConcentration": "Applying an effect that is being concentrated on by another character requires GM permissions.",
+  "MYTHICREALMS.EffectApplyWarningOwnership": "Effects cannot be applied to tokens you are not the owner of.",
+  "MYTHICREALMS.EffectsSearch": "Search effects",
+  "MYTHICREALMS.ENCHANT": {
+    "FIELDS": {
+      "effects.element": {
+        "level": {
+          "label": "Level Limit",
+          "hint": "Range of levels required to use this enchantment.",
+          "max": {
+            "label": "Maximum Level"
+          },
+          "min": {
+            "label": "Minimum Level"
+          }
+        },
+        "riders": {
+          "label": "Attached",
+          "activity": {
+            "label": "Additional Activities",
+            "hint": "These additional activities will be added to the enchanted item when this enchantment is applied, and removed when the enchantment is removed."
+          },
+          "effect": {
+            "label": "Additional Effects",
+            "hint": "These additional effects will be added to the enchanted item when this enchantment is applied, and removed when the enchantment is removed."
+          },
+          "item": {
+            "label": "Additional Items",
+            "hint": "These additional items will be added to the creature when one of its items is enchanted, and will be removed if the enchantment is ever removed."
+          }
+        }
+      },
+      "enchant": {
+        "label": "Enchantment Configuration",
+        "identifier": {
+          "label": "Class Identifier",
+          "hint": "Identifier used to determine whether the character level or a specific class level should be used for enchantment level limits."
+        },
+        "self": {
+          "label": "Automatically Enchant Self",
+          "hint": "Automatically apply selected enchantment to the item containing this activity when it is used, and remove it when the activity is used again."
+        }
+      },
+      "restrictions": {
+        "label": "Restrictions",
+        "hint": "Restrictions on the type of item to which this enchantment can be applied.",
+        "allowMagical": {
+          "label": "Allow Magical",
+          "hint": "Allow physical items that are already magical to be enchanted."
+        },
+        "categories": {
+          "label": "Valid Categories",
+          "hint": "Specific item categories to which this enchantment can be applied."
+        },
+        "properties": {
+          "label": "Valid Properties",
+          "hint": "Specific item properties which must be present for this enchantment to be applied."
+        },
+        "type": {
+          "label": "Item Type",
+          "hint": "Type of item to which this enchantment can be applied.",
+          "Any": "Any Enchantable Type"
+        }
+      }
+    },
+    "DropArea": "Place item here to enchant it…",
+    "Enchanted": "{current} &sol; {max} enchanted",
+    "Enchantment": {
+      "Action": {
+        "Create": "Create Enchantment",
+        "Delete": "Delete Enchantment"
+      },
+      "Active": "{name} (active)",
+      "Empty": "No associated enchantments. Use the <i class=\"fas fa-plus\"></i> button above to create one, or select an existing enchantment from the drop-down."
+    },
+    "Hint": "Apply an enchantment to an item that modifies its stats or functionality.",
+    "SECTIONS": {
+      "Enchanting": "Enchanting",
+      "Enchantments": "Enchantments",
+      "Restrictions": "Restrictions"
+    },
+    "Title": "Enchant",
+    "Warning": {
+      "ConcentrationEnded": "Cannot apply this enchantment because concentration has ended.",
+      "MissingProperty": "Item must have one of these properties to be enchanted: {validProperties}.",
+      "NoMagicalItems": "Items that are already magical cannot be enchanted.",
+      "NoTargetActor": "Enchanting from a compendium requires an assigned character or selected token.",
+      "NoSubtype": "Only {allowedType} items can be enchanted by this enchantment, but this item doesn't have a sub-type.",
+      "WrongType": "{incorrectType} items cannot be enchanted by this enchantment, only {allowedType} items are allowed."
+    }
+  },
 }
