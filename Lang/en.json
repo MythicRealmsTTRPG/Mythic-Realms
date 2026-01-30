@@ -2570,5 +2570,244 @@
     "Use": {
       "Description": "Issued the <strong>{order}</strong> order to their {link} {facilityType}."
     }
-  }
+  },
+  "MYTHICREALMS.Favorite": "Favorite",
+  "MYTHICREALMS.FavoriteDrop": "Drop Favorite",
+  "MYTHICREALMS.FavoriteRemove": "Remove Favorite",
+  "MYTHICREALMS.Favorites": "Favorites",
+  "MYTHICREALMS.FeatureActionRecharge": "Action Recharge",
+  "MYTHICREALMS.FEATURE": {
+    "FIELDS": {
+      "cover": {
+        "label": "Cover",
+        "hint": "Cover provided to crew by this vehicle feature."
+      },
+      "properties": {
+        "label": "Feature Properties"
+      },
+      "requirements": {
+        "label": "Requirements"
+      },
+      "type": {
+        "label": "Feature Type"
+      }
+    }
+  },
+  "MYTHICREALMS.Feature": {
+    "Background": "Background Feature",
+    "Class": {
+      "Label": "Class Feature",
+      "ArcaneShot": "Arcane Shot",
+      "ArtificerInfusion": "Artificer Infusion",
+      "ArtificerPlan": "Artificer Plan",
+      "ChannelDivinity": "Channel Divinity",
+      "DefensiveTactic": "Defensive Tactic",
+      "EldritchInvocation": "Eldritch Invocation",
+      "ElementalDiscipline": "Elemental Discipline",
+      "FightingStyle": "Fighting Style",
+      "HuntersPrey": "Hunter's Prey",
+      "Ki": "Ki Ability",
+      "Maneuver": "Maneuver",
+      "Metamagic": "Metamagic Option",
+      "Multiattack": "Multiattack",
+      "PactBoon": "Pact Boon",
+      "PsionicPower": "Psionic Power",
+      "Rune": "Rune",
+      "SuperiorHuntersDefense": "Superior Hunter's Defense"
+    },
+    "Feat": {
+      "Label": "Feat",
+      "EpicBoon": "Epic Boon Feat",
+      "FightingStyle": "Fighting Style Feat",
+      "General": "General Feat",
+      "Origin": "Origin Feat"
+    },
+    "Monster": "Monster Feature",
+    "Species": "Species Feature",
+    "SpeciesLegacy": "Race Feature",
+    "SupernaturalGift": {
+      "Label": "Supernatural Gift",
+      "Blessing": "Blessing",
+      "Charm": "Charm",
+      "EpicBoon": "Epic Boon"
+    },
+    "Vehicle": {
+      "Label": "Vehicle Feature"
+    }
+  },
+  "MYTHICREALMS.Focus": {
+    "Label": "Spellcasting Focus",
+    "Arcane": "Arcane Focus",
+    "Druidic": "Druidic Focus",
+    "Holy": "Holy Focus"
+  },
+  "MYTHICREALMS.Loot.Art": "Art Object",
+  "MYTHICREALMS.Loot.Gear": "Adventuring Gear",
+  "MYTHICREALMS.Loot.Gem": "Gemstone",
+  "MYTHICREALMS.Loot.Junk": "Junk",
+  "MYTHICREALMS.Loot.Material": "Material",
+  "MYTHICREALMS.Loot.Resource": "Resource",
+  "MYTHICREALMS.Loot.Trade": "Trade Good",
+  "MYTHICREALMS.Loot.Treasure": "Treasure",
+  "MYTHICREALMS.Flaws": "Flaws",
+  "MYTHICREALMS.FormulaCannotContainDiceError": "{name} formula cannot contain dice expressions.",
+  "MYTHICREALMS.FORWARD": {
+    "FIELDS": {
+      "activity": {
+        "label": "Triggered Activity"
+      }
+    },
+    "Hint": "Trigger another activity on this item with different consumption & scaling details.",
+    "Title": "Forward",
+    "Warning": {
+      "NoActivity": "Linked activity must be configured before Forward activity can be used."
+    }
+  },
+  "MYTHICREALMS.EffectCreate": "Create Effect",
+  "MYTHICREALMS.EffectToggle": "Toggle Effect",
+  "MYTHICREALMS.EffectEdit": "Edit Effect",
+  "MYTHICREALMS.EffectEnable": "Enable Effect",
+  "MYTHICREALMS.EffectDelete": "Delete Effect",
+  "MYTHICREALMS.EffectDisable": "Disable Effect",
+  "MYTHICREALMS.EffectTemporary": "Temporary Effects",
+  "MYTHICREALMS.EffectPassive": "Passive Effects",
+  "MYTHICREALMS.EffectInactive": "Inactive Effects",
+  "MYTHICREALMS.EffectNew": "New Effect",
+  "MYTHICREALMS.EffectType": {
+    "Inactive": "Inactive",
+    "Passive": "Passive",
+    "Temporary": "Temporary",
+    "Unavailable": "Unavailable"
+  },
+  "MYTHICREALMS.EffectUnavailable": "Unavailable Effects",
+  "MYTHICREALMS.EffectUnavailableInfo": "Source item must be equipped or attuned to activate these",
+  "MYTHICREALMS.Encumbrance": "Encumbrance",
+  "MYTHICREALMS.Eyes": "Eyes",
+  "MYTHICREALMS.Faith": "Faith",
+  "MYTHICREALMS.FeatureActive": "Active Abilities",
+  "MYTHICREALMS.FeatureAdd": "Create Feature",
+  "MYTHICREALMS.FeatureAttack": "Feature Attack",
+  "MYTHICREALMS.FeaturePassive": "Passive Abilities",
+  "MYTHICREALMS.FeatureRechargeOn": "Recharge On",
+  "MYTHICREALMS.FeatureRechargeResult": "1d6 Result",
+  "MYTHICREALMS.FeatureSearch": "Search features",
+  "MYTHICREALMS.FeatureUsage": "Feature Usage",
+  "MYTHICREALMS.Features": "Features",
+  "MYTHICREALMS.FeaturesBackground": "Background Features",
+  "MYTHICREALMS.FeaturesClass": "{class} Features",
+  "MYTHICREALMS.FeaturesOther": "Other Features",
+  "MYTHICREALMS.Feats": "Feats",
+  "MYTHICREALMS.FeetAbbr": "ft.",
+  "MYTHICREALMS.Filter": "Filter",
+  "MYTHICREALMS.FilterClear": "Clear Filters",
+  "MYTHICREALMS.FilterGroupCategory": "Group by Category",
+  "MYTHICREALMS.FilterGroupOrigin": "Group by Origin",
+  "MYTHICREALMS.FilterGroupAction": "Group by Action",
+  "MYTHICREALMS.FilterNoSpells": "No spells found for this set of filters.",
+  "MYTHICREALMS.NoSpellLevels": "This character has no spellcaster levels, but you may add spells manually.",
+  "MYTHICREALMS.FLAGS": {
+    "EnhancedDualWielding": {
+      "Name": "Enhanced Dual Wielding",
+      "Hint": "Allow bonus action extra attacks using any melee weapon without the Two-Handed property."
+    }
+  },
+  "MYTHICREALMS.FlagsInstructions": "Configure character features and traits which fine-tune behaviors of the D&D Fifth Edition system.",
+  "MYTHICREALMS.FlagsSave": "Update Special Traits",
+  "MYTHICREALMS.FlagsTitle": "Configure Special Traits",
+  "MYTHICREALMS.FlagsDiamondSoul": "Diamond Soul",
+  "MYTHICREALMS.FlagsDiamondSoulHint": "Gain proficiency to all saving throws.",
+  "MYTHICREALMS.FlagsPowerfulBuild": "Powerful Build",
+  "MYTHICREALMS.FlagsPowerfulBuildHint": "Provides increased carrying capacity.",
+  "MYTHICREALMS.FlagsElvenAccuracy": "Elven Accuracy",
+  "MYTHICREALMS.FlagsElvenAccuracyHint": "Roll an extra d20 with advantage to Dex, Int, Wis, or Cha.",
+  "MYTHICREALMS.FlagsHalflingLucky": "Halfling Lucky",
+  "MYTHICREALMS.FlagsHalflingLuckyHint": "Reroll ones when rolling d20 checks.",
+  "MYTHICREALMS.FlagsHalflingNimbleness": "Halfling Nimbleness",
+  "MYTHICREALMS.FlagsHalflingNimblenessHint": "Movement through larger creatures is not blocked.",
+  "MYTHICREALMS.FlagsAlert": "Alert Feat",
+  "MYTHICREALMS.FlagsAlertHint": "Proficient in Initiative rolls.",
+  "MYTHICREALMS.FlagsAlertHintLegacy": "Provides +5 to Initiative.",
+  "MYTHICREALMS.FlagsJOAT": "Jack of All Trades",
+  "MYTHICREALMS.FlagsJOATHint": "Half-Proficiency to Ability Checks in which you are not already Proficient.",
+  "MYTHICREALMS.FlagsObservant": "Observant Feat",
+  "MYTHICREALMS.FlagsObservantHint": "Provides a +5 to passive Perception and Investigation.",
+  "MYTHICREALMS.FlagsTavernBrawler": "Tavern Brawler Feat",
+  "MYTHICREALMS.FlagsTavernBrawlerHint": "Proficient with improvised weapons.",
+  "MYTHICREALMS.FlagsReliableTalent": "Reliable Talent",
+  "MYTHICREALMS.FlagsReliableTalentHint": "Rogues Reliable Talent Feature.",
+  "MYTHICREALMS.FlagsRemarkableAthlete": "Remarkable Athlete",
+  "MYTHICREALMS.FlagsRemarkableAthleteHint": "Half-Proficiency (rounded-up) to physical Ability Checks and Initiative.",
+  "MYTHICREALMS.FlagsWeaponCritThreshold": "Weapon Critical Hit Threshold",
+  "MYTHICREALMS.FlagsWeaponCritThresholdHint": "An expanded critical hit threshold for weapon attacks.",
+  "MYTHICREALMS.FlagsSpellCritThreshold": "Spell Critical Hit Threshold",
+  "MYTHICREALMS.FlagsSpellCritThresholdHint": "An expanded critical hit threshold for spell attacks.",
+  "MYTHICREALMS.FlagsMeleeCriticalDice": "Melee Critical Damage Dice",
+  "MYTHICREALMS.FlagsMeleeCriticalDiceHint": "A number of additional damage dice added to melee weapon critical hits.",
+  "MYTHICREALMS.FlagsToolExpertise": "Tool Expertise",
+  "MYTHICREALMS.FlagsToolExpertiseHint": "Doubles your proficiency bonus for any ability check you make that uses your proficiency with a tool.",
+  "MYTHICREALMS.Flat": "Flat",
+  "MYTHICREALMS.Formula": "Formula",
+  "MYTHICREALMS.FormulaMalformedError": "Problem preparing the {property} formula within {name}.",
+  "MYTHICREALMS.FormulaMissingReferenceWarn": "The {property} formula within {name} has references to missing data: {references}",
+  "MYTHICREALMS.Gear": "Gear",
+  "MYTHICREALMS.Gender": "Gender",
+  "MYTHICREALMS.GlobalBonus": "Global Bonus",
+  "MYTHICREALMS.GrantedAbilities": "Granted Abilities",
+  "MYTHICREALMS.GroupInventory": "Inventory",
+  "MYTHICREALMS.GroupHP": "Aggregate Hit Points",
+  "MYTHICREALMS.GroupSummary": "A group of {members}",
+  "MYTHICREALMS.GroupSummaryEmpty": "Empty group",
+  "MYTHICREALMS.GroupControls": "Controls",
+  "MYTHICREALMS.Group": {
+    "Action": {
+      "ChangePace": "Change Pace",
+      "Inventory": {
+        "Group": "Show Group Inventory",
+        "Vehicle": "Show Vehicle Inventory"
+      },
+      "Remove": "Remove Member",
+      "SetPrimaryVehicle": "Set Primary Vehicle",
+      "UnsetPrimaryVehicle": "Unset Primary Vehicle",
+      "View": "View Member"
+    },
+    "Config": {
+      "Art": {
+        "Label": "Member Art",
+        "portraits": "Portraits",
+        "tokens": "Tokens"
+      },
+      "Legend": "Group Sheet Options"
+    },
+    "Challenge": "Challenge",
+    "Distribute": {
+      "noxp": "Distribute pooled currency",
+      "xp": "Distribute pooled XP & currency"
+    },
+    "Member": {
+      "one": "Member",
+      "other": "Members"
+    },
+    "PlaceMembers": "Place Members",
+    "Primary": {
+      "Remove": "Remove as Primary Party",
+      "Set": "Set as Primary Party"
+    },
+    "Type": "Group Type",
+    "TypeEncounter": "Encounter",
+    "TypeGeneric": "Group",
+    "TypeParty": "Party",
+    "Vehicle": {
+      "Count": {
+        "one": "Vehicle",
+        "other": "Vehicles"
+      },
+      "Primary": {
+        "label": "Primary Vehicle"
+      }
+    },
+    "Warning": {
+      "PhysicalItemOnly": "Only physical items are supported.",
+      "PlaceMembers": "Error placing tokens in scene."
+    }
+  },
 }
