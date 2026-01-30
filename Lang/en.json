@@ -3104,5 +3104,47 @@
     },
     "HasLair": "Has Lair",
     "Inside": "Inside Lair"
-  }
+  },
+  "MYTHICREALMS.Language": {
+    "All": "All Languages",
+    "Label": "Language",
+    "Category": {
+      "Exotic": "Exotic Languages",
+      "Rare": "Rare Languages",
+      "Standard": "Standard Languages"
+    },
+    "Communication": {
+      "Label": "Ranged Communication",
+      "Telepathy": "Telepathy"
+    },
+    "Language": {
+      "Aarakocra": "Aarakocra",
+      "Abyssal": "Abyssal",
+      "Aquan": "Aquan",
+      "Auran": "Auran",
+      "Celestial": "Celestial",
+      "Common": "Common",
+      "CommonSign": "Common Sign Language",
+      "DeepSpeech": "Deep Speech",
+      "Draconic": "Draconic",
+      "Druidic": "Druidic",
+      "Dwarvish": "Dwarvish",
+      "Elvish": "Elvish",
+      "Giant": "Giant",
+      "Gith": "Gith",
+      "Gnoll": "Gnoll",
+      "Gnomish": "Gnomish",
+      "Goblin": "Goblin",
+      "Halfling": "Halfling",
+      "Ignan": "Ignan",
+      "Infernal": "Infernal",
+      "Orc": "Orc",
+      "Primordial": "Primordial",
+      "Sylvan": "Sylvan",
+      "Terran": "Terran",
+      "ThievesCant": "Thieves' Cant",
+      "Undercommon": "Undercommon"
+    }
+  },
+  "MYTHICREALMS.Languages": "Languages",
 }
