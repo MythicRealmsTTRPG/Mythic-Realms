@@ -2205,4 +2205,370 @@
       "WrongType": "{incorrectType} items cannot be enchanted by this enchantment, only {allowedType} items are allowed."
     }
   },
+  "MYTHICREALMS.ENCHANTMENT": {
+    "Action": {
+      "Apply": "Apply Enchantment",
+      "Disable": "Disable Enchantment",
+      "Edit": "Edit Enchantment",
+      "Enable": "Enable Enchantment",
+      "Remove": "Remove Enchantment"
+    },
+    "Category": {
+      "Active": "Active Enchantments",
+      "General": "Enchantments",
+      "Inactive": "Inactive Enchantments"
+    },
+    "FIELDS": {
+      "enchantment": {
+        "label": "Enchantment Configuration",
+        "items": {
+          "max": {
+            "label": "Item Limit",
+            "hint": "Formula for the maximum number of enchantments of this type that can be active at a time."
+          },
+          "period": {
+            "label": "Replacement Period",
+            "hint": "How frequently the enchantments of this type can be re-bound to different items."
+          }
+        }
+      }
+    },
+    "Items": {
+      "Entry": "{item} on <em>{actor}</em>"
+    },
+    "Label": "Enchantment",
+    "Period": {
+      "AtWill": "At Will",
+      "LongRest": "Long Rest",
+      "Never": "Never",
+      "ShortRest": "Short Rest"
+    },
+    "Warning": {
+      "NotOnActor": "Enchantments can only be added to items, not directly to actors.",
+      "Override": "This value is being modified by an Enchantment and cannot be edited. Disable the enchantment in the effects tab to edit it."
+    }
+  },
+  "MYTHICREALMS.ENCOUNTER": {
+    "Action": {
+      "AddCreature": "Add Creature",
+      "Award": "Award XP & Currency"
+    },
+    "Difficulty": {
+      "high": "High Difficulty",
+      "low": "Low Difficulty",
+      "moderate": "Moderate Difficulty"
+    },
+    "Tab": {
+      "Description": "Description",
+      "Loot": "Loot",
+      "Members": "Members"
+    }
+  },
+  "MYTHICREALMS.Environment": "Environment",
+  "MYTHICREALMS.EQUIPMENT": {
+    "Type": {
+      "Clothing": {
+        "Label": "Clothing"
+      },
+      "Ring": {
+        "Label": "Ring"
+      },
+      "Rod": {
+        "Label": "Rod"
+      },
+      "Trinket": {
+        "Label": "Trinket"
+      },
+      "Vehicle": {
+        "Label": "Vehicle Equipment"
+      },
+      "Wand": {
+        "Label": "Wand"
+      },
+      "Wondrous": {
+        "Label": "Wondrous Item"
+      }
+    }
+  },
+  "MYTHICREALMS.EquipmentBonus": "Magical Bonus",
+  "MYTHICREALMS.EquipmentHeavy": "Heavy Armor",
+  "MYTHICREALMS.EquipmentLight": "Light Armor",
+  "MYTHICREALMS.EquipmentMedium": "Medium Armor",
+  "MYTHICREALMS.EquipmentNatural": "Natural Armor",
+  "MYTHICREALMS.EquipmentShield": "Shield",
+  "MYTHICREALMS.EquipmentShieldProficiency": "Shields",
+  "MYTHICREALMS.Equipped": "Equipped",
+  "MYTHICREALMS.Exhaustion": "Exhaustion",
+  "MYTHICREALMS.ExhaustionLevel": "Exhaustion Level {n}",
+  "MYTHICREALMS.ExperiencePoints": {
+    "Abbreviation": "XP",
+    "Boons": {
+      "one": "{number} Boon",
+      "other": "{number} Boons"
+    },
+    "Current": "Current XP",
+    "Format": "{value} XP",
+    "Label": "Experience Points",
+    "Pool": "XP Pool",
+    "Progress": "Progress to next Level",
+    "StatBlock": {
+      "Standard": "XP {value}",
+      "Lair": "XP {value}, or {lair} in lair"
+    },
+    "Value": "XP Value"
+  },
+  "MYTHICREALMS.Expertise": "Expertise",
+  "MYTHICREALMS.FACILITY": {
+    "Action": {
+      "DeleteDefender": "Delete Defender",
+      "DeleteOccupant": "Delete Occupant",
+      "RemoveCraft": "Remove Craft"
+    },
+    "AvailableFacility": {
+      "basic": {
+        "build": "Build Facility",
+        "free": "Free Facility"
+      },
+      "special": {
+        "free": "Add Facility"
+      }
+    },
+    "Build": {
+      "Unbuilt": "Unbuilt"
+    },
+    "Costs": {
+      "Automatic": "Deduct Automatically",
+      "Days": "{days} days",
+      "Label": "Costs",
+      "Manual": "Mark as Paid",
+      "Paid": "paid",
+      "Unpaid": "unpaid"
+    },
+    "Craft": {
+      "BaseItem": {
+        "Label": "Purchase Base Item",
+        "Hint": "If checked, the base item will be purchased at full price instead of crafted."
+      },
+      "Hint": "The items that this facility is currently in the process of crafting or harvesting, if any."
+    },
+    "Description": "Description",
+    "FIELDS": {
+      "building": {
+        "built": {
+          "label": "Built",
+          "hint": "Basic facilities must be built first before they can be used."
+        }
+      },
+      "defenders": {
+        "max": {
+          "label": "Defenders"
+        }
+      },
+      "disabled": {
+        "hint": "Disabled facilities cannot be issued orders and are repaired at the beginning of the next turn.",
+        "label": "Disabled"
+      },
+      "enlargeable": {
+        "hint": "Certain special facilities may have their size categories increased for a cost.",
+        "label": "Can Be Enlarged"
+      },
+      "free": {
+        "hint": "Free facilities do not count towards your special facilities cap.",
+        "label": "Free Facility"
+      },
+      "hirelings": {
+        "max": {
+          "label": "Hirelings"
+        }
+      },
+      "level": {
+        "label": "Level Requirement"
+      },
+      "order": {
+        "label": "Order"
+      },
+      "progress": {
+        "max": {
+          "label": "Total"
+        },
+        "order": {
+          "label": "Executing"
+        },
+        "value": {
+          "label": "Current"
+        }
+      },
+      "size": {
+        "label": "Size"
+      },
+      "trade": {
+        "creatures": {
+          "max": {
+            "label": "Creature Capacity"
+          }
+        },
+        "profit": {
+          "label": "Profit Factor"
+        },
+        "stock": {
+          "stocked": {
+            "hint": "Appropriate for facilities that do not store a variable value of goods, but are instead considered either stocked or empty.",
+            "label": "Stocked"
+          },
+          "value": {
+            "label": "Value"
+          },
+          "max": {
+            "label": "Max"
+          }
+        }
+      },
+      "type": {
+        "subtype": {
+          "label": "Type"
+        },
+        "value": {
+          "label": "Category"
+        }
+      }
+    },
+    "Goods": "Goods",
+    "NoDefenders": "Bastion is undefended.",
+    "Occupants": "Occupants",
+    "Order": {
+      "Execute": "Execute Order",
+      "Issue": "Issue Order: {order}"
+    },
+    "Orders": {
+      "Label": "Orders",
+      "build": {
+        "inf": "Build",
+        "present": "Building"
+      },
+      "change": {
+        "inf": "Change",
+        "present": "Changing"
+      },
+      "craft": {
+        "inf": "Craft",
+        "present": "Crafting"
+      },
+      "empower": {
+        "inf": "Empower",
+        "present": "Empowering"
+      },
+      "enlarge": {
+        "inf": "Enlarge",
+        "present": "Enlarging"
+      },
+      "harvest": {
+        "inf": "Harvest",
+        "present": "Harvesting"
+      },
+      "maintain": {
+        "inf": "Maintain",
+        "present": "Maintaining"
+      },
+      "recruit": {
+        "inf": "Recruit",
+        "present": "Recruiting"
+      },
+      "repair": {
+        "inf": "Repair",
+        "present": "Repairing"
+      },
+      "research": {
+        "inf": "Research",
+        "present": "Researching"
+      },
+      "trade": {
+        "inf": "Trade",
+        "present": "Trading"
+      }
+    },
+    "Progress": "Progress",
+    "Properties": "Properties",
+    "Sizes": {
+      "cramped": "Cramped",
+      "roomy": "Roomy",
+      "vast": "Vast"
+    },
+    "Squares": "{squares} squares",
+    "Trade": {
+      "Buy": {
+        "Supplement": "Buy"
+      },
+      "Creatures": {
+        "Buy": "Drop animals that you wish to purchase into the slots above, and update the cost appropriately below."
+      },
+      "Price": {
+        "Label": "Base Price",
+        "Hint": "Select which stock to sell, and input the base price above."
+      },
+      "Sell": {
+        "Label": "Sell Stock",
+        "Supplement": "Sell"
+      },
+      "Stock": {
+        "Buy": "Buying",
+        "Sell": "Selling"
+      },
+      "Stocked": {
+        "Label": "Fully Stock",
+        "Hint": "Input the required cost to fully stock this facility below."
+      }
+    },
+    "Types": {
+      "Basic": {
+        "Label": {
+          "one": "Basic Facility",
+          "other": "Basic Facilities"
+        },
+        "Bedroom": "Bedroom",
+        "DiningRoom": "Dining Room",
+        "Parlor": "Parlor",
+        "Courtyard": "Courtyard",
+        "Kitchen": "Kitchen",
+        "Storage": "Storage"
+      },
+      "Special": {
+        "Label": {
+          "one": "Special Facility",
+          "other": "Special Facilities"
+        },
+        "ArcaneStudy": "Arcane Study",
+        "Armory": "Armory",
+        "Barrack": "Barrack",
+        "Garden": "Garden",
+        "Library": "Library",
+        "Sanctuary": "Sanctuary",
+        "Smithy": "Smithy",
+        "Storehouse": "Storehouse",
+        "Workshop": "Workshop",
+        "GamingHall": "Gaming Hall",
+        "Greenhouse": "Greenhouse",
+        "Laboratory": "Laboratory",
+        "Sacristy": "Sacristy",
+        "Scriptorium": "Scriptorium",
+        "Stable": "Stable",
+        "TeleportationCircle": "Teleportation Circle",
+        "Theater": "Theater",
+        "TrainingArea": "Training Area",
+        "TrophyRoom": "Trophy Room",
+        "Archive": "Archive",
+        "MeditationChamber": "Meditation Chamber",
+        "Menagerie": "Menagerie",
+        "Observatory": "Observatory",
+        "Pub": "Pub",
+        "Reliquary": "Reliquary",
+        "Demiplane": "Demiplane",
+        "Guildhall": "Guildhall",
+        "Sanctum": "Sanctum",
+        "WarRoom": "War Room"
+      }
+    },
+    "Use": {
+      "Description": "Issued the <strong>{order}</strong> order to their {link} {facilityType}."
+    }
+  }
 }
