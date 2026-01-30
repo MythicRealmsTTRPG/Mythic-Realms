@@ -1218,5 +1218,578 @@
         "Deepwinter 30": "Final Accounting"
       }
     }
+  },
+  "MYTHICREALMS.CAST": {
+    "Action": {
+      "RemoveSpell": "Remove Spell"
+    },
+    "Enchantment": {
+      "Name": "Spell Changes"
+    },
+    "FIELDS": {
+      "spell": {
+        "label": "Casting Details",
+        "ability": {
+          "label": "Casting Ability",
+          "hint": "Ability to override the creature's normal spellcasting ability."
+        },
+        "challenge": {
+          "attack": {
+            "label": "Attack Bonus",
+            "hint": "Flat to hit bonus in place of the spell's normal attack bonus."
+          },
+          "save": {
+            "label": "Save DC",
+            "hint": "Flat DC to use in place of the spell's normal save DC."
+          },
+          "override": {
+            "label": "Override Values",
+            "hint": "Override the spell's normal attack bonus & DC when casting."
+          }
+        },
+        "level": {
+          "label": "Casting Level",
+          "hint": "Base level to cast the spell, if different than the spell's level."
+        },
+        "properties": {
+          "label": "Ignored Properties",
+          "hint": "Spell components & tags to ignore while casting."
+        },
+        "spellbook": {
+          "label": "Display in Spellbook",
+          "hint": "Display spell in the Spells tab of the character sheet."
+        },
+        "uuid": {
+          "label": "Spell to Cast"
+        }
+      }
+    },
+    "Hint": "Cast a spell through an item.",
+    "SECTIONS": {
+      "Spell": "Spell",
+      "Spellbook": "Additional Spells"
+    },
+    "Title": "Cast"
+  },
+  "MYTHICREALMS.Casting": "Casting",
+  "MYTHICREALMS.Conditions": "Conditions",
+  "MYTHICREALMS.CONTAINER": {
+    "Details": "Container Details",
+    "FIELDS": {
+      "capacity": {
+        "label": "Capacity",
+        "count": {
+          "label": "Item Count"
+        },
+        "volume": {
+          "label": "Volume Capacity",
+          "units": {
+            "label": "Volume Units"
+          },
+          "value": {
+            "label": "Maximum Volume"
+          }
+        },
+        "weight": {
+          "label": "Weight Capacity",
+          "units": {
+            "label": "Weight Units"
+          },
+          "value": {
+            "label": "Maximum Weight"
+          }
+        }
+      },
+      "properties": {
+        "label": "Container Properties"
+      }
+    }
+  },
+  "MYTHICREALMS.Controls": {
+    "Hint": "Enable various hints throughout the UI for certain mouse and keyboard controls.",
+    "LeftClick": "Left Click",
+    "LockHint": "Middle-click to lock",
+    "MiddleClick": "Middle Click",
+    "Name": "Enable Control Hints",
+    "Activity": {
+      "FastForwardHint": "<kbd>Shift</kbd> + <left-click> the item to skip this dialog"
+    }
+  },
+  "MYTHICREALMS.Challenge": "Challenge",
+  "MYTHICREALMS.ChallengeRating": "Challenge Rating",
+  "MYTHICREALMS.Charged": "Charged",
+  "MYTHICREALMS.Charges": "Charges",
+  "MYTHICREALMS.ChatContextDamage": "Apply As Damage",
+  "MYTHICREALMS.ChatContextHealing": "Apply As Healing",
+  "MYTHICREALMS.ChatContextTempHP": "Apply As Temporary HP",
+  "MYTHICREALMS.ChatContextDoubleDamage": "Apply Double As Damage",
+  "MYTHICREALMS.ChatContextHalfDamage": "Apply Half As Damage",
+  "MYTHICREALMS.ChatContextSelectHit": "Select Hit Targets",
+  "MYTHICREALMS.ChatContextSelectMiss": "Select Missed Targets",
+  "MYTHICREALMS.ChatFlavor": "Chat Message Flavor",
+  "MYTHICREALMS.CHATMESSAGE": {
+    "Activities": "Activities",
+    "Deltas": {
+      "Created": "Item Created",
+      "Deleted": "Item Deleted",
+      "Recovery": "Recovery"
+    },
+    "REQUEST": {
+      "Action": {
+        "Handle": "Handle Request"
+      },
+      "Complete": "Request Fulfilled",
+      "PartyMembers": "Party Members"
+    },
+    "TURN": {
+      "NoCombatant": "Combatant no longer exists!"
+    }
+  },
+  "MYTHICREALMS.CHECK": {
+    "FIELDS": {
+      "check": {
+        "label": "Check Details",
+        "ability": {
+          "label": "Check Ability",
+          "hint": "Ability to use when making the check."
+        },
+        "associated": {
+          "label": "Associated Skills or Tools",
+          "hint": "Present ability checks using proficiency and bonuses with these skills or tools."
+        },
+        "dc": {
+          "label": "Difficulty Class",
+          "calculation": {
+            "label": "DC Calculation",
+            "hint": "Method or ability used to calculate the difficulty class."
+          },
+          "formula": {
+            "label": "DC Formula",
+            "hint": "Custom formula or flat value for defining the check DC."
+          }
+        }
+      }
+    },
+    "Hint": "Request an ability check possibly assisted by a skill or tool.",
+    "ThisTool": "This Tool",
+    "Title": "Check"
+  },
+  "MYTHICREALMS.CheckBonus": "Check Bonus",
+  "MYTHICREALMS.CLASS": {
+    "Multiclass": {
+      "Title": "Multiclassing"
+    },
+    "FIELDS": {
+      "hd": {
+        "label": "Hit Point Die",
+        "additional": {
+          "label": "Additional Hit Dice",
+          "hint": "Formula for hit dice that are available for this class beyond the normal amount."
+        },
+        "spent": {
+          "label": "Spent Hit Dice"
+        }
+      },
+      "levels": {
+        "label": "Class Levels"
+      },
+      "primaryAbility": {
+        "all": {
+          "label": "Require All",
+          "hint": "Require all primary abilities to meet the minimum in order to multi-class."
+        },
+        "value": {
+          "label": "Primary Ability",
+          "hint": "Abilities used most by this class. Used to determine multi-classing restrictions."
+        }
+      },
+      "properties": {
+        "label": "Class Properties"
+      }
+    }
+  },
+  "MYTHICREALMS.ClassAdd": "Add Class",
+  "MYTHICREALMS.ClassIdentifier": "Class Identifier",
+  "MYTHICREALMS.ClassIdentifierHint": "This class's data will be accessible using <strong>@classes.{identifier}</strong> in roll formulas.",
+  "MYTHICREALMS.ClassLevels": "Class Levels",
+  "MYTHICREALMS.ClassMakeOriginal": "Original Class",
+  "MYTHICREALMS.ClassMakeOriginalHint": "First class taken by character used to determine certain class traits when multiclassing.",
+  "MYTHICREALMS.ClassName": "Class Name",
+  "MYTHICREALMS.ClassOriginal": "Original Class",
+  "MYTHICREALMS.ClassSaves": "Saving Throws",
+  "MYTHICREALMS.Confirm": "Confirm",
+  "MYTHICREALMS.COMBAT": {
+    "Group": {
+      "ActiveCount": "{current} of {combatants}",
+      "Title": "{name} Group"
+    }
+  },
+  "MYTHICREALMS.COMBATANT": {
+    "Counted": {
+      "one": "{number} combatant",
+      "other": "{number} combatants"
+    }
+  },
+  "MYTHICREALMS.CompendiumBrowser": {
+    "Title": "Compendium Browser",
+    "Action": {
+      "Open": "Open Compendium Browser"
+    },
+    "Column": {
+      "Icon": "Icon",
+      "Name": "Name",
+      "Results": "Results",
+      "Source": "Source"
+    },
+    "Filters": {
+      "Label": "Filters",
+      "Grouped": "{type} ({group})",
+      "HasDarkvision": "Has Darkvision",
+      "HasSpellcasting": "Has Spellcasting",
+      "SearchResults": "Search results"
+    },
+    "Selection": {
+      "Label": "Selected: {summary}",
+      "Select": "Select",
+      "Summary": {
+        "Max": "<span class=\"value\">{value}</span> of up to {max}",
+        "Min": "<span class=\"value\">{value}</span> of at least {min}",
+        "Range": "<span class=\"value\">{value}</span> of {min} to {max}",
+        "Single": "<span class=\"value\">{value}</span> of {max}"
+      },
+      "Warning": {
+        "Document": {
+          "one": "document",
+          "other": "documents"
+        },
+        "Max": "Must select at most {max} {document}, {value} selected.",
+        "Min": "Must select at least {min} {document}, {value} selected.",
+        "Range": "Must select between {min} and {max} documents, {value} selected.",
+        "Single": "Must select {max} {document}, {value} selected."
+      }
+    },
+    "Sources": {
+      "Name": "Compendium Browser Sources",
+      "Label": "Configure Sources",
+      "FilterPackages": "Filter Packages",
+      "Hint": "Configure which compendium packs have their content available in the compendium browser."
+    },
+    "Tabs": {
+      "Feat.other": "Feats",
+      "Item.other": "Items",
+      "Monster.other": "Monsters"
+    },
+    "Types": {
+      "Label": "Types"
+    },
+    "Locked": "Locked"
+  },
+  "MYTHICREALMS.ComponentMaterial": "Material",
+  "MYTHICREALMS.ComponentMaterialAbbr": "M",
+  "MYTHICREALMS.ComponentSomatic": "Somatic",
+  "MYTHICREALMS.ComponentSomaticAbbr": "S",
+  "MYTHICREALMS.ComponentVerbal": "Verbal",
+  "MYTHICREALMS.ComponentVerbalAbbr": "V",
+  "MYTHICREALMS.Components": "Components",
+  "MYTHICREALMS.Container": "Container",
+  "MYTHICREALMS.ContainerDeleteMessage": "This container will be permanently deleted and cannot be recovered and the {count} items contained within will be moved out.",
+  "MYTHICREALMS.ContainerDeleteContents": "Also delete all items within the container.",
+  "MYTHICREALMS.ContainerMaxDepth": "Containers cannot be nested more than {depth} levels deep.",
+  "MYTHICREALMS.ContainerRecursiveError": "Containers cannot contain themselves.",
+  "MYTHICREALMS.Contents": "Contents",
+  "MYTHICREALMS.ContextMenuActionEdit": "Edit",
+  "MYTHICREALMS.ContextMenuActionDuplicate": "Duplicate",
+  "MYTHICREALMS.ContextMenuActionDelete": "Delete",
+  "MYTHICREALMS.ContextMenuActionEquip": "Equip",
+  "MYTHICREALMS.ContextMenuActionUnequip": "Unequip",
+  "MYTHICREALMS.ContextMenuActionPrepare": "Prepare",
+  "MYTHICREALMS.ContextMenuActionExpendCharge": "Uncharge",
+  "MYTHICREALMS.ContextMenuActionCharge": "Charge",
+  "MYTHICREALMS.ContextMenuActionUnprepare": "Unprepare",
+  "MYTHICREALMS.ContextMenuActionAttune": "Attune",
+  "MYTHICREALMS.ContextMenuActionUnattune": "Unattune",
+  "MYTHICREALMS.ContextMenuActionEnable": "Enable",
+  "MYTHICREALMS.ContextMenuActionDisable": "Disable",
+  "MYTHICREALMS.ContextMenuActionView": "View",
+  "MYTHICREALMS.Contiguous": "Contiguous",
+  "MYTHICREALMS.ConBlinded": "Blinded",
+  "MYTHICREALMS.ConCharmed": "Charmed",
+  "MYTHICREALMS.ConDeafened": "Deafened",
+  "MYTHICREALMS.ConDiseased": "Diseased",
+  "MYTHICREALMS.CONDITIONS": {
+    "RiderConditions": {
+      "label": "Separate Status Conditions",
+      "hint": "When this Active Effect is applied, these additional status conditions will be applied separately."
+    }
+  },
+  "MYTHICREALMS.ConExhaustion": "Exhaustion",
+  "MYTHICREALMS.ConFrightened": "Frightened",
+  "MYTHICREALMS.ConGrappled": "Grappled",
+  "MYTHICREALMS.ConImm": "Condition Immunities",
+  "MYTHICREALMS.ConIncapacitated": "Incapacitated",
+  "MYTHICREALMS.ConInvisible": "Invisible",
+  "MYTHICREALMS.ConParalyzed": "Paralyzed",
+  "MYTHICREALMS.ConPetrified": "Petrified",
+  "MYTHICREALMS.ConPoisoned": "Poisoned",
+  "MYTHICREALMS.ConProne": "Prone",
+  "MYTHICREALMS.ConRestrained": "Restrained",
+  "MYTHICREALMS.ConStunned": "Stunned",
+  "MYTHICREALMS.ConUnconscious": "Unconscious",
+  "MYTHICREALMS.Concentration": "Concentration",
+  "MYTHICREALMS.ConcentrationAbbr": "C",
+  "MYTHICREALMS.ConcentrationBreak": "Break Concentration",
+  "MYTHICREALMS.ConcentrationBreakWarning": "Breaking concentration on an effect that is active on other creatures requires an active GM to be present.",
+  "MYTHICREALMS.ConcentrationBonus": "Concentration Bonus",
+  "MYTHICREALMS.ConcentrationDuration": "Concentration, up to {duration}",
+  "MYTHICREALMS.ConcentratingOn": "You are maintaining concentration on the effects of the '{name}' {type}.",
+  "MYTHICREALMS.ConcentratingEndChoice": "You are concentrating on effects from more than one source. Pick which effect to end.",
+  "MYTHICREALMS.ConcentratingMissingItem": "The effect that is concentrated on and to be replaced does not exist.",
+  "MYTHICREALMS.ConcentratingLimited": "You are not able to begin concentrating on an additional effect.",
+  "MYTHICREALMS.ConcentrationLimit": "Concentration Limit",
+  "MYTHICREALMS.ConcentratingEnd": "End Concentration",
+  "MYTHICREALMS.ConcentratingItemless": "Concentration With No Source",
+  "MYTHICREALMS.ConcentratingWarnLimit": "You cannot maintain concentration on more effects!",
+  "MYTHICREALMS.ConcentratingWarnLimitOptional": "You may end concentration on one of your maintained effects to use this item.",
+  "MYTHICREALMS.ConcentratingWarnLimitZero": "You are not able to maintain concentration on any effects!",
+  "MYTHICREALMS.ConcentrationConfigurationHint": "Configure concentration modifiers and bonuses which apply to this creature.",
+  "MYTHICREALMS.ConsumeTitle": "Resource Consumption",
+  "MYTHICREALMS.ConsumeAmount": "Consumption Amount",
+  "MYTHICREALMS.ConsumeHint": {
+    "Attribute": "Attribute to consume (e.g. currency.gp)",
+    "Item": "UUID of target in compendium"
+  },
+  "MYTHICREALMS.ConsumeTarget": "Consumption Target",
+  "MYTHICREALMS.ConsumeType": "Consumption Category",
+  "MYTHICREALMS.ConsumeAmmunition": "Ammunition",
+  "MYTHICREALMS.ConsumeAttribute": "Attribute",
+  "MYTHICREALMS.ConsumeHitDice": "Hit Dice",
+  "MYTHICREALMS.ConsumeHitDiceLargest": "Largest Available",
+  "MYTHICREALMS.ConsumeHitDiceLargestLong": "Largest Hit Dice Available",
+  "MYTHICREALMS.ConsumeHitDiceSmallest": "Smallest Available",
+  "MYTHICREALMS.ConsumeHitDiceSmallestLong": "Smallest Hit Dice Available",
+  "MYTHICREALMS.ConsumeMaterial": "Material",
+  "MYTHICREALMS.ConsumeCharges": "Item Uses",
+  "MYTHICREALMS.ConsumeResource": "Consume Resource?",
+  "MYTHICREALMS.ConsumeRecharge": "Consume Recharge?",
+  "MYTHICREALMS.ConsumeScaling": "Resource Scaling",
+  "MYTHICREALMS.ConsumeScalingLabel": "Use Resources",
+  "MYTHICREALMS.ConsumeScalingTooltip": "If checked, consuming additional resources will increase the level the spell is cast at.",
+  "MYTHICREALMS.CONSUMABLE": {
+    "FIELDS": {
+      "damage": {
+        "label": "Ammunition Damage",
+        "replace": {
+          "label": "Augment Weapon Damage",
+          "hint": "Add this damage to base weapon damage."
+        }
+      },
+      "magicalBonus": {
+        "label": "Magical Bonus"
+      },
+      "properties": {
+        "label": "Consumable Properties"
+      },
+      "uses": {
+        "autoDestroy": {
+          "label": "Destroy on Empty",
+          "hint": "Reduce the item's quantity by 1 whenever all of its limited uses are expended."
+        }
+      }
+    },
+    "Category": {
+      "Poison": "Poison"
+    },
+    "Type": {
+      "Ammunition": {
+        "Label": "Ammunition",
+        "Arrow": "Arrow",
+        "Bolt": "Bolt",
+        "BulletRifle": "Bullet, Rifle",
+        "BulletPistol": "Bullet, Pistol",
+        "BulletSling": "Bullet, Sling",
+        "EnergyCell": "Energy Cell",
+        "Needle": "Needle",
+        "ShellShotgun": "Shotgun Shell"
+      },
+      "Food": {
+        "Label": "Food"
+      },
+      "Poison": {
+        "Label": "Poison",
+        "Contact": "Contact",
+        "Ingested": "Ingested",
+        "Inhaled": "Inhaled",
+        "Injury": "Injury"
+      },
+      "Potion": {
+        "Label": "Potion"
+      },
+      "Rod": {
+        "Label": "Rod"
+      },
+      "Scroll": {
+        "Label": "Scroll"
+      },
+      "Trinket": {
+        "Label": "Trinket"
+      },
+      "Wand": {
+        "Label": "Wand"
+      },
+      "Wondrous": {
+        "Label": "Wondrous Item"
+      }
+    }
+  },
+  "MYTHICREALMS.ConsumableUseWarnStart": "This consumable has",
+  "MYTHICREALMS.ConsumableUseWarnEnd": "of the current unit",
+  "MYTHICREALMS.ConsumableUnitWarn": "units remaining",
+  "MYTHICREALMS.ConsumableLastChargeWarn": "This is the last charge of this unit and consuming it will also reduce the item's quantity by 1",
+  "MYTHICREALMS.ConsumableWithoutCharges": "available units to use",
+  "MYTHICREALMS.CONSUMPTION": {
+    "FIELDS": {
+      "consumption": {
+        "label": "Consumption",
+        "scaling": {
+          "abbr": "Scaling",
+          "label": "Consumption Scaling",
+          "allowed": {
+            "label": "Allow Scaling",
+            "hint": "Can an activity not on a spell be activated at higher levels?"
+          },
+          "max": {
+            "label": "Max Scaling",
+            "hint": "Maximum number of scaling levels for this item, including the base level."
+          }
+        },
+        "spellSlot": {
+          "label": "Consume Spell Slot",
+          "hint": "Should using this activity consume a slot for this spell?"
+        },
+        "targets": {
+          "label": "Consumption Targets",
+          "hint": "Targets of possible consumption when this activity is activated.",
+          "FIELDS": {
+            "type": {
+              "label": "Consumption Type",
+              "hint": "Type of consumption target."
+            },
+            "target": {
+              "label": "Consumption Target",
+              "hint": "Specific target to be consumed."
+            },
+            "value": {
+              "label": "Consumption Amount",
+              "hint": "Enter a negative value to restore rather than consume."
+            },
+            "scaling": {
+              "label": "Consumption Scaling",
+              "mode": {
+                "label": "Scaling Mode",
+                "hint": "How consumption should be scaled."
+              },
+              "formula": {
+                "label": "Scaling Formula",
+                "hint": "Custom scaling of consumption amount per level."
+              }
+            }
+          }
+        }
+      }
+    },
+    "Action": {
+      "ConsumeResource": "Consume Resource",
+      "Create": "Create Consumption Target",
+      "Delete": "Delete Consumption Target",
+      "RefundResource": "Refund Resource"
+    },
+    "Scaling": {
+      "Amount": "Amount",
+      "Automatic": "Automatic",
+      "None": "No Scaling",
+      "SlotLevel": "Slot Level"
+    },
+    "Target": {
+      "ThisItem": "This Item",
+      "UnknownItem": "an unknown item"
+    },
+    "Type": {
+      "Action": {
+        "Prompt": "Consume {type}?",
+        "PromptHint": "Spend {cost} ({available} available)."
+      },
+      "ActivityUses": {
+        "Label": "Activity Uses",
+        "PromptDecrease": "Consume Activity Use?",
+        "PromptIncrease": "Restore Activity Use?",
+        "PromptHintDecrease": "Spend <strong>{cost}</strong> {use} of this activity ({available} {availableUse} available).",
+        "PromptHintIncrease": "Recover <strong>{cost}</strong> {use} of this activity.",
+        "Warning": "uses on {item}'s activity {activity}"
+      },
+      "Attribute": {
+        "Label": "Attribute",
+        "NonEmbeddedHint": "Path of the attribute to consume (e.g. attributes.exhaustion, spells.pact.value).",
+        "PromptDecrease": "Consume Attribute?",
+        "PromptIncrease": "Restore Attribute?",
+        "PromptHintDecrease": "Decrease <code>{attribute}</code> by <strong>{cost}</strong> (currently {current}).",
+        "PromptHintIncrease": "Increase <code>{attribute}</code> by <strong>{cost}</strong> (currently {current}).",
+        "Warning": "{attribute} amount"
+      },
+      "HitDice": {
+        "Label": "Hit Dice",
+        "PromptDecrease": "Consume Hit Die?",
+        "PromptIncrease": "Restore Hit Die?",
+        "PromptHintDecrease": "Spend <strong>{cost}</strong> {denomination} {die} ({available} remaining).",
+        "PromptHintIncrease": "Recover <strong>{cost}</strong> {denomination} {die}.",
+        "Warning": "{denomination} hit dice"
+      },
+      "HitDie": {
+        "one": "hit die",
+        "other": "hit dice"
+      },
+      "ItemUses": {
+        "Label": "Item Uses",
+        "NonEmbeddedHint": "Item identifier or UUID of item in compendium that will be linked automatically to matching item on sheet.",
+        "PromptDecrease": "Consume Item Use?",
+        "PromptIncrease": "Restore Item Use?",
+        "PromptHintDecrease": "Spend <strong>{cost}</strong> {use} of {item} ({available} {availableUse} available).",
+        "PromptHintIncrease": "Recover <strong>{cost}</strong> {use} of {item}.",
+        "Warning": "uses on {name}"
+      },
+      "Material": {
+        "Label": "Material",
+        "NonEmbeddedHint": "Item identifier or UUID of item in compendium that will be linked automatically to matching item on sheet.",
+        "PromptDecrease": "Consume Material?",
+        "PromptIncrease": "Restore Material?",
+        "PromptHintDecrease": "Reduce quantity of {item} by <strong>{cost}</strong> ({quantity} remaining).",
+        "PromptHintIncrease": "Increase quantity of {item} by <strong>{cost}</strong>.",
+        "Warning": "of {name}"
+      },
+      "SpellSlot": {
+        "one": "{level} slot",
+        "other": "{level} slots"
+      },
+      "SpellSlots": {
+        "Label": "Spell Slots",
+        "PromptDecrease": "Consume Spell Slot?",
+        "PromptIncrease": "Restore Spell Slot?",
+        "PromptHintDecrease": "Spend <strong>{cost}</strong> {slot} ({available} remaining).",
+        "PromptHintIncrease": "Recover <strong>{cost}</strong> {slot}.",
+        "Warning": "{level} slots"
+      },
+      "Use": {
+        "one": "use",
+        "other": "uses"
+      }
+    },
+    "Warning": {
+      "MissingAttribute": "Attribute {attribute} configured to be consumed by {activity} activity on {item} could not be found.",
+      "MissingHitDice": "Actor does not have a class with a {denomination} hit die.",
+      "MissingItem": "Item configured to be consumed by {activity} activity on {item} could not be found.",
+      "MissingSpellSlot": "No {level} slots available.",
+      "None": "No {type} available to spend, {cost} required.",
+      "NotEnough": "Not enough {type} available to spend, {cost} required and only {available} available.",
+      "WillDestroy": "Consuming {item} will spend its final use and it will be destroyed."
+    }
   }
 }
