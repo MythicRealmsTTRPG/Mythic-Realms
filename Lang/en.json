@@ -2811,283 +2811,298 @@
     }
   },
   "MYTHICREALMS.Habitat": {
-  "Categories": {
-    "Any": "Any",
-    "Arctic": "Arctic",
-    "Coastal": "Coastal",
-    "Desert": "Desert",
-    "Forest": "Forest",
-    "Grassland": "Grassland",
-    "Hill": "Hill",
-    "Mountain": "Mountain",
-    "Planar": "Planar",
-    "Swamp": "Swamp",
-    "Underdark": "Underdark",
-    "Underwater": "Underwater",
-    "Urban": "Urban"
+    "Categories": {
+      "Any": "Any",
+      "Arctic": "Arctic",
+      "Coastal": "Coastal",
+      "Desert": "Desert",
+      "Forest": "Forest",
+      "Grassland": "Grassland",
+      "Hill": "Hill",
+      "Mountain": "Mountain",
+      "Planar": "Planar",
+      "Swamp": "Swamp",
+      "Underdark": "Underdark",
+      "Underwater": "Underwater",
+      "Urban": "Urban"
+    },
+    "Configuration": {
+      "Custom": "Custom",
+      "Label": "Habitat",
+      "Legend": "Categories",
+      "Subtype": "{type} Subtype",
+      "Title": "Configure Habitat"
+    },
+    "Subtype": "{type} ({subtype})"
   },
-  "Configuration": {
-    "Custom": "Custom",
-    "Label": "Habitat",
-    "Legend": "Categories",
-    "Subtype": "{type} Subtype",
-    "Title": "Configure Habitat"
-  },
-  "Subtype": "{type} ({subtype})"
-},
-"MYTHICREALMS.Hair": "Hair",
-"MYTHICREALMS.HalfProficient": "Half Proficient",
-
-"MYTHICREALMS.HEAL": {
-  "FIELDS": {
-    "healing": {
-      "label": "Healing",
-      "bonus": {
-        "label": "Healing Bonus",
-        "hint": "Bonus added to the healing roll."
-      },
-      "custom": {
-        "label": "Custom Healing Formula",
-        "enabled": {
-          "label": "Enable Custom Formula",
-          "hint": "Should the custom formula be used rather than the default dice."
+  "MYTHICREALMS.Hair": "Hair",
+  "MYTHICREALMS.HalfProficient": "Half Proficient",
+  "MYTHICREALMS.HEAL": {
+    "FIELDS": {
+      "healing": {
+        "label": "Healing",
+        "bonus": {
+          "label": "Healing Bonus",
+          "hint": "Bonus added to the healing roll."
         },
-        "formula": {
-          "label": "Healing Formula",
-          "hint": "Custom healing formula."
-        }
-      },
-      "denomination": {
-        "label": "Die Denomination",
-        "hint": "Denomination of the dice to roll."
-      },
-      "number": {
-        "label": "Die Number",
-        "hint": "Number of dice to roll."
-      },
-      "scaling": {
-        "label": "Healing Scaling",
-        "mode": {
-          "label": "Scaling Mode",
-          "hint": "Method by which the scaling increase is calculated."
+        "custom": {
+          "label": "Custom Healing Formula",
+          "enabled": {
+            "label": "Enable Custom Formula",
+            "hint": "Should the custom formula be used rather than the default dice."
+          },
+          "formula": {
+            "label": "Healing Formula",
+            "hint": "Custom healing formula."
+          }
+        },
+        "denomination": {
+          "label": "Die Denomination",
+          "hint": "Denomination of the dice to roll."
         },
         "number": {
-          "label": "Dice Scaling",
-          "hint": "Number of dice to increase for each scaling step. Will be applied to the first die found in the healing formula if more than one is present."
+          "label": "Die Number",
+          "hint": "Number of dice to roll."
         },
-        "formula": {
-          "label": "Scaling Formula",
-          "hint": "Arbitrary scaling formula that will be multiplied for each scaling step and added to the original formula."
+        "scaling": {
+          "label": "Healing Scaling",
+          "mode": {
+            "label": "Scaling Mode",
+            "hint": "Method by which the scaling increase is calculated."
+          },
+          "number": {
+            "label": "Dice Scaling",
+            "hint": "Number of dice to increase for each scaling step. Will be applied to the first die found in the healing formula if more than one is present."
+          },
+          "formula": {
+            "label": "Scaling Formula",
+            "hint": "Arbitrary scaling formula that will be multiplied for each scaling step and added to the original formula."
+          }
+        },
+        "types": {
+          "label": "Healing Types",
+          "hint": "Type of healing inflicted or multiple for the user to select from."
         }
-      },
-      "types": {
-        "label": "Healing Types",
-        "hint": "Type of healing inflicted or multiple for the user to select from."
       }
+    },
+    "Hint": "Heal a creature",
+    "Title": "Heal"
+  },
+  "MYTHICREALMS.Healing": "Healing",
+  "MYTHICREALMS.HealingRoll": "Healing Roll",
+  "MYTHICREALMS.HealingTemp": "Temporary Hit Points",
+  "MYTHICREALMS.Height": "Height",
+  "MYTHICREALMS.HITPOINTS": {
+    "Counted": {
+      "one": "{number} hit point",
+      "other": "{number} hit points"
+    },
+    "DT": {
+      "abbr": "DT"
+    },
+    "Other": {
+      "label": "Other Options"
     }
   },
-  "Hint": "Heal a creature",
-  "Title": "Heal"
-},
-
-"MYTHICREALMS.Healing": "Healing",
-"MYTHICREALMS.HealingRoll": "Healing Roll",
-"MYTHICREALMS.HealingTemp": "Temporary Hit Points",
-"MYTHICREALMS.Height": "Height",
-
-"MYTHICREALMS.HITPOINTS": {
-  "Counted": {
-    "one": "{number} hit point",
-    "other": "{number} hit points"
+  "MYTHICREALMS.HitPoints": "Hit Points",
+  "MYTHICREALMS.HitPointsBonusLevel": "Per Level Bonus",
+  "MYTHICREALMS.HitPointsBonusOverall": "Overall Bonus",
+  "MYTHICREALMS.HitPointsConfig": "Configure Hit Points",
+  "MYTHICREALMS.HitPointsCurrent": "Current Hit Points",
+  "MYTHICREALMS.HitPointsMax": "Maximum Hit Points",
+  "MYTHICREALMS.HitPointsMin": "Minimum Hit Points",
+  "MYTHICREALMS.HitPointsOverride": "Maximum Override",
+  "MYTHICREALMS.HitPointsOverrideHint": "Override automatically calculated hit points, ignoring any HP from classes, bonuses, and ability modifier.",
+  "MYTHICREALMS.HitPointsTemp": "Temporary Hit Points",
+  "MYTHICREALMS.HitPointsTempShort": "Temporary HP",
+  "MYTHICREALMS.HitPointsTempMax": "Temporary Maximum",
+  "MYTHICREALMS.HitPointsTempMaxHint": "Temporary change to the maximum HP.",
+  "MYTHICREALMS.HitPointsTempMaxShort": "Temp Max HP",
+  "MYTHICREALMS.HP": "HP",
+  "MYTHICREALMS.HPFormula": "Health Formula",
+  "MYTHICREALMS.HPFormulaError": "The provided hit point formula could not be evaluated.",
+  "MYTHICREALMS.HPFormulaRollMessage": "Roll Hit Point Formula",
+  "MYTHICREALMS.HITDICE": {
+    "Abbreviation": "HD",
+    "Action": {
+      "Decrease": "Decrease",
+      "Increase": "Increase"
+    },
+    "Available": "{number} available",
+    "Config": "Adjust Hit Dice",
+    "Counted": {
+      "one": "{number} hit die",
+      "other": "{number} hit dice"
+    }
   },
-  "DT": {
-    "abbr": "DT"
+  "MYTHICREALMS.HitDie": "Hit Die",
+  "MYTHICREALMS.HitDice": "Hit Dice",
+  "MYTHICREALMS.HitDiceConfig": "Adjust Hit Dice",
+  "MYTHICREALMS.HitDiceConfigHint": "Adjust remaining hit dice levels for each class.",
+  "MYTHICREALMS.HitDiceMax": "Maximum Hit Dice",
+  "MYTHICREALMS.HitDiceRemaining": "Remaining Hit Dice",
+  "MYTHICREALMS.HitDiceRoll": "Roll Hit Dice",
+  "MYTHICREALMS.HitDiceWarn": "{name} has no available {formula} Hit Dice remaining!",
+  "MYTHICREALMS.HitDiceNPCWarn": "{name} has no available Hit Dice remaining!",
+  "MYTHICREALMS.Ideals": "Ideals",
+  "MYTHICREALMS.Identified": "Identified",
+  "MYTHICREALMS.Identifier": "Identifier",
+  "MYTHICREALMS.IdentifierError": "An identifier can only contain letters (a-z), numbers (0-9), dashes (-), and underscores (_).",
+  "MYTHICREALMS.Identify": "Identify",
+  "MYTHICREALMS.Immunities": "Immunities",
+  "MYTHICREALMS.Initiative": "Initiative",
+  "MYTHICREALMS.InitiativeAbbr": "Init",
+  "MYTHICREALMS.InitiativeBonus": "Initiative Bonus",
+  "MYTHICREALMS.InitiativeRoll": "Initiative Roll",
+  "MYTHICREALMS.InitiativeConfig": "Configure Initiative",
+  "MYTHICREALMS.InitiativeConfigHint": "Configure initiative modifiers and bonuses which apply to this Actor.",
+  "MYTHICREALMS.Inspiration": "Inspiration",
+  "MYTHICREALMS.Inventory": "Inventory",
+  "MYTHICREALMS.InventorySearch": "Search inventory",
+  "MYTHICREALMS.Issues": "Issues",
+  "MYTHICREALMS.ItemActionType": "Action Type",
+  "MYTHICREALMS.ItemActivation": "Activation",
+  "MYTHICREALMS.ItemActivationCondition": "Activation Condition",
+  "MYTHICREALMS.ItemActivationCost": "Activation Cost",
+  "MYTHICREALMS.ItemActivationType": "Activation Type",
+  "MYTHICREALMS.ItemAmmoProperties": "Ammunition Properties",
+  "MYTHICREALMS.ItemAttackBonus": "Attack Roll Bonus",
+  "MYTHICREALMS.ItemAttackFlat": "Flat Bonus",
+  "MYTHICREALMS.ItemAttackFlatHint": "If checked, don't add proficiency, ability modifier, or any other bonuses to attack roll except what is included here.",
+  "MYTHICREALMS.ItemBackgroundDetails": "Background Details",
+  "MYTHICREALMS.ItemClassDetails": "Class Details",
+  "MYTHICREALMS.ItemConsumableActivation": "Consumable Activation",
+  "MYTHICREALMS.ItemConsumableUsage": "Consumable Usage",
+  "MYTHICREALMS.ItemConsumableDetails": "Consumable Details",
+  "MYTHICREALMS.ItemConsumableProperties": "Consumable Properties",
+  "MYTHICREALMS.ItemConsumableStatus": "Consumable Status",
+  "MYTHICREALMS.ItemConsumableSubtype": "{category} Type",
+  "MYTHICREALMS.ItemConsumableType": "Consumable Type",
+  "MYTHICREALMS.ItemCreate": "Create Item",
+  "MYTHICREALMS.ItemCritThreshold": "Critical Hit Threshold",
+  "MYTHICREALMS.ItemCritExtraDamage": "Extra Critical Hit Damage",
+  "MYTHICREALMS.ItemDelete": "Delete Item",
+  "MYTHICREALMS.ItemEdit": "Edit Item",
+  "MYTHICREALMS.ItemEquipmentAction": "Equipment Action",
+  "MYTHICREALMS.ItemEquipmentBase": "Base Equipment",
+  "MYTHICREALMS.ItemEquipmentDetails": "Equipment Details",
+  "MYTHICREALMS.ItemEquipmentDexMod": "Max. Dexterity Modifier",
+  "MYTHICREALMS.ItemEquipmentDexModAbbr": "Max Dex",
+  "MYTHICREALMS.ItemEquipmentProperties": "Equipment Properties",
+  "MYTHICREALMS.ItemEquipmentStatus": "Equipment Status",
+  "MYTHICREALMS.ItemEquipmentStealthDisav": "Imposes Stealth Disadvantage",
+  "MYTHICREALMS.ItemEquipmentType": "Equipment Type",
+  "MYTHICREALMS.ItemEquipmentUsage": "Equipment Usage",
+  "MYTHICREALMS.ItemFacilityDetails": "Facility Details",
+  "MYTHICREALMS.ItemFeatureDetails": "Feature Details",
+  "MYTHICREALMS.ItemFeatureProperties": "Feature Properties",
+  "MYTHICREALMS.ItemFeatureSubtype": "{category} Type",
+  "MYTHICREALMS.ItemFeatureType": "Feature Type",
+  "MYTHICREALMS.ItemLootDetails": "Loot Details",
+  "MYTHICREALMS.ItemLootProperties": "Loot Properties",
+  "MYTHICREALMS.ItemLootSubtype": "{category} Type",
+  "MYTHICREALMS.ItemLootType": "Loot Type",
+  "MYTHICREALMS.ItemName": "Item Name",
+  "MYTHICREALMS.ItemNew": "New {type}",
+  "MYTHICREALMS.ItemRarityCommon": "common",
+  "MYTHICREALMS.ItemRarityMundane": "mundane",
+  "MYTHICREALMS.ItemRarityUncommon": "uncommon",
+  "MYTHICREALMS.ItemRarityRare": "rare",
+  "MYTHICREALMS.ItemRarityVeryRare": "very rare",
+  "MYTHICREALMS.ItemRarityLegendary": "legendary",
+  "MYTHICREALMS.ItemRarityArtifact": "artifact",
+  "MYTHICREALMS.ItemRechargeCheck": "{name} recharge check - {result}",
+  "MYTHICREALMS.ItemRechargeFailure": "failure!",
+  "MYTHICREALMS.ItemRechargeSuccess": "success!",
+  "MYTHICREALMS.ItemRecoveryRoll": "{name} recovers {count} charges",
+  "MYTHICREALMS.ItemLossRoll": "{name} loses {count} charges",
+  "MYTHICREALMS.ItemRecoveryRollMax": "{name} recovers all charges",
+  "MYTHICREALMS.ItemRecoveryFormulaWarning": "Unable to recover uses for {name}. Invalid recovery formula '{formula}' ({uuid}).",
+  "MYTHICREALMS.ItemRequiredStr": "Required Strength",
+  "MYTHICREALMS.Items": "Items",
+  "MYTHICREALMS.ItemSiegeProperties": "Siege Properties",
+  "MYTHICREALMS.ItemSpeciesDetails": "Species Details",
+  "MYTHICREALMS.ItemSpeciesDetailsLegacy": "Race Details",
+  "MYTHICREALMS.ItemSubclassDetails": "Subclass Details",
+  "MYTHICREALMS.ItemToolBase": "Base Tool",
+  "MYTHICREALMS.ItemToolBonus": "Tool Bonus",
+  "MYTHICREALMS.ItemToolDetails": "Tool Details",
+  "MYTHICREALMS.ItemToolProficiency": "Tool Proficiency",
+  "MYTHICREALMS.ItemToolProperties": "Tool Properties",
+  "MYTHICREALMS.ItemToolStatus": "Tool Status",
+  "MYTHICREALMS.ItemToolType": "Tool Type",
+  "MYTHICREALMS.ItemToolUsage": "Tool Usage",
+  "MYTHICREALMS.ItemVehicleProperties": "Vehicle Properties",
+  "MYTHICREALMS.ItemView": "View Item",
+  "MYTHICREALMS.ItemWeaponAttack": "Weapon Attack",
+  "MYTHICREALMS.ItemWeaponBase": "Base Weapon",
+  "MYTHICREALMS.ItemWeaponDetails": "Weapon Details",
+  "MYTHICREALMS.ItemWeaponProperties": "Weapon Properties",
+  "MYTHICREALMS.ItemWeaponStatus": "Weapon Status",
+  "MYTHICREALMS.ItemWeaponType": "Weapon Type",
+  "MYTHICREALMS.ItemWeaponUsage": "Weapon Usage",
+  "MYTHICREALMS.ITEM": {
+    "Category": {
+      "Label": "Category",
+      "Physical": "Physical"
+    },
+    "Property": {
+      "Adamantine": "Adamantine",
+      "Ammunition": "Ammunition",
+      "Concentration": "Concentration",
+      "Finesse": "Finesse",
+      "Firearm": "Firearm",
+      "Focus": "Focus",
+      "Heavy": "Heavy",
+      "Light": "Light",
+      "Loading": "Loading",
+      "Material": "Material",
+      "Magical": "Magical",
+      "Reach": "Reach",
+      "Reload": "Reload",
+      "Returning": "Returning",
+      "Ritual": "Ritual",
+      "Sidekick": "Sidekick",
+      "Silvered": "Silvered",
+      "Somatic": "Somatic",
+      "Special": "Special",
+      "StealthDisadvantage": "Stealth Disadvantage",
+      "Thrown": "Thrown",
+      "Trait": "Passive Trait",
+      "TwoHanded": "Two-Handed",
+      "Versatile": "Versatile",
+      "Verbal": "Verbal",
+      "WeightlessContents": "Weightless Contents"
+    },
+    "SECTIONS": {
+      "Activities": "Activities",
+      "Advancement": "Advancement",
+      "Contents": "Contents",
+      "Description": "Description",
+      "Details": "Details",
+      "Effects": "Effects"
+    }
   },
-  "Other": {
-    "label": "Other Options"
+  "MYTHICREALMS.JackOfAllTrades": "Jack of all Trades",
+  "MYTHICREALMS.JOURNALENTRY": {
+    "Action": {
+      "ConfigureNavigation": "Configure Navigation"
+    },
+    "Navigation": {
+      "Next": "Next",
+      "Previous": "Previous",
+      "Title": "Navigation",
+      "Up": "Up"
+    }
+  },
+  "MYTHICREALMS.LAIR": {
+    "Label": "Lair",
+    "Action": {
+      "Label": "Lair Action",
+      "Initiative": "Lair Action Initiative Count",
+      "Uses": "Uses Lair Action"
+    },
+    "HasLair": "Has Lair",
+    "Inside": "Inside Lair"
   }
-},
-
-"MYTHICREALMS.HitPoints": "Hit Points",
-"MYTHICREALMS.HitPointsBonusLevel": "Per Level Bonus",
-"MYTHICREALMS.HitPointsBonusOverall": "Overall Bonus",
-"MYTHICREALMS.HitPointsConfig": "Configure Hit Points",
-"MYTHICREALMS.HitPointsCurrent": "Current Hit Points",
-"MYTHICREALMS.HitPointsMax": "Maximum Hit Points",
-"MYTHICREALMS.HitPointsMin": "Minimum Hit Points",
-"MYTHICREALMS.HitPointsOverride": "Maximum Override",
-"MYTHICREALMS.HitPointsOverrideHint": "Override automatically calculated hit points, ignoring any HP from classes, bonuses, and ability modifier.",
-"MYTHICREALMS.HitPointsTemp": "Temporary Hit Points",
-"MYTHICREALMS.HitPointsTempShort": "Temporary HP",
-"MYTHICREALMS.HitPointsTempMax": "Temporary Maximum",
-"MYTHICREALMS.HitPointsTempMaxHint": "Temporary change to the maximum HP.",
-"MYTHICREALMS.HitPointsTempMaxShort": "Temp Max HP",
-"MYTHICREALMS.HP": "HP",
-"MYTHICREALMS.HPFormula": "Health Formula",
-"MYTHICREALMS.HPFormulaError": "The provided hit point formula could not be evaluated.",
-"MYTHICREALMS.HPFormulaRollMessage": "Roll Hit Point Formula",
-
-"MYTHICREALMS.HITDICE": {
-  "Abbreviation": "HD",
-  "Action": {
-    "Decrease": "Decrease",
-    "Increase": "Increase"
-  },
-  "Available": "{number} available",
-  "Config": "Adjust Hit Dice",
-  "Counted": {
-    "one": "{number} hit die",
-    "other": "{number} hit dice"
-  }
-},
-
-"MYTHICREALMS.HitDie": "Hit Die",
-"MYTHICREALMS.HitDice": "Hit Dice",
-"MYTHICREALMS.HitDiceConfig": "Adjust Hit Dice",
-"MYTHICREALMS.HitDiceConfigHint": "Adjust remaining hit dice levels for each class.",
-"MYTHICREALMS.HitDiceMax": "Maximum Hit Dice",
-"MYTHICREALMS.HitDiceRemaining": "Remaining Hit Dice",
-"MYTHICREALMS.HitDiceRoll": "Roll Hit Dice",
-"MYTHICREALMS.HitDiceWarn": "{name} has no available {formula} Hit Dice remaining!",
-"MYTHICREALMS.HitDiceNPCWarn": "{name} has no available Hit Dice remaining!",
-"MYTHICREALMS.Ideals": "Ideals",
-"MYTHICREALMS.Identified": "Identified",
-"MYTHICREALMS.Identifier": "Identifier",
-"MYTHICREALMS.IdentifierError": "An identifier can only contain letters (a-z), numbers (0-9), dashes (-), and underscores (_).",
-"MYTHICREALMS.Identify": "Identify",
-"MYTHICREALMS.Immunities": "Immunities",
-"MYTHICREALMS.Initiative": "Initiative",
-"MYTHICREALMS.InitiativeAbbr": "Init",
-"MYTHICREALMS.InitiativeBonus": "Initiative Bonus",
-"MYTHICREALMS.InitiativeRoll": "Initiative Roll",
-"MYTHICREALMS.InitiativeConfig": "Configure Initiative",
-"MYTHICREALMS.InitiativeConfigHint": "Configure initiative modifiers and bonuses which apply to this Actor.",
-"MYTHICREALMS.Inspiration": "Inspiration",
-"MYTHICREALMS.Inventory": "Inventory",
-"MYTHICREALMS.InventorySearch": "Search inventory",
-"MYTHICREALMS.Issues": "Issues",
-"MYTHICREALMS.ItemActionType": "Action Type",
-"MYTHICREALMS.ItemActivation": "Activation",
-"MYTHICREALMS.ItemActivationCondition": "Activation Condition",
-"MYTHICREALMS.ItemActivationCost": "Activation Cost",
-"MYTHICREALMS.ItemActivationType": "Activation Type",
-"MYTHICREALMS.ItemAmmoProperties": "Ammunition Properties",
-"MYTHICREALMS.ItemAttackBonus": "Attack Roll Bonus",
-"MYTHICREALMS.ItemAttackFlat": "Flat Bonus",
-"MYTHICREALMS.ItemAttackFlatHint": "If checked, don't add proficiency, ability modifier, or any other bonuses to attack roll except what is included here.",
-"MYTHICREALMS.ItemBackgroundDetails": "Background Details",
-"MYTHICREALMS.ItemClassDetails": "Class Details",
-"MYTHICREALMS.ItemConsumableActivation": "Consumable Activation",
-"MYTHICREALMS.ItemConsumableUsage": "Consumable Usage",
-"MYTHICREALMS.ItemConsumableDetails": "Consumable Details",
-"MYTHICREALMS.ItemConsumableProperties": "Consumable Properties",
-"MYTHICREALMS.ItemConsumableStatus": "Consumable Status",
-"MYTHICREALMS.ItemConsumableSubtype": "{category} Type",
-"MYTHICREALMS.ItemConsumableType": "Consumable Type",
-"MYTHICREALMS.ItemCreate": "Create Item",
-"MYTHICREALMS.ItemCritThreshold": "Critical Hit Threshold",
-"MYTHICREALMS.ItemCritExtraDamage": "Extra Critical Hit Damage",
-"MYTHICREALMS.ItemDelete": "Delete Item",
-"MYTHICREALMS.ItemEdit": "Edit Item",
-"MYTHICREALMS.ItemEquipmentAction": "Equipment Action",
-"MYTHICREALMS.ItemEquipmentBase": "Base Equipment",
-"MYTHICREALMS.ItemEquipmentDetails": "Equipment Details",
-"MYTHICREALMS.ItemEquipmentDexMod": "Max. Dexterity Modifier",
-"MYTHICREALMS.ItemEquipmentDexModAbbr": "Max Dex",
-"MYTHICREALMS.ItemEquipmentProperties": "Equipment Properties",
-"MYTHICREALMS.ItemEquipmentStatus": "Equipment Status",
-"MYTHICREALMS.ItemEquipmentStealthDisav": "Imposes Stealth Disadvantage",
-"MYTHICREALMS.ItemEquipmentType": "Equipment Type",
-"MYTHICREALMS.ItemEquipmentUsage": "Equipment Usage",
-"MYTHICREALMS.ItemFacilityDetails": "Facility Details",
-"MYTHICREALMS.ItemFeatureDetails": "Feature Details",
-"MYTHICREALMS.ItemFeatureProperties": "Feature Properties",
-"MYTHICREALMS.ItemFeatureSubtype": "{category} Type",
-"MYTHICREALMS.ItemFeatureType": "Feature Type",
-"MYTHICREALMS.ItemLootDetails": "Loot Details",
-"MYTHICREALMS.ItemLootProperties": "Loot Properties",
-"MYTHICREALMS.ItemLootSubtype": "{category} Type",
-"MYTHICREALMS.ItemLootType": "Loot Type",
-"MYTHICREALMS.ItemName": "Item Name",
-"MYTHICREALMS.ItemNew": "New {type}",
-"MYTHICREALMS.ItemRarityCommon": "common",
-"MYTHICREALMS.ItemRarityMundane": "mundane",
-"MYTHICREALMS.ItemRarityUncommon": "uncommon",
-"MYTHICREALMS.ItemRarityRare": "rare",
-"MYTHICREALMS.ItemRarityVeryRare": "very rare",
-"MYTHICREALMS.ItemRarityLegendary": "legendary",
-"MYTHICREALMS.ItemRarityArtifact": "artifact",
-"MYTHICREALMS.ItemRechargeCheck": "{name} recharge check - {result}",
-"MYTHICREALMS.ItemRechargeFailure": "failure!",
-"MYTHICREALMS.ItemRechargeSuccess": "success!",
-"MYTHICREALMS.ItemRecoveryRoll": "{name} recovers {count} charges",
-"MYTHICREALMS.ItemLossRoll": "{name} loses {count} charges",
-"MYTHICREALMS.ItemRecoveryRollMax": "{name} recovers all charges",
-"MYTHICREALMS.ItemRecoveryFormulaWarning": "Unable to recover uses for {name}. Invalid recovery formula '{formula}' ({uuid}).",
-"MYTHICREALMS.ItemRequiredStr": "Required Strength",
-"MYTHICREALMS.Items": "Items",
-"MYTHICREALMS.ItemSiegeProperties": "Siege Properties",
-"MYTHICREALMS.ItemSpeciesDetails": "Species Details",
-"MYTHICREALMS.ItemSpeciesDetailsLegacy": "Race Details",
-"MYTHICREALMS.ItemSubclassDetails": "Subclass Details",
-"MYTHICREALMS.ItemToolBase": "Base Tool",
-"MYTHICREALMS.ItemToolBonus": "Tool Bonus",
-"MYTHICREALMS.ItemToolDetails": "Tool Details",
-"MYTHICREALMS.ItemToolProficiency": "Tool Proficiency",
-"MYTHICREALMS.ItemToolProperties": "Tool Properties",
-"MYTHICREALMS.ItemToolStatus": "Tool Status",
-"MYTHICREALMS.ItemToolType": "Tool Type",
-"MYTHICREALMS.ItemToolUsage": "Tool Usage",
-"MYTHICREALMS.ItemVehicleProperties": "Vehicle Properties",
-"MYTHICREALMS.ItemView": "View Item",
-"MYTHICREALMS.ItemWeaponAttack": "Weapon Attack",
-"MYTHICREALMS.ItemWeaponBase": "Base Weapon",
-"MYTHICREALMS.ItemWeaponDetails": "Weapon Details",
-"MYTHICREALMS.ItemWeaponProperties": "Weapon Properties",
-"MYTHICREALMS.ItemWeaponStatus": "Weapon Status",
-"MYTHICREALMS.ItemWeaponType": "Weapon Type",
-"MYTHICREALMS.ItemWeaponUsage": "Weapon Usage",
-
-"MYTHICREALMS.ITEM": {
-  "Category": {
-    "Label": "Category",
-    "Physical": "Physical"
-  },
-  "Property": {
-    "Adamantine": "Adamantine",
-    "Ammunition": "Ammunition",
-    "Concentration": "Concentration",
-    "Finesse": "Finesse",
-    "Firearm": "Firearm",
-    "Focus": "Focus",
-    "Heavy": "Heavy",
-    "Light": "Light",
-    "Loading": "Loading",
-    "Material": "Material",
-    "Magical": "Magical",
-    "Reach": "Reach",
-    "Reload": "Reload",
-    "Returning": "Returning",
-    "Ritual": "Ritual",
-    "Sidekick": "Sidekick",
-    "Silvered": "Silvered",
-    "Somatic": "Somatic",
-    "Special": "Special",
-    "StealthDisadvantage": "Stealth Disadvantage",
-    "Thrown": "Thrown",
-    "Trait": "Passive Trait",
-    "TwoHanded": "Two-Handed",
-    "Versatile": "Versatile",
-    "Verbal": "Verbal",
-    "WeightlessContents": "Weightless Contents"
-  },
-  "SECTIONS": {
-    "Activities": "Activities",
-    "Advancement": "Advancement",
-    "Contents": "Contents",
-    "Description": "Description",
-    "Details": "Details",
-    "Effects": "Effects"
-  }
-},
 }
