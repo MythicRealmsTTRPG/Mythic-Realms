@@ -8,7 +8,7 @@
     "max": "13"
   },
   "url": "https://github.com/MythicRealmsTTRPG/Mythic-Realms",
-  "manifest": "",
+  "manifest": "https://raw.githubusercontent.com/MythicRealmsTTRPG/Mythic-Realms/refs/heads/main/system.json",
   "download": "",
   "authors": [
     {
