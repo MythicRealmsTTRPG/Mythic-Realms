@@ -3138,13 +3138,817 @@
       "Halfling": "Halfling",
       "Ignan": "Ignan",
       "Infernal": "Infernal",
+      "Kenderspeak": "Kenderspeak",
+      "Kobold": "Kobold",
       "Orc": "Orc",
       "Primordial": "Primordial",
+      "Shadowtongue": "Shadowtongue",
       "Sylvan": "Sylvan",
       "Terran": "Terran",
       "ThievesCant": "Thieves' Cant",
-      "Undercommon": "Undercommon"
+      "Undercommon": "Undercommon",
+      "Voidtongue": "Voidtongue",
+      "YuanTi": "Yuan-Ti"
     }
   },
   "MYTHICREALMS.Languages": "Languages",
+  "MYTHICREALMS.LegendaryAction": {
+    "Description": "Legendary Action Uses: {uses}. Immediately after another creature’s turn, the {name} can expend a use to take one of the following actions. The {name} regains all expended uses at the start of each of its turns.",
+    "DescriptionLegacy": "The {name} can take {usesNamed}, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The {name} regains spent legendary actions at the start of its turn.",
+    "Label": "Legendary Action",
+    "LabelPl": "Legendary Actions",
+    "LairUses": "{normal} ({lair} in Lair)",
+    "Max": "Maximum Legendary Actions",
+    "Ordinal": {
+      "one": "{n}st Legendary Action",
+      "two": "{n}nd Legendary Action",
+      "few": "{n}rd Legendary Action",
+      "other": "{n}th Legendary Action"
+    },
+    "Remaining": "Remaining Legendary Actions",
+    "Spent": "Spent Legendary Actions"
+  },
+  "MYTHICREALMS.LegendaryResistance": {
+    "Action": {
+      "Resist": "Legendary Resistance"
+    },
+    "Label": "Legendary Resistance",
+    "LabelPl": "Legendary Resistances",
+    "LairUses": "{normal}/Day, or {lair}/Day in Lair",
+    "Max": "Maximum Legendary Resistances",
+    "Ordinal": {
+      "one": "{n}st Legendary Resistance",
+      "two": "{n}nd Legendary Resistance",
+      "few": "{n}rd Legendary Resistance",
+      "other": "{n}th Legendary Resistance"
+    },
+    "Remaining": "Remaining Legendary Resistances",
+    "Resisted": "Used Legendary Resistance",
+    "Spent": "Spent Legendary Resistances"
+  },
+  "MYTHICREALMS.Level": "Level",
+  "MYTHICREALMS.LevelAvg": "Avg. Level",
+  "MYTHICREALMS.LevelPl": "Levels",
+  "MYTHICREALMS.LevelActionDecrease": "Level Down",
+  "MYTHICREALMS.LevelActionIncrease": "Level Up",
+  "MYTHICREALMS.LevelCount": "{ordinal} Level",
+  "MYTHICREALMS.LevelLimit": {
+    "Label": "Level Limit",
+    "Max": "Maximum Level",
+    "Min": "Minimum Level"
+  },
+  "MYTHICREALMS.LevelNumber": "Level {level}",
+  "MYTHICREALMS.LevelScaling": "Level Scaling",
+  "MYTHICREALMS.LimitedUses": "Limited Uses",
+  "MYTHICREALMS.LimitedUsesAvailable": "Remaining Uses",
+  "MYTHICREALMS.LimitedUsesMax": "Maximum Uses",
+  "MYTHICREALMS.LimitedUsesPer": "Use Recovery Mode",
+  "MYTHICREALMS.LimitedUsesPrompt": "Uses Prompt",
+  "MYTHICREALMS.LimitedUsesPromptTooltip": "If unchecked, the prompt to consume an available use will be suppressed.",
+  "MYTHICREALMS.Long": "Long",
+  "MYTHICREALMS.Loyalty": "Loyalty",
+  "MYTHICREALMS.MagicalBonus": "Magical Bonus",
+  "MYTHICREALMS.Materials": "Materials",
+  "MYTHICREALMS.Max": "Max",
+  "MYTHICREALMS.MaxCharacterLevelExceededWarn": "Character cannot be advanced past level {max}.",
+  "MYTHICREALMS.MaxClassLevelExceededWarn": "Class cannot be advanced past level {max}.",
+  "MYTHICREALMS.MaxClassLevelMinimumWarn": "Class must have at least one level.",
+  "MYTHICREALMS.Maximum": "Maximum",
+  "MYTHICREALMS.Minimum": "Minimum",
+  "MYTHICREALMS.Method": "Method",
+  "MYTHICREALMS.Modifier": "Modifier",
+  "MYTHICREALMS.ModuleArtConfigH": "Configure which module-provided art should be used.",
+  "MYTHICREALMS.ModuleArtConfigL": "Configure Art",
+  "MYTHICREALMS.ModuleArtConfigN": "Module-provided Art",
+  "MYTHICREALMS.ModuleArtConfigPortraits": "Portraits",
+  "MYTHICREALMS.ModuleArtConfigTokens": "Tokens",
+  "MYTHICREALMS.ModuleArtPriorityDecrease": "Decrease Priority",
+  "MYTHICREALMS.ModuleArtPriorityHint": "Use the arrows to adjust the priority of the art sources. When a single Actor has art provided from multiple sources, the one with the highest priority will be used.",
+  "MYTHICREALMS.ModuleArtPriorityIncrease": "Increase Priority",
+  "MYTHICREALMS.Multiple": "Multiple",
+  "MYTHICREALMS.Multiplier": "Multiplier",
+  "MYTHICREALMS.MythicActionLabel": "Mythic Action",
+  "MYTHICREALMS.Name": "Character Name",
+  "MYTHICREALMS.NameUnidentified": "Unidentified Name",
+  "MYTHICREALMS.NoCharges": "No Charges",
+  "MYTHICREALMS.None": "None",
+  "MYTHICREALMS.NoneActionLabel": "None",
+  "MYTHICREALMS.Normal": "Normal",
+  "MYTHICREALMS.NotProficient": "Not Proficient",
+  "MYTHICREALMS.Notes": "Notes",
+  "MYTHICREALMS.NPC": {
+    "ActionCostCounted": {
+      "other": "Costs {number} Actions"
+    },
+    "FIELDS": {
+      "attributes": {
+        "price": {
+          "denomination": {
+            "label": "Denomination"
+          },
+          "hint": "The hire rate per day, or the livestock purchase price.",
+          "label": "Cost",
+          "value": {
+            "label": "Amount"
+          }
+        }
+      },
+      "traits": {
+        "important": {
+          "hint": "Important NPCs track death saves, hit dice, and loyalty (if enabled). Any NPC with class levels is considered important regardless of this setting.",
+          "label": "Important NPC"
+        }
+      }
+    },
+    "Label": "NPC",
+    "SECTIONS": {
+      "Actions": "Actions",
+      "BonusActions": "Bonus Actions",
+      "LegendaryActions": "Legendary Actions",
+      "MythicActions": "Mythic Actions",
+      "Reactions": "Reactions",
+      "Traits": "Traits"
+    }
+  },
+  "MYTHICREALMS.NUMBER": {
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four",
+    "5": "five",
+    "6": "six",
+    "7": "seven",
+    "8": "eight",
+    "9": "nine",
+    "10": "ten",
+    "11": "eleven",
+    "12": "twelve",
+    "13": "thirteen",
+    "14": "fourteen",
+    "15": "fifteen"
+  },
+  "MYTHICREALMS.Number": "Number",
+  "MYTHICREALMS.OtherFormula": "Other Formula",
+  "MYTHICREALMS.ORDINAL": {
+    "one": "{number}st",
+    "two": "{number}nd",
+    "few": "{number}rd",
+    "other": "{number}th"
+  },
+  "MYTHICREALMS.PactMagic": "Pact Magic",
+  "MYTHICREALMS.Passive": "Passive",
+  "MYTHICREALMS.PassivePerception": "Passive Perception",
+  "MYTHICREALMS.Period": "Period",
+  "MYTHICREALMS.PersonalityTraits": "Personality Traits",
+  "MYTHICREALMS.Portrait": "Portrait",
+  "MYTHICREALMS.Prepared": "Prepared",
+  "MYTHICREALMS.Preparation": "Preparation",
+  "MYTHICREALMS.Prerequisites": {
+    "Header": "Feature Prerequisites",
+    "FIELDS": {
+      "prerequisites": {
+        "items": {
+          "hint": "Identifiers for items that the character must have before selecting this item.",
+          "label": "Required Items"
+        },
+        "label": "Prerequisites",
+        "level": {
+          "hint": "Character or class level required to select this feature when levelling up.",
+          "label": "Required Level"
+        },
+        "repeatable": {
+          "hint": "This feature can be chosen more than once.",
+          "label": "Repeatable"
+        }
+      }
+    },
+    "Warning": {
+      "InvalidLevel": "must be at least level {level}",
+      "Message": "{actor} {requirements} in order to take this {type}.",
+      "MissingItem": "must have previously taken {items}",
+      "NotRepeatable": "must not have taken this before"
+    }
+  },
+  "MYTHICREALMS.Price": "Price",
+  "MYTHICREALMS.Proficiency": "Proficiency",
+  "MYTHICREALMS.ProficiencyBonus": "Proficiency Bonus",
+  "MYTHICREALMS.ProficiencyBonusAbbr": "PB",
+  "MYTHICREALMS.ProficiencyConfigurationHint": "Configure proficiency and bonuses.",
+  "MYTHICREALMS.ProficiencyConfigureTitle": "Configure {label}",
+  "MYTHICREALMS.ProficiencyLevel": "Proficiency Level",
+  "MYTHICREALMS.ProficiencyOther": "Other",
+  "MYTHICREALMS.Proficient": "Proficient",
+  "MYTHICREALMS.Properties": "Properties",
+  "MYTHICREALMS.PropertyBase": "Base",
+  "MYTHICREALMS.PropertyTotal": "Total",
+  "MYTHICREALMS.Public": "Public",
+  "MYTHICREALMS.Quality": "Quality",
+  "MYTHICREALMS.Quantity": "Quantity",
+  "MYTHICREALMS.QuantityAbbr": "Qty",
+  "MYTHICREALMS.QuantityFormula": "Quantity Formula",
+  "MYTHICREALMS.QuantityRoll": "Roll Quantities",
+  "MYTHICREALMS.RacialTraits": "Species Traits",
+  "MYTHICREALMS.RacialTraitsLegacy": "Racial Traits",
+  "MYTHICREALMS.RANGE": {
+    "FIELDS": {
+      "range": {
+        "label": "Range",
+        "long": {
+          "label": "Long Range",
+          "hint": "Far attack range of the weapon, if present on the weapon."
+        },
+        "override": {
+          "label": "Override Range",
+          "hint": "Use these range values instead of the item's when using this activity."
+        },
+        "reach": {
+          "label": "Reach"
+        },
+        "special": {
+          "label": "Special Range",
+          "hint": "Description of any special range details."
+        },
+        "units": {
+          "label": "Range Units",
+          "hint": "Units used to measure range."
+        },
+        "value": {
+          "label": "Range Value",
+          "hint": "Value of the range in the specified units, if applicable."
+        }
+      }
+    },
+    "Formatted": {
+      "Range": "range {range}",
+      "Reach": "reach {reach}"
+    }
+  },
+  "MYTHICREALMS.Range": "Range",
+  "MYTHICREALMS.RangeDistance": "Distance",
+  "MYTHICREALMS.RangeLong": "Long Range",
+  "MYTHICREALMS.RangeNormal": "Normal Range",
+  "MYTHICREALMS.RangeUnits": "Range Type or Units",
+  "MYTHICREALMS.Rarity": "Rarity",
+  "MYTHICREALMS.Reaction": "Reaction",
+  "MYTHICREALMS.ReactionAbbr": "R",
+  "MYTHICREALMS.ReactionPl": "Reactions",
+  "MYTHICREALMS.Recharge": "Recharge",
+  "MYTHICREALMS.RechargeLong": "Recharge after a Long Rest",
+  "MYTHICREALMS.RechargeShort": "Recharge after a Short or Long Rest",
+  "MYTHICREALMS.Recovery": "Recovery",
+  "MYTHICREALMS.RecoveryFormula": "Recovery Formula",
+  "MYTHICREALMS.REGIONBEHAVIORS": {
+    "DIFFICULTTERRAIN": {
+      "FIELDS": {
+        "ignoredDispositions": {
+          "hint": "Tokens with these dispositions will not be affected by this difficult terrain.",
+          "label": "Ignored Dispositions"
+        },
+        "magical": {
+          "hint": "This difficult terrain is created by a magical effect.",
+          "label": "Magical"
+        },
+        "types": {
+          "hint": "Types that best describe the source of this difficult terrain, if any.",
+          "label": "Types"
+        }
+      },
+      "Type": {
+        "All": "All Types",
+        "Ice": "Slippery Ice",
+        "Magical": "Magical",
+        "Nonmagical": "Nonmagical",
+        "Plants": "Plants or Undergrowth",
+        "Rocks": "Rubble or Rocks",
+        "Liquid": "Shallow Liquid",
+        "Mud": "Thick Mud",
+        "Sand": "Shifting Sand",
+        "Slope": "Steep Slope",
+        "Snow": "Deep Snow",
+        "Webs": "Sticking Webs"
+      }
+    },
+    "ROTATEAREA": {
+      "Action": {
+        "AddPosition": "Add Position",
+        "DeletePosition": "Delete Position",
+        "RotateToPosition": "Rotate to Position"
+      },
+      "DirectionMode": {
+        "Clockwise": "Clockwise",
+        "CounterClockwise": "Counter Clockwise",
+        "Longest": "Longest",
+        "Shortest": "Shortest"
+      },
+      "FIELDS": {
+        "directionMode": {
+          "label": "Direction Mode",
+          "hint": "How the rotation direction is decided when moving to the next position."
+        },
+        "lights": {
+          "ids": {
+            "label": "Lights"
+          }
+        },
+        "positions": {
+          "label": "Positions",
+          "element": {
+            "angle": {
+              "label": "Angle"
+            }
+          }
+        },
+        "regions": {
+          "ids": {
+            "label": "Regions"
+          }
+        },
+        "sounds": {
+          "ids": {
+            "label": "Ambient Sounds"
+          }
+        },
+        "tiles": {
+          "ids": {
+            "label": "Tiles"
+          }
+        },
+        "time": {
+          "mode": {
+            "label": "Speed Mode",
+            "hint": "How the rotation speed is determined from the rotation time, either the same regardless of the distance moved (fixed) or dependant on the distance rotated (variable)."
+          },
+          "value": {
+            "label": "Rotation Time",
+            "hint": "Time in miliseconds to rotate to the next position (in fixed mode) or to rotate 90˚ (in variable mode)."
+          }
+        },
+        "walls": {
+          "ids": {
+            "label": "Walls"
+          },
+          "link": {
+            "label": "Link Walls",
+            "hint": "Rotate any wall segments attached to the ones specified."
+          }
+        }
+      },
+      "SpeedMode": {
+        "Fixed": "Fixed (total rotation time)",
+        "Variable": "Variable (time to rotate 90˚)"
+      },
+      "Warning": {
+        "RecursiveRegion": "Cannot rotate same region that contains the behavior."
+      }
+    }
+  },
+  "MYTHICREALMS.Remaining": "Remaining",
+  "MYTHICREALMS.RequiredMaterials": "Required Materials",
+  "MYTHICREALMS.Requirements": "Requirements",
+  "MYTHICREALMS.Resistances": "Resistances",
+  "MYTHICREALMS.Resources": "Resources",
+  "MYTHICREALMS.ResourceLabel": "Label",
+  "MYTHICREALMS.ResourceMax": "Resource Maximum",
+  "MYTHICREALMS.ResourceValue": "Resource Value",
+  "MYTHICREALMS.ResourcePrimary": "Resource 1",
+  "MYTHICREALMS.ResourceSecondary": "Resource 2",
+  "MYTHICREALMS.ResourceTertiary": "Resource 3",
+  "MYTHICREALMS.REST": {
+    "Configuration": "Rest Configuration",
+    "HitDice": {
+      "AutoSpend": {
+        "Hint": "Automatically spend hit dice until they run out or health is full.",
+        "Label": "Auto Spend HD"
+      },
+      "None": "No Hit Dice remaining to roll during this rest.",
+      "Select": "Select Dice to Roll"
+    },
+    "Label": "Rest",
+    "Long": {
+      "Abbreviation": "LR",
+      "Hint": {
+        "Group": "On a long rest group members will recover hit points, hit dice, class resources, limited use item charges, and spell slots.",
+        "GroupLegacy": "On a long rest group members will recover hit points, half of their maximum hit dice, class resources, limited use item charges, and spell slots.",
+        "Normal": "On a long rest you will recover hit points, hit dice, class resources, limited use item charges, and spell slots.",
+        "NormalLegacy": "On a long rest you will recover hit points, half your maximum hit dice, class resources, limited use item charges, and spell slots."
+      },
+      "Label": "Long Rest",
+      "LabelShort": "L. Rest",
+      "Recovery": "Recovers after Long Rest",
+      "Result": {
+        "Full": "{name} takes a long rest and recovers {health} and {dice}.",
+        "HitDice": "{name} takes a long rest and recovers {dice}.",
+        "HitPoints": "{name} takes a long rest and recovers {health}.",
+        "Short": "{name} takes a long rest."
+      }
+    },
+    "NewDay": {
+      "Hint": "Recover limited use abilities which recharge at dusk, dawn, or on a new day.",
+      "Label": "New Day"
+    },
+    "RecoverTempHP": {
+      "Label": "Remove Temp HP"
+    },
+    "RecoverTempMaxHP": {
+      "Hint": "Remove any adjustments to a character's maximum Hit Points.",
+      "Label": "Recover Max HP"
+    },
+    "Request": {
+      "AutoRest": {
+        "Hint": "Automatically perform the rest for selected party actors, rather than sending a rest request to players.",
+        "Label": "Auto Rest"
+      },
+      "Label": "Rest Request"
+    },
+    "Short": {
+      "Abbreviation": "SR",
+      "Hint": {
+        "Group": "On a short rest group members can spend Hit Dice and will recover item uses.",
+        "Normal": "On a short rest you may spend remaining Hit Dice and recover item uses."
+      },
+      "Label": "Short Rest",
+      "LabelShort": "S. Rest",
+      "Recovery": "Recovers after Short Rest",
+      "Result": {
+        "Full": "{name} takes a short rest spending {dice} to recover {health}.",
+        "Short": "{name} takes a short rest."
+      }
+    },
+    "Warning": {
+      "OnlyByRequest": "Rests can only be performed at the request of the GM."
+    }
+  },
+  "MYTHICREALMS.Ritual": "Ritual",
+  "MYTHICREALMS.RitualAbbr": "R",
+  "MYTHICREALMS.ROLL": {
+    "Range": {
+      "Label": "Roll Range",
+      "Maximum": "Maximum Roll",
+      "Minimum": "Minimum Roll"
+    },
+    "Section": "{label} Rolls",
+    "Status": "Status"
+  },
+  "MYTHICREALMS.Roll": "Roll",
+  "MYTHICREALMS.RollConfiguration": {
+    "Title": "Configure Roll",
+    "Configuration": "Configuration",
+    "Rolls": "Rolls"
+  },
+  "MYTHICREALMS.RollExample": "e.g. 1d4",
+  "MYTHICREALMS.RollMode": "Roll Mode",
+  "MYTHICREALMS.RollSituationalBonus": "Situational Bonus?",
+  "MYTHICREALMS.Rule": {
+    "Tooltip": "Tooltip",
+    "Type": {
+      "Label": "Rule Type",
+      "Condition": "Condition",
+      "Rule": "Rule"
+    }
+  },
+  "MYTHICREALMS.MOVEMENT": {
+    "Action": {
+      "Configure": "Configure Movement Speed"
+    },
+    "FIELDS": {
+      "bonus": {
+        "label": "Movement Bonus"
+      },
+      "ignoredDifficultTerrain": {
+        "label": "Ignored Difficult Terrain"
+      },
+      "special": {
+        "label": "Special Movement"
+      },
+      "speeds": {
+        "label": "Movement Speeds"
+      },
+      "units": {
+        "label": "Unit"
+      }
+    },
+    "Hover": "Hover",
+    "Speed": "Combat Speed",
+    "Type": {
+      "Burrow": "Burrow",
+      "Climb": "Climb",
+      "Fly": "Fly",
+      "Speed": "Speed",
+      "Swim": "Swim",
+      "Walk": "Walk"
+    }
+  },
+  "MYTHICREALMS.Movement": "Movement",
+  "MYTHICREALMS.SAVE": {
+    "FIELDS": {
+      "damage": {
+        "label": "Save Damage",
+        "onSave": {
+          "label": "Damage on Save",
+          "hint": "How much damage should be applied on a successful save?",
+          "Full": "Full Damage",
+          "Half": "Half Damage",
+          "None": "No Damage"
+        },
+        "parts": {
+          "label": "Damage Parts",
+          "hint": "Individual damage parts to include with the roll."
+        }
+      },
+      "effects": {
+        "onSave": {
+          "label": "Always Apply",
+          "hint": "This effect will always be applied, even if the target succeeds on its saving throw."
+        }
+      },
+      "save": {
+        "label": "Save Details",
+        "ability": {
+          "label": "Challenge Abilities",
+          "hint": "Abilities that may be rolled to attempt to save."
+        },
+        "dc": {
+          "label": "Difficulty Class",
+          "calculation": {
+            "label": "DC Calculation",
+            "hint": "Method or ability used to calculate the difficulty class."
+          },
+          "formula": {
+            "label": "DC Formula",
+            "hint": "Custom formula or flat value for defining the save DC."
+          },
+          "CustomFormula": "Custom Formula",
+          "DefaultFormula": "8 + @mod + @prof"
+        }
+      }
+    },
+    "Hint": "Request a saving throw with the option of rolling damage.",
+    "OnSave": "On Save",
+    "Title": {
+      "one": "Save",
+      "other": "Saves"
+    }
+  },
+  "MYTHICREALMS.SaveBonus": "Saving Throw Bonus",
+  "MYTHICREALMS.SaveGlobalBonusHint": "This bonus applies to all saving throws made by this actor.",
+  "MYTHICREALMS.Scroll": {
+    "CreateFrom": "Create Scroll from {spell}",
+    "CreateScroll": "Create Scroll",
+    "Details": "Scroll Details",
+    "Explanation": {
+      "Label": "Explanation",
+      "Hint": "Amount of the rules on using spell scrolls to include in the created scroll.",
+      "Complete": "Complete",
+      "Reference": "Reference"
+    },
+    "RequiresConcentration": "Requires Concentration",
+    "SaveDC": "Save DC",
+    "Values": "Spell Values"
+  },
+  "MYTHICREALMS.Senses": "Senses",
+  "MYTHICREALMS.SensesConfig": "Configure Senses",
+  "MYTHICREALMS.SensesConfigHint": "Configure any special sensory perception abilities that this actor possesses.",
+  "MYTHICREALMS.SenseDarkvision": "Darkvision",
+  "MYTHICREALMS.SenseBlindsight": "Blindsight",
+  "MYTHICREALMS.SenseTremorsense": "Tremorsense",
+  "MYTHICREALMS.SenseTruesight": "Truesight",
+  "MYTHICREALMS.SenseUnits": "Units",
+  "MYTHICREALMS.SenseSpecial": "Special Senses",
+  "MYTHICREALMS.Shape": "Shape",
+  "MYTHICREALMS.SheetClass": {
+    "Character": "D&D 5e Character Sheet",
+    "ClassSummary": "D&D 5e Class Summary Sheet",
+    "Container": "D&D 5e Container Sheet",
+    "DifficultTerrain": "D&D 5e Difficult Terrain Sheet",
+    "Encounter": "D&D 5e Encounter Sheet",
+    "Group": "D&D 5e Group Sheet",
+    "Item": "D&D 5e Item Sheet",
+    "JournalEntry": "D&D 5e Journal Entry Sheet",
+    "JournalEntryLegacy": "Legacy D&D 5e Journal Entry Sheet",
+    "MapLocation": "D&D 5e Map Location Sheet",
+    "NPC": "D&D 5e NPC Sheet",
+    "RollTable": "D&D 5e Roll Table Sheet",
+    "RotateArea": "D&D 5e Rotate Area Sheet",
+    "Rule": "D&D 5e Rule Sheet",
+    "SpellList": "D&D 5e Spell List Sheet",
+    "Token": "D&D 5e Token Sheet",
+    "Vehicle": "D&D 5e Vehicle Sheet"
+  },
+  "MYTHICREALMS.SheetModeEdit": "Edit",
+  "MYTHICREALMS.SheetModePlay": "Play",
+  "MYTHICREALMS.SavingThrow": "Saving Throw",
+  "MYTHICREALMS.SavingThrowDC": "DC {dc} {ability} Saving Throw",
+  "MYTHICREALMS.SavingThrowRoll": "Roll {ability} Saving Throw",
+  "MYTHICREALMS.SavingThrowShort": "Save",
+  "MYTHICREALMS.SaveDC": "DC {dc} {ability}",
+  "MYTHICREALMS.SavePromptTitle": "{ability} Saving Throw",
+  "MYTHICREALMS.ScalingFormula": "Scaling Formula",
+  "MYTHICREALMS.ScalingMode": "Scaling Mode",
+  "MYTHICREALMS.ScalingValue": "Scaling Value",
+  "MYTHICREALMS.School": "School",
+  "MYTHICREALMS.SchoolAbj": "Abjuration",
+  "MYTHICREALMS.SchoolCon": "Conjuration",
+  "MYTHICREALMS.SchoolDiv": "Divination",
+  "MYTHICREALMS.SchoolEnc": "Enchantment",
+  "MYTHICREALMS.SchoolEvo": "Evocation",
+  "MYTHICREALMS.SchoolIll": "Illusion",
+  "MYTHICREALMS.SchoolNec": "Necromancy",
+  "MYTHICREALMS.SchoolTrs": "Transmutation",
+  "MYTHICREALMS.Size": "Size",
+  "MYTHICREALMS.SizeGargantuan": "Gargantuan",
+  "MYTHICREALMS.SizeGargantuanAbbr": "Gt",
+  "MYTHICREALMS.SizeHuge": "Huge",
+  "MYTHICREALMS.SizeHugeAbbr": "Hg",
+  "MYTHICREALMS.SizeLarge": "Large",
+  "MYTHICREALMS.SizeLargeAbbr": "Lg",
+  "MYTHICREALMS.SizeMedium": "Medium",
+  "MYTHICREALMS.SizeMediumAbbr": "Md",
+  "MYTHICREALMS.SizeSmall": "Small",
+  "MYTHICREALMS.SizeSmallAbbr": "Sm",
+  "MYTHICREALMS.SizeTiny": "Tiny",
+  "MYTHICREALMS.SizeTinyAbbr": "Tn",
+  "MYTHICREALMS.SKILL": {
+    "SECTIONS": {
+      "Details": "{label} Details",
+      "Bonuses": {
+        "Label": "{label} Bonuses",
+        "Hint": "These bonuses apply to passive scores & checks made with {label}."
+      },
+      "Global": {
+        "Label": "Global Bonuses",
+        "Hint": "These bonuses apply to checks made with any skill."
+      }
+    }
+  },
+  "MYTHICREALMS.Skill": "Skill",
+  "MYTHICREALMS.Skills": "Skills",
+  "MYTHICREALMS.SkillAcr": "Acrobatics",
+  "MYTHICREALMS.SkillAni": "Animal Handling",
+  "MYTHICREALMS.SkillArc": "Arcana",
+  "MYTHICREALMS.SkillAth": "Athletics",
+  "MYTHICREALMS.SkillDec": "Deception",
+  "MYTHICREALMS.SkillHis": "History",
+  "MYTHICREALMS.SkillIns": "Insight",
+  "MYTHICREALMS.SkillInv": "Investigation",
+  "MYTHICREALMS.SkillItm": "Intimidation",
+  "MYTHICREALMS.SkillMed": "Medicine",
+  "MYTHICREALMS.SkillNat": "Nature",
+  "MYTHICREALMS.SkillPer": "Persuasion",
+  "MYTHICREALMS.SkillPrc": "Perception",
+  "MYTHICREALMS.SkillPrf": "Performance",
+  "MYTHICREALMS.SkillRel": "Religion",
+  "MYTHICREALMS.SkillSlt": "Sleight of Hand",
+  "MYTHICREALMS.SkillSte": "Stealth",
+  "MYTHICREALMS.SkillSur": "Survival",
+  "MYTHICREALMS.SkillRoll": "Roll {ability} ({skill}) Check",
+  "MYTHICREALMS.SkillTitle": "{ability} ({skill})",
+  "MYTHICREALMS.SkillPromptTitle": "{ability} ({skill}) Check",
+  "MYTHICREALMS.SkillConfigureTitle": "Configure {skill}",
+  "MYTHICREALMS.SkillConfigure": "Configure Skill",
+  "MYTHICREALMS.SkillsConfig": "Configure Skills",
+  "MYTHICREALMS.SkillBonuses": "Skill Bonuses",
+  "MYTHICREALMS.SkillBonusCheck": "Check Bonus",
+  "MYTHICREALMS.SkillBonusPassive": "Passive Bonus",
+  "MYTHICREALMS.SkillConfigurationHint": "Configure skill proficiency and bonuses.",
+  "MYTHICREALMS.SkillGlobalBonusCheckHint": "This bonus applies to all skill checks made by this actor.",
+  "MYTHICREALMS.SkillModifierHint": "{skill} Modifier",
+  "MYTHICREALMS.SkillPassiveHint": "Passive {skill}",
+  "MYTHICREALMS.SkillPassiveSpecificHint": "Passive {ability} ({skill})",
+  "MYTHICREALMS.SkillPassiveScore": "Passive {skill} Score",
+  "MYTHICREALMS.SkillPassives": "Skill Passives",
+  "MYTHICREALMS.Skin": "Skin",
+  "MYTHICREALMS.Skip": "Skip",
+  "MYTHICREALMS.SOURCE": {
+    "FIELDS": {
+      "source": {
+        "label": "Source",
+        "book": {
+          "label": "Book"
+        },
+        "custom": {
+          "label": "Custom Label"
+        },
+        "license": {
+          "label": "License"
+        },
+        "page": {
+          "label": "Page/Section"
+        },
+        "revision": {
+          "label": "Revision"
+        },
+        "rules": {
+          "label": "Rules Version"
+        },
+        "uuid": {
+          "label": "Original Source"
+        }
+      }
+    },
+    "Action": {
+      "Configure": "Configure Source"
+    },
+    "Display": {
+      "Full": "{book} {page}",
+      "Page": "pg. {page}"
+    }
+  },
+  "MYTHICREALMS.Special": "Special",
+  "MYTHICREALMS.SpecialHint": "Special values separated by semi-colons.",
+  "MYTHICREALMS.SpecialTraits": "Special Traits",
+  "MYTHICREALMS.Species": {
+    "Label": "Species",
+    "Add": "Add Species",
+    "AddLegacy": "Add Race",
+    "Features": "Species Features",
+    "FeaturesLegacy": "Race Features",
+    "Name": "Species Name"
+  },
+  "MYTHICREALMS.Speed": "Speed",
+  "MYTHICREALMS.SpeedSpecial": "Special Movement",
+  "MYTHICREALMS.SPELL": {
+    "Embed": {
+      "CastingTimeTrigger": "{castingTime}, which you take {trigger}",
+      "Tag": {
+        "Cantrip": "{school} Cantrip",
+        "CantripLegacy": "{school} cantrip",
+        "Classes": "{levelSchool} ({classes})",
+        "Leveled": "Level {level} {school}",
+        "LeveledLegacy": "{levelOrdinal}-level {school}",
+        "Ritual": "{levelSchool} (ritual)"
+      }
+    }
+  },
+  "MYTHICREALMS.SpellAbility": "Spellcasting Ability",
+  "MYTHICREALMS.SpellAbilitySet": "Set as Primary Spellcasting Ability",
+  "MYTHICREALMS.SpellAdd": "Add Spell",
+  "MYTHICREALMS.SpellAttackBonus": "Spell Attack Bonus",
+  "MYTHICREALMS.SpellCantrip": "Cantrip",
+  "MYTHICREALMS.SpellCastConsume": "Consume Spell Slot?",
+  "MYTHICREALMS.SpellCastNoSlots": "You have no available {level} spell slots with which to cast {name}",
+  "MYTHICREALMS.SpellCastNoSlotsLeft": "You have no available spell slots with which to cast {name}!",
+  "MYTHICREALMS.SpellCastTime": "Casting Time",
+  "MYTHICREALMS.SpellCastUpcast": "Cast at Level",
+  "MYTHICREALMS.SpellcasterLevel": "Spellcaster Level",
+  "MYTHICREALMS.SpellCastingHeader": "Spell Casting",
+  "MYTHICREALMS.Spellcasting": "Spellcasting",
+  "MYTHICREALMS.SPELLCASTING": {
+    "METHODS": {
+      "AtWill": {
+        "label": "At-Will"
+      },
+      "Innate": {
+        "label": "Innate Spellcasting"
+      },
+      "Ritual": {
+        "label": "Ritual Only"
+      },
+      "Spell": {
+        "label": "Spellcasting",
+        "Full": {
+          "label": "Full Caster"
+        },
+        "Half": {
+          "label": "Half Caster"
+        },
+        "Third": {
+          "label": "Third Caster"
+        },
+        "Artificer": {
+          "label": "Artificer"
+        }
+      },
+      "Pact": {
+        "abbr": "Pact",
+        "label": "Pact Magic",
+        "Full": {
+          "label": "Pact Magic"
+        }
+      }
+    },
+    "SLOTS": {
+      "spell0": "Cantrips",
+      "spell1": "1st Level",
+      "spell2": "2nd Level",
+      "spell3": "3rd Level",
+      "spell4": "4th Level",
+      "spell5": "5th Level",
+      "spell6": "6th Level",
+      "spell7": "7th Level",
+      "spell8": "8th Level",
+      "spell9": "9th Level",
+      "spell10": "10th Level",
+      "spell11": "11th Level",
+      "spell12": "12th Level",
+      "spell13": "13th Level",
+      "spell14": "14th Level",
+      "spell15": "15th Level"
+    },
+    "STATES": {
+      "Unprepared": "Not Prepared",
+      "Prepared": "Prepared",
+      "AlwaysPrepared": "Always Prepared"
+    },
+    "Unlabeled": "Unlabeled Spellcasting"
+  }
 }
