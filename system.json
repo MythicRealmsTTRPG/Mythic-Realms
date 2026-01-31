@@ -1,7 +1,7 @@
 {
   "id": "mythicrealms",
   "title": "Mythic Realms",
-  "description": "",
+  "description": "Mythic Realms is a standalone epic-fantasy system for Foundry VTT where power carries consequence and victory reshapes the world. With original sourcebooks, mythic progression, expanded challenge scaling, and layered world systems, campaigns evolve into living chronicles of struggle, triumph, and transformation.",
   "version": "1.0.0",
   "compatibility": {
     "min": "13.347",
@@ -288,8 +288,7 @@
         "mythicrealms": {
           "sourceBook": "MythicRealms Player's Handbook",
           "types": [
-            "feat",
-            "weapon"
+            "feat"
           ]
         }
       }
@@ -343,8 +342,7 @@
         "mythicrealms": {
           "sourceBook": "MythicRealms Bestiary",
           "types": [
-            "feat",
-            "weapon"
+            "feat"
           ]
         }
       }
@@ -392,7 +390,7 @@
       "flags": {
         "mythicrealms": {
           "display": "table-of-contents",
-          "sourceBook": "Mythic Realms Core Rulebook"
+          "sourceBook": "MythicRealms Core Rulebook"
         }
       }
     },
@@ -522,7 +520,7 @@
     {
       "type": "setup",
       "url": "systems/mythicrealms/ui/official/mythicrealms-repo.png",
-      "thumbnail": "systems/dnd5e/ui/official/mythicrealms-thumbnail.png"
+      "thumbnail": "systems/mythicrealms/ui/official/mythicrealms-thumbnail.png"
     }
   ],
   "socket": true,
@@ -551,7 +549,7 @@
       }
     },
     "needsMigrationVersion": "1.0.0",
-    "compatibleMigrationVersion": "0.8",
+    "compatibleMigrationVersion": "1.0.0",
     "hotReload": {
       "extensions": [
         "css",
