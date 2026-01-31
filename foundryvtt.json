@@ -1,0 +1,17 @@
+{
+  "project": {
+    "type": "system",
+    "premium": false
+  },
+  "includes": [
+    "fonts/",
+    "icons/",
+    "json/",
+    "LICENSE.txt",
+    "README.md",
+    "mythicrealms-compiled.mjs.map",
+    "templates/",
+    "tokens/",
+    "ui/"
+  ]
+}
