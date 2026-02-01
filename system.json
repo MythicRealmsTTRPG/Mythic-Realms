@@ -507,7 +507,7 @@
     {
       "lang": "en",
       "name": "English",
-      "path": "lang/en.json",
+      "path": "Lang/en.json",
       "flags": {}
     }
   ],
