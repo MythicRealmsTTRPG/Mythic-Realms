@@ -2,7 +2,7 @@
   "id": "mythicrealms",
   "title": "Mythic Realms",
   "description": "Mythic Realms is a standalone epic-fantasy system for Foundry VTT where power carries consequence and victory reshapes the world. With original sourcebooks, mythic progression, expanded challenge scaling, and layered world systems, campaigns evolve into living chronicles of struggle, triumph, and transformation.",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "compatibility": {
     "min": "13.347",
     "max": "13"
