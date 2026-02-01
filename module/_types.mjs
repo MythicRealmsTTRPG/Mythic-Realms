@@ -12,8 +12,8 @@
  * @property {string} fullKey                             Fully written key used as alternate for enrichers.
  * @property {string} [reference]                         Reference to a rule page describing this ability.
  * @property {string} [type]                              Whether this is a "physical" or "mental" ability.
- * @property {Object<string, number|string>}  [defaults]  Default values for this ability based on actor type.
- *                                                        If a string is used, the system will attempt to fetch.
+ * @property {Object<string, number|string>} [defaults]    Default values for this ability based on actor type.
+ *                                                        If a string is used, the system will attempt to fetch
  *                                                        the value of the specified ability.
  * @property {string} [icon]                              An SVG icon that represents the ability.
  */
@@ -41,8 +41,8 @@
 
 /**
  * @callback ActivityActivationAutoConsumptionPredicate
- * @property {Activity} activity  The activity with the consumption.
- * @returns {boolean|void}        Return explicit false to block auto-consumption.
+ * @param {Activity} activity  The activity with the consumption.
+ * @returns {boolean|void}     Return explicit false to block auto-consumption.
  */
 
 /* -------------------------------------------- */
@@ -255,17 +255,17 @@
  * Encumbrance configuration data.
  *
  * @typedef EncumbranceConfiguration
- * @property {Record<string, number>} currencyPerWeight  Pieces of currency that equal a base weight (lbs or kgs).
- * @property {number} draftMultiplier                    The carry capacity multiplier to apply to draft animals pulling
- *                                                       a vehicle.
- * @property {Record<string, object>} effects            Data used to create encumbrance-related Active Effects.
- * @property {object} threshold                          Amount to multiply strength to get given capacity threshold.
+ * @property {Record<string, number>} currencyPerWeight         Pieces of currency that equal a base weight (lbs or kgs).
+ * @property {number} draftMultiplier                           The carry capacity multiplier to apply to draft animals
+ *                                                              pulling a vehicle.
+ * @property {Record<string, object>} effects                   Data used to create encumbrance-related Active Effects.
+ * @property {object} threshold                                 Amount to multiply strength to get given capacity threshold.
  * @property {Record<string, number>} threshold.encumbered
  * @property {Record<string, number>} threshold.heavilyEncumbered
  * @property {Record<string, number>} threshold.maximum
  * @property {Record<string, { ft: number, m: number }>} speedReduction  Speed reduction caused by encumbered status.
- * @property {Record<string, number>} vehicleWeightMultiplier  Multiplier used to determine vehicle carrying capacity.
- * @property {Record<string, Record<string, string>>} baseUnits  Base units used to calculate carrying weight.
+ * @property {Record<string, number>} vehicleWeightMultiplier   Multiplier used to determine vehicle carrying capacity.
+ * @property {Record<string, Record<string, string>>} baseUnits Base units used to calculate carrying weight.
  */
 
 /* -------------------------------------------- */
@@ -310,7 +310,7 @@
 /* -------------------------------------------- */
 
 /**
- * @typedef HabitatConfiguration5e
+ * @typedef HabitatConfigurationMythicRealms
  * @property {string} label        The human-readable habitat name.
  * @property {boolean} [subtypes]  Whether this habitat is divided into sub-types.
  */
@@ -345,7 +345,7 @@
  *
  * @typedef LimitedUsePeriodConfiguration
  * @property {string} label                Localized label.
- * @property {string}  abbreviation        Shorthand form of the label.
+ * @property {string} abbreviation         Shorthand form of the label.
  * @property {"combat"|"special"} [group]  Grouping if outside the normal "time" group.
  * @property {boolean} [formula]           Whether this limited use period restores charges via formula.
  */
@@ -371,8 +371,8 @@
 /**
  * @typedef MovementTypeConfiguration
  * @property {string} label            Localized label for the movement type.
- * @property {string} [travel]         Travel type in `CONFIG.DND5E.travelTypes` to map this movement speed to. If not
- *                                     provided, then `land` is assumed.
+ * @property {string} [travel]         Travel type in `CONFIG.MYTHICREALMS.travelTypes` to map this movement speed to.
+ *                                     If not provided, then `land` is assumed.
  * @property {boolean} [walkFallback]  When this special movement type runs out, can the actor fall back to using their
  *                                     walk speed at 2x cost?
  */
@@ -410,16 +410,16 @@
 /* -------------------------------------------- */
 
 /**
- * @callback RequestCallback5e
- * @param {Actor5e} actor               The actor fulfilling the request.
- * @param {ChatMessage5e} request       The request message.
- * @param {object} config               Additional request configuration.
- * @param {RequestOptions5e} [options]  Additional options provided at fulfillment time.
- * @returns {Promise<ChatMessage5e>}    Result chat message that will be associated with request.
+ * @callback RequestCallbackMythicRealms
+ * @param {ActorMythicRealms} actor                         The actor fulfilling the request.
+ * @param {ChatMessageMythicRealms} request                 The request message.
+ * @param {object} config                                  Additional request configuration.
+ * @param {RequestOptionsMythicRealms} [options]           Additional options provided at fulfillment time.
+ * @returns {Promise<ChatMessageMythicRealms>}              Result chat message that will be associated with request.
  */
 
 /**
- * @typedef RequestOptions5e
+ * @typedef RequestOptionsMythicRealms
  * @property {Event} [event]  The event forwarded from the user clicking the request button.
  */
 
@@ -444,9 +444,8 @@
  * @property {string} fullKey      Fully written key used as alternate for enrichers.
  * @property {string} [reference]  Reference to a rule page describing this skill.
  * @property {object} [pace]       Configuration for skills affected by travel pace.
- * @property {Set<TravelPace5e>} [pace.advantage]     Grant advantage on this skill when traveling at the given paces.
- * @property {Set<TravelPace5e>} [pace.disadvantage]  Grant disadvantage on this skill when traveling at the given
- *                                                    paces.
+ * @property {Set<TravelPaceMythicRealms>} [pace.advantage]     Grant advantage on this skill when traveling at the given paces.
+ * @property {Set<TravelPaceMythicRealms>} [pace.disadvantage]  Grant disadvantage on this skill when traveling at the given paces.
  */
 
 /* -------------------------------------------- */
@@ -462,7 +461,7 @@
 /* -------------------------------------------- */
 
 /**
- * @typedef SpellcastingPreparationState5e
+ * @typedef SpellcastingPreparationStateMythicRealms
  * @property {string} label  The human-readable label.
  * @property {number} value  A unique number representing this state.
  */
@@ -490,7 +489,7 @@
 /* -------------------------------------------- */
 
 /**
- * @typedef _StatusEffectConfig5e
+ * @typedef _StatusEffectConfigMythicRealms
  * @property {string} img                    Image used to represent the condition on the token.
  * @property {number} [order]                Order status to the start of the token HUD, rather than alphabetically.
  * @property {string} [reference]            UUID of a journal entry with details on this condition.
@@ -505,7 +504,7 @@
 
 /**
  * Configuration data for system status effects.
- * @typedef {Omit<StatusEffectConfig, "img"> & _StatusEffectConfig5e} StatusEffectConfig5e
+ * @typedef {Omit<StatusEffectConfig, "img"> & _StatusEffectConfigMythicRealms} StatusEffectConfigMythicRealms
  */
 
 /**
@@ -522,13 +521,13 @@
 
 /**
  * Configuration data for system conditions.
- * @typedef {Omit<StatusEffectConfig5e, "name"> & _ConditionConfiguration} ConditionConfiguration
+ * @typedef {Omit<StatusEffectConfigMythicRealms, "name"> & _ConditionConfiguration} ConditionConfiguration
  */
 
 /* -------------------------------------------- */
 
 /**
- * Configuration data for an items that have sub-types.
+ * Configuration data for items that have sub-types.
  *
  * @typedef SubtypeTypeConfiguration
  * @property {string} label                       Localized label for this type.
@@ -540,7 +539,7 @@
 /**
  * Important information on a targeted token.
  *
- * @typedef TargetDescriptor5e
+ * @typedef TargetDescriptorMythicRealms
  * @property {string} uuid  The UUID of the target.
  * @property {string} img   The target's image.
  * @property {string} name  The target's name.
@@ -552,7 +551,7 @@
 /**
  * @typedef ToolConfiguration
  * @property {string} ability  Default ability used for the tool.
- * @property {string} id       UUID of reference tool or ID within pack defined by `DND5E.sourcePacks.ITEMS`.
+ * @property {string} id       UUID of reference tool or ID within pack defined by `MYTHICREALMS.sourcePacks.ITEMS`.
  */
 
 /* -------------------------------------------- */
@@ -571,13 +570,13 @@
  * @property {string} [actorKeyPath]       If the trait doesn't directly map to an entry as `traits.[key]`, where is
  *                                         this trait's data stored on the actor?
  * @property {string} [configKey]          If the list of trait options doesn't match the name of the trait, where can
- *                                         the options be found within `CONFIG.DND5E`?
+ *                                         the options be found within `CONFIG.MYTHICREALMS`?
  * @property {boolean|number} [dataType]   Type of data represented.
  * @property {string} [labelKeyPath]       If config is an enum of objects, where can the label be found?
  * @property {object} [subtypes]           Configuration for traits that take some sort of base item.
  * @property {string} [subtypes.keyPath]   Path to subtype value on base items, should match a category key.
  *                                         Deprecated in favor of the standardized `system.type.value`.
- * @property {string[]} [subtypes.ids]     Key for base item ID objects within `CONFIG.DND5E`.
+ * @property {string[]} [subtypes.ids]     Key for base item ID objects within `CONFIG.MYTHICREALMS`.
  * @property {object} [children]           Mapping of category key to an object defining its children.
  * @property {boolean} [sortCategories]    Whether top-level categories should be sorted.
  * @property {boolean} [expertise]         Can an actor receive expertise in this trait?
@@ -592,7 +591,7 @@
  * @property {Record<string, TransformationFlagConfiguration>} keep
  * @property {Record<string, TransformationFlagConfiguration>} merge
  * @property {Record<string, TransformationFlagConfiguration>} others
- * @property {Record<string, TransformationPresetConfiguration} presets
+ * @property {Record<string, TransformationPresetConfiguration>} presets
  */
 
 /**
@@ -605,9 +604,9 @@
 
 /**
  * @typedef TransformationPresetConfiguration
- * @property {string} icon                                  Icon representing this preset on the button.
- * @property {string} label                                 Localized label for the preset.
- * @property {Partial<TransformationSettingData>} settings  Options that will be set for the preset.
+ * @property {string} icon                                   Icon representing this preset on the button.
+ * @property {string} label                                  Localized label for the preset.
+ * @property {Partial<TransformationSettingData>} settings    Options that will be set for the preset.
  */
 
 /* -------------------------------------------- */
@@ -624,7 +623,7 @@
 /* -------------------------------------------- */
 
 /**
- * @typedef TreasureConfiguration5e
+ * @typedef TreasureConfigurationMythicRealms
  * @property {string} label  The human-readable treasure category name.
  */
 
@@ -666,7 +665,7 @@
 /* -------------------------------------------- */
 
 /**
- * @typedef UnitValue5e
+ * @typedef UnitValueMythicRealms
  * @property {string} units
  * @property {number} value
  */
