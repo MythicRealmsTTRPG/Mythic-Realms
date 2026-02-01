@@ -9,7 +9,7 @@
   },
   "url": "https://github.com/MythicRealmsTTRPG/Mythic-Realms",
   "manifest": "https://raw.githubusercontent.com/MythicRealmsTTRPG/Mythic-Realms/refs/heads/main/system.json",
-  "download": "https://github.com/MythicRealmsTTRPG/Mythic-Realms/releases/tag/v0.1",
+  "download": "https://github.com/MythicRealmsTTRPG/Mythic-Realms/archive/refs/tags/v0.1.zip",
   "authors": [
     {
       "name": "ScaleScribe",
