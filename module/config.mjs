@@ -57,7 +57,7 @@ MYTHICREALMS.abilities = {
     abbreviation: "MYTHICREALMS.AbilityStrAbbr",
     type: "physical",
     fullkey: "strength",
-    reference:
+    reference: "",
     icon: "systems/Mythic-Realms/icons/SVG/Abilities/strength.svg"
   },
 }
