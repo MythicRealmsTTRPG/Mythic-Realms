@@ -43,3 +43,21 @@ MYTHICREALMS.ASCII = `__________________________________________________
               ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝___________`;
 
 
+/* -------------------------------------------- */
+/*  Abilities                                   */
+/* -------------------------------------------- */
+
+/**
+ *  * The set of Ability Scores used within the system.
+ * @enum {AbilityConfiguration}
+ */
+MYTHICREALMS.abilities = {
+  str: {
+    Label: "MYTHICREALMS.AbilityStr",
+    abbreviation: "MYTHICREALMS.AbilityStrAbbr",
+    type: "physical",
+    fullkey: "strength",
+    reference:
+    icon: "MythicRealmsTTRPG/Mythic-Realms/icons/SVG/Abilities/strength.svg"
+  },
+}
