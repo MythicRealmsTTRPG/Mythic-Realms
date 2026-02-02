@@ -1156,7 +1156,8 @@
       "Time": "Time Formatters"
     },
     "Gregorian": "Gregorian Calendar",
-    "Astral Concordat": {
+    "AstralConcordat": {
+      "Label": "Astral Concordat",
       "Day": {
         "Sunfall": "Sunfall",
         "Moonrise": "Moonrise",
