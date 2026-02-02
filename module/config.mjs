@@ -58,6 +58,6 @@ MYTHICREALMS.abilities = {
     type: "physical",
     fullkey: "strength",
     reference:
-    icon: "MythicRealmsTTRPG/Mythic-Realms/icons/SVG/Abilities/strength.svg"
+    icon: "systems/Mythic-Realms/icons/SVG/Abilities/strength.svg"
   },
 }
