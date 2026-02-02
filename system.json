@@ -545,7 +545,8 @@
         "MythicRealms Arcane Codex": "SOURCE.BOOK.ARCANE",
         "MythicRealms Epic Levels": "SOURCE.BOOK.EPIC",
         "MythicRealms Tools and Trade": "SOURCE.BOOK.CRAFTING",
-        "MythicRealms Atlas and Calendars": "SOURCE.BOOK.ATLAS"
+        "MythicRealms Atlas and Calendars": "SOURCE.BOOK.ATLAS",
+        "MythicRealms Gods and Deities": "SOURCE.BOOK.DIVINE"
       }
     },
     "needsMigrationVersion": "1.0.0",
