@@ -1,0 +1,105 @@
+/**
+ * @import { FilterDescription } from "../_types.mjs";
+ * @import { SheetTabDescriptorMythic } from "./api/_types.mjs";
+ */
+
+/**
+ * Options for awarding post-encounter rewards in Mythic Realms.
+ *
+ * @typedef AwardOptions
+ * @property {Record<string, number>|null} currency   Amount of each currency to award.
+ * @property {boolean} each                           Distribute the full award to each destination instead of
+ *                                                    dividing it among destinations.
+ * @property {Set<string>} savedDestinations          Set of IDs for previously selected destinations.
+ * @property {number|null} xp                         Amount of experience points to award.
+ */
+
+/**
+ * Configuration object for the Mythic Realms Compendium Browser.
+ *
+ * @typedef {ApplicationConfiguration} MythicRealmsCompendiumBrowserConfiguration
+ * @property {{locked: MythicRealmsCompendiumBrowserFilters, initial: MythicRealmsCompendiumBrowserFilters}} filters
+ *   Filters to apply on initialization.
+ *   - locked: Cannot be modified by the user
+ *   - initial: Default values that may be changed by the user
+ * @property {string|null} hint
+ *   Optional hint text displayed in the interface.
+ * @property {MythicRealmsCompendiumBrowserSelectionConfiguration} selection
+ *   Rules governing document selection behavior.
+ */
+
+/**
+ * Selection constraints for the Mythic Realms Compendium Browser.
+ *
+ * @typedef MythicRealmsCompendiumBrowserSelectionConfiguration
+ * @property {number|null} min   Minimum number of documents that must be selected.
+ * @property {number|null} max   Maximum number of documents that may be selected.
+ */
+
+/**
+ * Filter configuration for the Mythic Realms Compendium Browser.
+ *
+ * @typedef MythicRealmsCompendiumBrowserFilters
+ * @property {string} [documentClass]            Document type to retrieve (e.g. Actor, Item).
+ * @property {Set<string>} [types]               Document subtypes to filter by (e.g. "relic", "class", "creature").
+ * @property {object} [additional]               Additional system- or type-specific filters.
+ * @property {FilterDescription[]} [arbitrary]   Arbitrary filters applied silently (not shown in UI).
+ *                                               Only available in locked filters.
+ * @property {string} [name]                     Substring filter applied to document names.
+ */
+
+/**
+ * Definition for an individual Compendium Browser filter control.
+ *
+ * @typedef MythicRealmsCompendiumBrowserFilterDefinitionEntry
+ * @property {string} label
+ *   Localizable label displayed for the filter.
+ * @property {"boolean"|"range"|"set"} type
+ *   Control type rendered in the UI.
+ * @property {object} config
+ *   Type-specific configuration data.
+ * @property {MythicRealmsCompendiumBrowserCreateFilters} [createFilter]
+ *   Optional callback used to generate filter data.
+ */
+
+/**
+ * Callback used to create or mutate filters based on user input.
+ *
+ * @callback MythicRealmsCompendiumBrowserCreateFilters
+ * @param {FilterDescription[]} filters
+ *   Array of filters to be mutated.
+ * @param {*} value
+ *   Current value of the filter.
+ * @param {MythicRealmsCompendiumBrowserFilterDefinitionEntry} definition
+ *   Definition object for the filter being applied.
+ */
+
+/**
+ * Map of filter keys to filter definitions.
+ *
+ * @typedef {Map<string, MythicRealmsCompendiumBrowserFilterDefinitionEntry>}
+ *   MythicRealmsCompendiumBrowserFilterDefinition
+ */
+
+/**
+ * Descriptor for a Compendium Browser tab in Mythic Realms.
+ *
+ * @typedef {SheetTabDescriptorMythic} MythicRealmsCompendiumBrowserTabDescriptor
+ * @property {string} documentClass   Class of Documents displayed in this tab.
+ * @property {string[]} [types]       Document subtypes shown in this tab. If omitted, all subtypes are assumed.
+ * @property {boolean} [advanced]     Whether this tab is restricted to advanced browsing mode.
+ */
+
+/**
+ * Description for a single property attribution step.
+ *
+ * @typedef PropertyAttributionDescription
+ * @property {string} label
+ *   Human-readable label. If provided as an @property reference, it will be auto-resolved.
+ * @property {number} mode
+ *   Application mode as defined in CONST.ACTIVE_EFFECT_MODES.
+ * @property {number} value
+ *   Numeric value applied by this attribution.
+ * @property {ActiveEffectMythic} [document]
+ *   Active Effect responsible for this attribution, if applicable.
+ */
