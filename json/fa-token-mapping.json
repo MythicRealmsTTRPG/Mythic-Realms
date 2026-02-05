@@ -1,0 +1,12 @@
+{
+  "mythicrealms.actors": {
+    "": {
+      "actor": "",
+      "token": {
+        "texture": "",
+        "scaleX": 2.5,
+        "scaleY": 2.5
+      }
+    }
+  }
+}
