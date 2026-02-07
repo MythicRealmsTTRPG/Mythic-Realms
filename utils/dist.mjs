@@ -13,12 +13,12 @@ const { argv } = yargs(hideBin(process.argv))
       type: "string"
     });
     yargs.positional("free-rules", {
-      describe: "Path to the free rules content (Afflictions, Statuses, etc.)",
+      describe: "The path to the free rules content.",
       type: "string"
     });
     yargs.option("out", {
       alias: "o",
-      describe: "Path to the output directory.",
+      describe: "The path to the output directory.",
       type: "string",
       default: "./dist",
       requiresArg: true
@@ -27,13 +27,13 @@ const { argv } = yargs(hideBin(process.argv))
       alias: "r",
       describe: "The Mythic Realms repository.",
       type: "string",
-      default: "git@github.com:YourUsername/MythicRealms.git",
+      default: "git@github.com:your-org/mythicrealms.git",
       requiresArg: true
     });
     yargs.option("url", {
-      describe: "Public URL where releases are posted.",
+      describe: "A public URL where releases are posted.",
       type: "string",
-      default: "https://github.com/YourUsername/MythicRealms",
+      default: "https://github.com/your-org/mythicrealms",
       requiresArg: true
     });
   })
@@ -44,22 +44,113 @@ const paths = { dist: out, free: freeRules };
 
 /* -------------------------------------------- */
 
-/**
- * Spawn a child command and pass output through.
- */
-function passthrough(cmd, args = [], options = {}) {
-  return new Promise((resolve, reject) => {
-    const proc = spawn(cmd, args, { stdio: "inherit", ...options });
-    proc.on("close", code => code === 0 ? resolve() : reject(new Error(`${cmd} exited ${code}`)));
-    proc.on("error", reject);
-  });
+async function build() {
+  await passthrough("npm", ["run", "build"], { cwd: paths.dist });
+  fs.renameSync(
+    path.join(paths.dist, "mythicrealms-compiled.mjs"),
+    path.join(paths.dist, "mythicrealms.mjs")
+  );
 }
 
 /* -------------------------------------------- */
 
-/**
- * Clean and prepare dist directory.
- */
+function checkout() {
+  return passthrough("git", ["clone", "-b", argv.tag, "--depth", "1", argv.repo, paths.dist]);
+}
+
+/* -------------------------------------------- */
+
+function compileManifest() {
+  console.info("Making manifest changes...");
+
+  const freeManifest = JSON.parse(fs.readFileSync(path.join(paths.free, "module.json"), "utf8"));
+  const systemManifest = JSON.parse(fs.readFileSync(path.join(paths.dist, "system.json"), "utf8"));
+
+  // Merge sourceBooks from free rules
+  Object.assign(
+    systemManifest.flags.mythicrealms.sourceBooks,
+    freeManifest.flags?.mythicrealms?.sourceBooks ?? {}
+  );
+
+  // Remove hotReload flag
+  delete systemManifest.flags.hotReload;
+
+  // Ensure version and download URL are correct
+  const [, version] = argv.tag.split("-");
+  const download = `${argv.url}/releases/download/${argv.tag}/mythicrealms-${argv.tag}.zip`;
+  if (systemManifest.version !== version) {
+    throw new Error(`System manifest version did not match build version '${version}'.`);
+  }
+  if (systemManifest.download !== download) {
+    throw new Error(`System download path did not match build download path '${download}'.`);
+  }
+
+  fs.writeFileSync(
+    path.join(paths.dist, "system.json"),
+    `${JSON.stringify(systemManifest, null, 2)}\n`,
+    { mode: 0o644 }
+  );
+}
+
+/* -------------------------------------------- */
+
+function copyCompendiumContent() {
+  console.info("Copying compendium content...");
+  const source = path.join(paths.free, "packs", "_source");
+
+  for (const file of fs.readdirSync(source, { recursive: true, withFileTypes: true })) {
+    if (!file.isFile()) continue;
+
+    const src = path.join(source, file.name);
+    const dest = path.join(paths.dist, path.relative(paths.free, src));
+    fs.mkdirSync(path.dirname(dest), { recursive: true });
+
+    let data = fs.readFileSync(src, "utf8");
+
+    // Adjust icon paths for Mythic Realms
+    data = data.replaceAll("modules/mythicrealms-free-rules/icons/", "systems/mythicrealms/icons/");
+
+    console.info(`Writing ${dest}...`);
+    fs.writeFileSync(dest, data, { mode: 0o644 });
+  }
+}
+
+/* -------------------------------------------- */
+
+function copyImages() {
+  console.info("Copying images...");
+  fs.cpSync(
+    path.join(paths.free, "icons"),
+    path.join(paths.dist, "icons"),
+    { recursive: true }
+  );
+}
+
+/* -------------------------------------------- */
+
+function installDeps() {
+  return passthrough("npm", ["ci", "--ignore-scripts"], { cwd: paths.dist });
+}
+
+/* -------------------------------------------- */
+
+function passthrough(cmd, args = [], options = {}) {
+  const { promise, resolve, reject } = Promise.withResolvers();
+  const proc = spawn(cmd, args, { stdio: "inherit", ...options });
+  const fail = () => {
+    reject();
+    process.exit(1);
+  };
+  proc.on("close", code => {
+    if (code === 0) resolve();
+    else fail();
+  });
+  proc.on("error", fail);
+  return promise;
+}
+
+/* -------------------------------------------- */
+
 function prepareDist() {
   console.info("Cleaning existing dist...");
   fs.rmSync(paths.dist, { force: true, recursive: true });
@@ -68,103 +159,6 @@ function prepareDist() {
 
 /* -------------------------------------------- */
 
-/**
- * Clone the Mythic Realms repo at the given tag.
- */
-function checkout() {
-  console.info("Cloning Mythic Realms repo...");
-  return passthrough("git", ["clone", "-b", argv.tag, "--depth", "1", argv.repo, paths.dist]);
-}
-
-/* -------------------------------------------- */
-
-/**
- * Install npm dependencies.
- */
-function installDeps() {
-  console.info("Installing dependencies...");
-  return passthrough("npm", ["ci", "--ignore-scripts"], { cwd: paths.dist });
-}
-
-/* -------------------------------------------- */
-
-/**
- * Compile a new system.json manifest.
- */
-function compileManifest() {
-  console.info("Compiling system manifest...");
-
-  const freeManifest = JSON.parse(fs.readFileSync(path.join(paths.free, "module.json"), "utf8"));
-  const systemManifest = JSON.parse(fs.readFileSync(path.join(paths.dist, "system.json"), "utf8"));
-
-  // Merge free rules (like sourcebooks)
-  Object.assign(systemManifest.flags.mythicrealms.sourceBooks, freeManifest.flags?.mythicrealms?.sourceBooks ?? {});
-
-  // Remove dev-only flags
-  delete systemManifest.flags.hotReload;
-
-  // Ensure version and download URL match
-  const [, version] = argv.tag.split("-");
-  const download = `${argv.url}/releases/download/${argv.tag}/mythicrealms-${argv.tag}.zip`;
-  if (systemManifest.version !== version) {
-    throw new Error(`System manifest version mismatch '${version}'.`);
-  }
-  if (systemManifest.download !== download) {
-    throw new Error(`System download path mismatch '${download}'.`);
-  }
-
-  fs.writeFileSync(path.join(paths.dist, "system.json"), JSON.stringify(systemManifest, null, 2) + "\n", { mode: 0o644 });
-}
-
-/* -------------------------------------------- */
-
-/**
- * Copy free rules content (Afflictions, Statuses, etc.) into dist.
- */
-function copyCompendiumContent() {
-  console.info("Copying compendium content...");
-  const source = path.join(paths.free, "packs");
-  for (const file of fs.readdirSync(source, { withFileTypes: true })) {
-    const src = path.join(source, file.name);
-    const dest = path.join(paths.dist, "packs", file.name);
-    if (file.isDirectory()) {
-      fs.cpSync(src, dest, { recursive: true });
-    } else if (file.isFile()) {
-      fs.mkdirSync(path.dirname(dest), { recursive: true });
-      fs.copyFileSync(src, dest);
-    }
-    console.info(`Copied ${file.name} to dist/packs`);
-  }
-}
-
-/* -------------------------------------------- */
-
-/**
- * Copy images/icons for Mythic Realms.
- */
-function copyImages() {
-  console.info("Copying icons...");
-  const src = path.join(paths.free, "icons");
-  const dest = path.join(paths.dist, "icons");
-  if (fs.existsSync(src)) fs.cpSync(src, dest, { recursive: true });
-}
-
-/* -------------------------------------------- */
-
-/**
- * Run build scripts (npm build).
- */
-async function build() {
-  console.info("Building Mythic Realms system...");
-  await passthrough("npm", ["run", "build"], { cwd: paths.dist });
-  fs.renameSync(path.join(paths.dist, "mythicrealms-compiled.mjs"), path.join(paths.dist, "mythicrealms.mjs"));
-}
-
-/* -------------------------------------------- */
-
-/**
- * Produce the release zip.
- */
 async function zip() {
   console.info("Building release artifact...");
   const manifest = JSON.parse(fs.readFileSync(path.join(paths.dist, "system.json"), "utf8"));
@@ -182,24 +176,18 @@ async function zip() {
 
   const artifact = `mythicrealms-${argv.tag}.zip`;
   await passthrough("zip", [artifact, "-r", ...includes], { cwd: paths.dist });
-  console.info(`Release artifact written to '${path.join(paths.dist, artifact)}'`);
+  console.info(`Release artifact written to '${path.join(paths.dist, artifact)}'.`);
 }
 
 /* -------------------------------------------- */
 
-(async function main() {
-  try {
-    prepareDist();
-    await checkout();
-    await installDeps();
-    compileManifest();
-    copyImages();
-    copyCompendiumContent();
-    await build();
-    await zip();
-    console.info("Mythic Realms build complete!");
-  } catch (err) {
-    console.error("Build failed:", err);
-    process.exit(1);
-  }
+(async function () {
+  prepareDist();
+  await checkout();
+  await installDeps();
+  compileManifest();
+  copyImages();
+  copyCompendiumContent();
+  await build();
+  await zip();
 })();
