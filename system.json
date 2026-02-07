@@ -66,6 +66,17 @@
       "turn": {}
     },
     "Item": {
+      "afflictions": {
+        "filePathFields": {
+          "advancement.*.icon": [
+            "image"
+          ]
+        },
+        "htmlFields": [
+          "description.value",
+          "description.chat"
+        ]
+      },
       "background": {
         "filePathFields": {
           "advancement.*.icon": [
@@ -245,6 +256,22 @@
     }
   },
   "packs": [
+    {
+      "name": "afflictions",
+      "label": "Afflictions",
+      "system": "mythicrealms",
+      "path": "packs/afflictions.db",
+      "type": "Item",
+      "private": false,
+      "flags": {
+        "mythicrealms": {
+          "sourceBook": "MythicRealms Core Rulebook",
+          "types": [
+            "affliction"
+          ]
+        }
+      }
+    },
     {
       "name": "backgrounds",
       "label": "Backgrounds",
