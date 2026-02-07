@@ -349,187 +349,203 @@
       "MYTHICREALMS.Advanced": "Advanced",
       "MYTHICREALMS.ADVANCEMENT": {
         "AbilityScoreImprovement": {
-          "Action": {
-            "Select": "Select Feat"
+    "Action": {
+      "Select": "Select Feat"
+    },
+    "CapDisplay": {
+      "one": "Max {points} point per score",
+      "other": "Max {points} points per score"
+    },
+    "Details": "Improvement Details",
+    "Feat": {
+      "ASIName": "Ability Score Improvement Feat",
+      "Hint": "Drop a feat here to choose one instead of an ability score improvement."
+    },
+    "FIELDS": {
+      "cap": {
+        "hint": "Maximum number of points a player can assign to a single score.",
+        "label": "Point Cap"
+      },
+      "fixed": {
+        "hint": "Abilities that are improved by a fixed amount and cannot be manually improved during the process.",
+        "label": "Fixed Improvement"
+      },
+      "locked": {
+        "hint": "Ability cannot be improved.",
+        "label": "Locked",
+        "locked": "Ability cannot be improved.",
+        "unlocked": "Ability may be improved."
+      },
+      "max": {
+        "hint": "Increase the maximum score from what is allowed on the actor.",
+        "label": "Maximum"
+      },
+      "points": {
+        "decrease": "Decrease Points",
+        "hint": "Number of points that can be assigned to any unlocked ability score.",
+        "increase": "Increase Points",
+        "label": "Points"
+      },
+      "recommendation": {
+        "hint": "Epic Boon feat recommended by this class.",
+        "label": "Recommendation"
+      }
+    },
+    "Hint": "Allow the player to increase one or more ability scores or take an optional feat.",
+    "Journal": {
+      "DescriptionEpic": "<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>",
+      "DescriptionEpicRecommendation": "<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. {recommendation} is recommended.</p>",
+      "DescriptionLegacy": "<p>When you reach {firstLevelOrdinal} level, and again at {otherLevelsOrdinal} level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above {maxAbilityScore} using this feature.</p><p>Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.</p>",
+      "DescriptionModern": "<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at {class} levels {otherLevels}.</p>",
+      "Name": "Ability Score Improvement"
+    },
+    "LockedHint": "Scores cannot be modified with a feat selected.",
+    "PointsRemaining": {
+      "one": "{points} Point Remaining",
+      "other": "{points} Points Remaining"
+    },
+    "Title": "Ability Score Improvement",
+    "TitleEpic": "Epic Boon",
+    "Warning": {
+      "Type": "Only features with the \"feat\" type can be selected."
+    }
+  },
+  "Action": {
+    "Create": "Create Advancement",
+    "Delete": "Delete Advancement",
+    "Duplicate": "Duplicate Advancement",
+    "Edit": "Edit Advancement",
+    "View": "View Advancement"
+  },
+  "Config": {
+    "AnyLevel": "Any",
+    "Details": "Advancement Details"
+  },
+  "MYTHICREALMS.DOMINATION_ADVANCEMENT": {
+    "Mild": "Mild",
+    "Moderate": "Moderate",
+    "Severe": "Severe",
+    "Critical": "Critical"
+  },
+  "MYTHICREALMS.DOMINATION_CATEGORIES": {
+    "Domination": "Domination",
+    "Submission": "Submission"
+  },
+  "MYTHICREALMS.DOMINATION_TOGGLE": {
+    "Label": "Enable Domination/Submission",
+    "Hint": "Turn the Domination & Submission mechanics on or off.",
+    "On": "Enabled",
+    "Off": "Disabled"
+  },
+  "Defaults": {
+    "BackgroundFeat": "Background Feat",
+    "BackgroundFeature": "Background Feature",
+    "BackgroundProficiencies": "Background Proficiencies",
+    "ChooseLanguages": "Choose Languages"
+  },
+  "HitPoints": {
+    "Action": {
+      "Roll": "Roll {die}"
+    },
+    "Average": "Average",
+    "Hint": "Track the player's hit points for each level in the class.",
+    "MaxAtFirstLevel": "Max at 1st Level: <strong>{max}</strong>",
+    "Roll": "Roll {class} Hit Points",
+    "Starting": "Hit Points at 1st Level",
+    "TakeAverage": "Take Average",
+    "Title": "Hit Points",
+    "Warning": {
+      "Empty": "Hit points must be rolled or the average value must be taken.",
+      "Invalid": "Hit points must be a valid whole number."
+    }
+  },
+  "ItemChoice": {
+    "Action": {
+      "SelectGeneric": "Select Item",
+      "SelectSpecific": "Select {type}"
+    },
+    "Choose": "choose {count}",
+    "Chosen": "Chosen: {current} of {max}",
+    "Details": "Choice Details",
+    "DropHint": "Drop Items here to add them to the list that can be chosen with this advancement.",
+    "FIELDS": {
+      "allowDrops": {
+        "hint": "Allow players to be able to drop their own choices into this advancement.",
+        "label": "Allow Drops"
+      },
+      "choices": {
+        "hint": "Specify how many choices are allowed at each level.",
+        "label": "Choices",
+        "FIELDS": {
+          "count": {
+            "label": "Count"
           },
-          "CapDisplay": {
-            "one": "Max {points} point per score",
-            "other": "Max {points} points per score"
-          },
-          "Details": "Improvement Details",
-          "Feat": {
-            "ASIName": "Ability Score Improvement Feat",
-            "Hint": "Drop a feat here to choose one instead of an ability score improvement."
-          },
-          "FIELDS": {
-            "cap": {
-              "hint": "Maximum number of points a player can assign to a single score.",
-              "label": "Point Cap"
-            },
-            "fixed": {
-              "hint": "Abilities that are improved by a fixed amount and cannot be manually improved during the process.",
-              "label": "Fixed Improvement"
-            },
-            "locked": {
-              "hint": "Ability cannot be improved.",
-              "label": "Locked",
-              "locked": "Ability cannot be improved.",
-              "unlocked": "Ability may be improved."
-            },
-            "max": {
-              "hint": "Increase the maximum score from what is allowed on the actor.",
-              "label": "Maximum"
-            },
-            "points": {
-              "decrease": "Decrease Points",
-              "hint": "Number of points that can be assigned to any unlocked ability score.",
-              "increase": "Increase Points",
-              "label": "Points"
-            },
-            "recommendation": {
-              "hint": "Epic Boon feat recommended by this class.",
-              "label": "Recommendation"
-            }
-          },
-          "Hint": "Allow the player to increase one or more ability scores or take an optional feat.",
-          "Journal": {
-            "DescriptionEpic": "<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>",
-            "DescriptionEpicRecommendation": "<p>You gain an Epic Boon feat or another feat of your choice for which you qualify. {recommendation} is recommended.</p>",
-            "DescriptionLegacy": "<p>When you reach {firstLevelOrdinal} level, and again at {otherLevelsOrdinal} level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above {maxAbilityScore} using this feature.</p><p>Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.</p>",
-            "DescriptionModern": "<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at {class} levels {otherLevels}.</p>",
-            "Name": "Ability Score Improvement"
-          },
-          "LockedHint": "Scores cannot be modified with a feat selected.",
-          "PointsRemaining": {
-            "one": "{points} Point Remaining",
-            "other": "{points} Points Remaining"
-          },
-          "Title": "Ability Score Improvement",
-          "TitleEpic": "Epic Boon",
-          "Warning": {
-            "Type": "Only features with the \"feat\" type can be selected."
+          "replacement": {
+            "label": "Allow Replacement"
           }
-        },
-        "Action": {
-          "Create": "Create Advancement",
-          "Delete": "Delete Advancement",
-          "Duplicate": "Duplicate Advancement",
-          "Edit": "Edit Advancement",
-          "View": "View Advancement"
-        },
-        "Config": {
-          "AnyLevel": "Any",
-          "Details": "Advancement Details"
-        },
-        "Defaults": {
-          "BackgroundFeat": "Background Feat",
-          "BackgroundFeature": "Background Feature",
-          "BackgroundProficiencies": "Background Proficiencies",
-          "ChooseLanguages": "Choose Languages"
-        },
-        "HitPoints": {
-          "Action": {
-            "Roll": "Roll {die}"
-          },
-          "Average": "Average",
-          "Hint": "Track the player's hit points for each level in the class.",
-          "MaxAtFirstLevel": "Max at 1st Level: <strong>{max}</strong>",
-          "Roll": "Roll {class} Hit Points",
-          "Starting": "Hit Points at 1st Level",
-          "TakeAverage": "Take Average",
-          "Title": "Hit Points",
-          "Warning": {
-            "Empty": "Hit points must be rolled or the average value must be taken.",
-            "Invalid": "Hit points must be a valid whole number."
-          }
-        },
-        "ItemChoice": {
-          "Action": {
-            "SelectGeneric": "Select Item",
-            "SelectSpecific": "Select {type}"
-          },
-          "Choose": "choose {count}",
-          "Chosen": "Chosen: {current} of {max}",
-          "Details": "Choice Details",
-          "DropHint": "Drop Items here to add them to the list that can be chosen with this advancement.",
-          "FIELDS": {
-            "allowDrops": {
-              "hint": "Allow players to be able to drop their own choices into this advancement.",
-              "label": "Allow Drops"
-            },
-            "choices": {
-              "hint": "Specify how many choices are allowed at each level.",
-              "label": "Choices",
-              "FIELDS": {
-                "count": {
-                  "label": "Count"
-                },
-                "replacement": {
-                  "label": "Allow Replacement"
-                }
-              }
-            },
-            "pool": {
-              "label": "Item Options"
-            },
-            "restriction": {
-              "level": {
-                "Available": "Any Available Level",
-                "hint": "Only allow choices from spells of this level.",
-                "label": "Spell Level"
-              }
-            },
-            "list": {
-              "hint": "Only allow spells from these lists.",
-              "label": "Spell Lists"
-            },
-            "subtype": {
-              "label": "Subtype"
-            },
-            "type": {
-              "label": "Type"
-            }
-          },
-          "type": {
-            "Any": "Anything",
-            "hint": "Restrict what Item types can be chosen.",
-            "label": "Item Type"
-          },
-          "Warning": {
-            "Title": "Choose Items",
-            "InvalidType": "Only {type} items can be selected for this choice.",
-            "MaxSelected": "No additional items can be selected, uncheck items before selecting more.",
-            "NoOriginal": "Previously selected choice no longer available for replacement.",
-            "SpellLevelAvailable": "Only {level} or lower spells can be chosen for this advancement.",
-            "SpellLevelSpecific": "Only {level} spells can be chosen for this advancement.",
-            "SpellList": "Only spells available on the {lists} spell list can be chosen for this advancement."
-          }
-        },
-        "Replacement": {
-          "Hint": "Present the player with a choice of items (such as equipment, features, or spells) that they can choose for their character at one or more levels.",
-          "None": "No Replacement",
-          "Title": "replace"
-        },
-        "ItemGrant": {
-          "Details": "Grant Details",
-          "DropHint": "Drop Items here to add them to the list granted by this advancement.",
-          "FIELDS": {
-            "items": {
-              "label": "Items"
-            },
-            "optional": {
-              "hint": "If the whole advancement is marked optional, players may opt out of any of the following items, otherwise all non-optional items are granted.",
-              "label": "Optional"
-            }
-          },
-          "Hint": "Grant the character items (such as equipment, features, or spells) when they reach a certain level.",
-          "Title": "Grant Items",
-          "Warning": {
-            "Container": "Container contents will not be added with containers.",
-            "Duplicate": "That item already exists on this advancement.",
-            "Recursive": "You cannot grant an item in its own advancement."
-          }
-        },
+        }
+      },
+      "pool": {
+        "label": "Item Options"
+      },
+      "restriction": {
+        "level": {
+          "Available": "Any Available Level",
+          "hint": "Only allow choices from spells of this level.",
+          "label": "Spell Level"
+        }
+      },
+      "list": {
+        "hint": "Only allow spells from these lists.",
+        "label": "Spell Lists"
+      },
+      "subtype": {
+        "label": "Subtype"
+      },
+      "type": {
+        "label": "Type"
+      }
+    },
+    "type": {
+      "Any": "Anything",
+      "hint": "Restrict what Item types can be chosen.",
+      "label": "Item Type"
+    },
+    "Warning": {
+      "Title": "Choose Items",
+      "InvalidType": "Only {type} items can be selected for this choice.",
+      "MaxSelected": "No additional items can be selected, uncheck items before selecting more.",
+      "NoOriginal": "Previously selected choice no longer available for replacement.",
+      "SpellLevelAvailable": "Only {level} or lower spells can be chosen for this advancement.",
+      "SpellLevelSpecific": "Only {level} spells can be chosen for this advancement.",
+      "SpellList": "Only spells available on the {lists} spell list can be chosen for this advancement."
+    }
+  },
+  "Replacement": {
+    "Hint": "Present the player with a choice of items (such as equipment, features, or spells) that they can choose for their character at one or more levels.",
+    "None": "No Replacement",
+    "Title": "replace"
+  },
+  "ItemGrant": {
+    "Details": "Grant Details",
+    "DropHint": "Drop Items here to add them to the list granted by this advancement.",
+    "FIELDS": {
+      "items": {
+        "label": "Items"
+      },
+      "optional": {
+        "hint": "If the whole advancement is marked optional, players may opt out of any of the following items, otherwise all non-optional items are granted.",
+        "label": "Optional"
+      }
+    },
+    "Hint": "Grant the character items (such as equipment, features, or spells) when they reach a certain level.",
+    "Title": "Grant Items",
+    "Warning": {
+      "Container": "Container contents will not be added with containers.",
+      "Duplicate": "That item already exists on this advancement.",
+      "Recursive": "You cannot grant an item in its own advancement."
+    }
+  },
         "Manager": {
           "Action": {
             "Complete": "Complete",
@@ -5727,6 +5743,26 @@
     "DEFAULTSKILLS": {
       "Name": "Default Skills",
       "Hint": "The default skills that appear on NPC sheets regardless of level of proficiency."
+    },
+    "DOMINATION": {
+      "Name": "Domination & Submission",
+      "Hint": "Enable mechanics representing consent, control, and social or magical influence dynamics.",
+      "Toggle": {
+        "Name": "Enable Domination/Submission",
+        "Hint": "Turn the Domination & Submission mechanics on or off.",
+        "On": "Enabled",
+        "Off": "Disabled"
+      },
+      "Categories": {
+        "Domination": "Domination",
+        "Submission": "Submission"
+      },
+      "Advancement": {
+        "Mild": "Mild",
+        "Moderate": "Moderate",
+        "Severe": "Severe",
+        "Critical": "Critical"
+      }
     },
     "General": "MythicRealms Core",
     "LOYALTY": {
