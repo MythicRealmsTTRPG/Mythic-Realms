@@ -23,6 +23,8 @@
     "rest": "Rest Message",
     "turn": "Combat Turn Message"
   },
+  "TYPES.Item.affliction": "affliction",
+  "TYPES.Item.afflictionPl": "afflictions",
   "TYPES.Item.background": "Background",
   "TYPES.Item.backgroundPl": "Backgrounds",
   "TYPES.Item.container": "Container",
@@ -3082,6 +3084,23 @@
       "Description": "Description",
       "Details": "Details",
       "Effects": "Effects"
+    },
+    "AFFLICTION": {
+      "Label": "Affliction",
+      "Description": "Conditions, curses, diseases, and other adverse effects that can affect characters or creatures. Afflictions may have mechanical effects and can escalate through stages or tiers.",
+      "Categories": {
+        "Disease": "Disease",
+        "Curse": "Curse",
+        "Poison": "Poison",
+        "Mental": "Mental Effect",
+        "Other": "Other"
+      },
+      "Advancement": {
+        "Mild": "Mild",
+        "Moderate": "Moderate",
+        "Severe": "Severe",
+        "Critical": "Critical"
+      }
     }
   },
   "MYTHICREALMS.JackOfAllTrades": "Jack of all Trades",
@@ -3980,6 +3999,12 @@
   "MYTHICREALMS.SpellLevel7": "7th Level",
   "MYTHICREALMS.SpellLevel8": "8th Level",
   "MYTHICREALMS.SpellLevel9": "9th Level",
+  "MYTHICREALMS.SpellLevel10": "10th Level",
+  "MYTHICREALMS.SpellLevel11": "11th Level",
+  "MYTHICREALMS.SpellLevel12": "12th Level",
+  "MYTHICREALMS.SpellLevel13": "13th Level",
+  "MYTHICREALMS.SpellLevel14": "14th Level",
+  "MYTHICREALMS.SpellLevel15": "15th Level",
   "MYTHICREALMS.SpellLevelSpell": "{level} ({n} Slots)",
   "MYTHICREALMS.SpellLevelPact": "Pact Slot [Level {level}] ({n} Slots)",
   "MYTHICREALMS.SpellMaterials": "Spellcasting Materials",
@@ -5458,6 +5483,7 @@
     "StatusInsane": "Insane",
     "StatusInternalBleeding": "Internal Bleeding",
     "StatusItemLocked": "Items Locked",
+    "StatusLycanthropy": "Lycanthropy",
     "StatusMaimed": "Maimed",
     "StatusMalnutrition": "Malnutrition",
     "StatusManaDrained": "Mana Drained",
@@ -5478,6 +5504,7 @@
     "StatusRealityAnchored": "Reality Anchored",
     "StatusRealityFractured": "Reality Fractured",
     "StatusRevealed": "Revealed",
+    "StatusSanguineMaleficarum": "Sanguine Maleficarum",
     "StatusSevered": "Severed",
     "StatusShattered": "Shattered",
     "StatusSilenced": "Silenced",
@@ -5496,6 +5523,8 @@
     "StatusTotalCover": "Total Cover",
     "StatusTracked": "Tracked",
     "StatusTransformed": "Transformed",
+    "StatusWitcherTrial": "Trial of the Grasses",
+    "StatusWitcher": "Witcher",
     "StatusWounded": "Wounded"
   },
   "TYPES.JournalEntryPage.class": "Class Summary",
@@ -5839,11 +5868,12 @@
     }
   },
   "SOURCE.BOOK.RULEBOOK": "MythicRealms Core Rulebook — Foundation Edition",
-  "SOURCE.BOOK.CHARACTER": "MythicRealms Player’s Handbook — Heroic Paths",
+  "SOURCE.BOOK.CHARACTER": "MythicRealms Player's Handbook — Heroic Paths",
   "SOURCE.BOOK.BESTIARY": "MythicRealms Bestiary — Creatures & Titans",
   "SOURCE.BOOK.ARCANE": "MythicRealms Arcane Codex — Spells & Powers",
   "SOURCE.BOOK.EPIC": "MythicRealms Epic Levels — Ascension Guide",
   "SOURCE.BOOK.CRAFTING": "MythicRealms Tools & Trade — Crafting Compendium",
+  "SOURCE.BOOK.AFFLICTION": "MythicRealms Afflictions & Curses — Tome of Adversity",
   "SOURCE.BOOK.ATLAS": "MythicRealms Atlas & Calendars — World Guide",
   "SOURCE.BOOK.DIVINE": "MythicRealms Gods & Deities — Divine Codex",
   "SIDEBAR.SortModePriority": "Sort by priority"
