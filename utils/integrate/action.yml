@@ -8,7 +8,7 @@ runs:
       uses: qoomon/actions--access-token@v3
       id: access-token
       with:
-        repository: foundryvtt/mythicrealms-free-rules
+        repository: MythicRealmsTTRPG/mythicrealms-free-rules
         permissions: |
           contents: read
 
@@ -16,7 +16,7 @@ runs:
       uses: actions/checkout@v4
       with:
         path: _free/
-        repository: foundryvtt/mythicrealms-free-rules
+        repository: MythicRealmsTTRPG/mythicrealms-free-rules
         ref: main
         token: ${{ steps.access-token.outputs.token }}
 
